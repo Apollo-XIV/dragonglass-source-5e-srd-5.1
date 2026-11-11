@@ -1,0 +1,300 @@
+[
+  {
+    "id": "srd:class:druid",
+    "kind": "class",
+    "name": "Druid",
+    "source": "srd",
+    "page": "PHB 64",
+    "key": "druid",
+    "hitDie": "d8",
+    "tags": [
+      "srd-class"
+    ],
+    "text": "**Hit Dice:** 1d8 per druid level.\n\n**Hit Points at 1st Level:** 8 + your Constitution modifier.\n\n**Hit Points at Higher Levels:** 1d8 (or 5) + your Constitution modifier per druid level after 1st.\n\n**Armor:** Light, medium, shields (druids will not wear armor or use shields made of metal)\n**Weapons:** Clubs, daggers, darts, javelins, maces, quarterstaffs, scimitars, sickles, slings, spears\n**Tools:** Herbalism kit\n**Saving Throws:** Intelligence, Wisdom\n**Skills:** Choose 2 from arcana, animal handling, insight, medicine, nature, perception, religion, survival\n\n**Equipment:** You start with the following equipment, in addition to the equipment granted by your background:\n\n- (a) a wooden shield or (b) any simple weapon\n- (a) a scimitar or (b) any simple melee weapon\n- Leather armor, an explorer's pack, and a druidic focus\n\nAlternatively, you may start with 2d4 × 10 gp to buy your own equipment.",
+    "multiclassRequires": {
+      "all": [
+        {
+          "type": "ability",
+          "ability": "wis",
+          "min": 13
+        }
+      ],
+      "text": "Wisdom 13"
+    },
+    "primaryAbility": [
+      "wis"
+    ],
+    "x-multiclass-proficiencies": {
+      "armor": [
+        "light",
+        "medium",
+        {
+          "proficiency": "shield",
+          "full": "shields (druids will not wear armor or use shields made of metal)"
+        }
+      ],
+      "armorProficiencies": [
+        {
+          "light": true,
+          "medium": true,
+          "shield": true
+        }
+      ]
+    },
+    "spellcasting": {
+      "ability": "wis",
+      "progression": "full",
+      "type": "prepared",
+      "list": "druid-spell",
+      "cantrips": "@table(druid, cantrips-known)",
+      "prepared": "@level(druid) + @abilities.wis.mod"
+    },
+    "tables": {
+      "cantrips-known": [
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "wild-shape": [
+        0,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        "unlimited"
+      ]
+    },
+    "levels": {
+      "1": {
+        "grants": [
+          "srd:tool:herbalism-kit",
+          "srd:druid:druidic",
+          "srd:druid:spellcasting"
+        ],
+        "choices": [
+          {
+            "id": "srd:class:druid:skill",
+            "name": "Skill Proficiency",
+            "count": 2,
+            "from": {
+              "ids": [
+                "srd:skill:arcana",
+                "srd:skill:animal-handling",
+                "srd:skill:insight",
+                "srd:skill:medicine",
+                "srd:skill:nature",
+                "srd:skill:perception",
+                "srd:skill:religion",
+                "srd:skill:survival"
+              ]
+            }
+          }
+        ],
+        "modifiers": [
+          {
+            "target": "saves.int",
+            "op": "proficiency",
+            "value": "proficient"
+          },
+          {
+            "target": "saves.wis",
+            "op": "proficiency",
+            "value": "proficient"
+          },
+          {
+            "target": "proficiencies.armor",
+            "op": "include",
+            "value": [
+              "light",
+              "medium",
+              "shield"
+            ]
+          },
+          {
+            "target": "proficiencies.weapon",
+            "op": "include",
+            "value": [
+              "srd:item:club",
+              "srd:item:dagger",
+              "srd:item:dart",
+              "srd:item:javelin",
+              "srd:item:mace",
+              "srd:item:quarterstaff",
+              "srd:item:scimitar",
+              "srd:item:sickle",
+              "srd:item:sling",
+              "srd:item:spear"
+            ]
+          }
+        ]
+      },
+      "2": {
+        "grants": [
+          "srd:druid:wild-shape",
+          "srd:druid:druid-circle"
+        ],
+        "choices": [
+          {
+            "id": "srd:class:druid:subclass",
+            "name": "Druid Circle",
+            "count": 1,
+            "from": {
+              "kind": "subclass",
+              "tags": [
+                "druid-subclass"
+              ]
+            }
+          }
+        ]
+      },
+      "4": {
+        "grants": [
+          "srd:druid:wild-shape-improvement"
+        ],
+        "choices": [
+          {
+            "id": "srd:class:druid:asi-4",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "8": {
+        "grants": [
+          "srd:druid:wild-shape-improvement-8"
+        ],
+        "choices": [
+          {
+            "id": "srd:class:druid:asi-8",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "12": {
+        "choices": [
+          {
+            "id": "srd:class:druid:asi-12",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "16": {
+        "choices": [
+          {
+            "id": "srd:class:druid:asi-16",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "18": {
+        "grants": [
+          "srd:druid:timeless-body",
+          "srd:druid:beast-spells"
+        ]
+      },
+      "19": {
+        "choices": [
+          {
+            "id": "srd:class:druid:asi-19",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "20": {
+        "grants": [
+          "srd:druid:archdruid"
+        ]
+      }
+    }
+  }
+]

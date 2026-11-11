@@ -1,0 +1,190 @@
+[
+  {
+    "id": "srd:subclass:way-of-the-open-hand",
+    "kind": "subclass",
+    "name": "Way of the Open Hand",
+    "source": "srd",
+    "page": "PHB 79",
+    "class": "srd:class:monk",
+    "tags": [
+      "monk-subclass",
+      "srd-subclass"
+    ],
+    "levels": {
+      "3": {
+        "grants": [
+          "srd:open-hand:way-of-the-open-hand"
+        ]
+      },
+      "6": {
+        "grants": [
+          "srd:open-hand:wholeness-of-body"
+        ]
+      },
+      "11": {
+        "grants": [
+          "srd:open-hand:tranquility"
+        ],
+        "innateSpells": [
+          {
+            "spell": "srd:spell:sanctuary",
+            "ability": "wis",
+            "uses": 1,
+            "recharge": [
+              {
+                "on": "long-rest",
+                "amount": "all"
+              }
+            ]
+          }
+        ]
+      },
+      "17": {
+        "grants": [
+          "srd:open-hand:quivering-palm"
+        ]
+      }
+    }
+  },
+  {
+    "id": "srd:open-hand:open-hand-technique",
+    "kind": "subclass-feature",
+    "name": "Open Hand Technique",
+    "source": "srd",
+    "page": "PHB 79",
+    "tags": [
+      "open-hand-feature",
+      "monk-feature"
+    ],
+    "text": "You can manipulate your enemy's ki when you harness your own. Whenever you hit a creature with one of the attacks granted by your Flurry of Blows, you can impose one of the following effects on that target.\n\n- It must succeed on a Dexterity saving throw or be knocked prone.\n- It must make a Strength saving throw. If it fails, you can push it up to 15 feet away from you.\n- It can't take reactions until the end of your next turn.",
+    "actions": [
+      {
+        "id": "open-hand-technique",
+        "name": "Open Hand Technique",
+        "activation": "special",
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:open-hand:way-of-the-open-hand",
+    "kind": "subclass-feature",
+    "name": "Way of the Open Hand",
+    "source": "srd",
+    "page": "PHB 79",
+    "tags": [
+      "open-hand-feature",
+      "monk-feature"
+    ],
+    "text": "Monks of the Way of the Open Hand are the ultimate masters of martial arts combat, whether armed or unarmed. They learn techniques to push and trip their opponents, manipulate ki to heal damage to their bodies, and practice advanced meditation that can protect them from harm.",
+    "grants": [
+      "srd:open-hand:open-hand-technique"
+    ]
+  },
+  {
+    "id": "srd:open-hand:wholeness-of-body",
+    "kind": "subclass-feature",
+    "name": "Wholeness of Body",
+    "source": "srd",
+    "page": "PHB 79",
+    "tags": [
+      "open-hand-feature",
+      "monk-feature"
+    ],
+    "text": "You gain the ability to heal yourself. As an action, you can regain hit points equal to three times your monk level. You must finish a long rest before you can use this feature again.",
+    "resources": [
+      {
+        "id": "srd:open-hand:wholeness-of-body",
+        "name": "Wholeness of Body",
+        "max": 1,
+        "recharge": [
+          {
+            "on": "long-rest",
+            "amount": "all"
+          }
+        ],
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ],
+    "actions": [
+      {
+        "id": "wholeness-of-body",
+        "name": "Wholeness of Body",
+        "activation": "action",
+        "cost": {
+          "srd:open-hand:wholeness-of-body": 1
+        },
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:open-hand:tranquility",
+    "kind": "subclass-feature",
+    "name": "Tranquility",
+    "source": "srd",
+    "page": "PHB 79",
+    "tags": [
+      "open-hand-feature",
+      "monk-feature"
+    ],
+    "text": "Beginning at 11th level, you can enter a special meditation that surrounds you with an aura of peace. At the end of a long rest, you gain the effect of a sanctuary spell that lasts until the start of your next long rest (the spell can end early as normal). The saving throw DC for the spell equals 8 + your Wisdom modifier + your proficiency bonus.",
+    "actions": [
+      {
+        "id": "tranquility",
+        "name": "Tranquility",
+        "activation": "special",
+        "save": {
+          "ability": "wis",
+          "dc": "8 + @prof + @abilities.wis.mod"
+        },
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:open-hand:quivering-palm",
+    "kind": "subclass-feature",
+    "name": "Quivering Palm",
+    "source": "srd",
+    "page": "PHB 79",
+    "tags": [
+      "open-hand-feature",
+      "monk-feature"
+    ],
+    "text": "You gain the ability to set up lethal vibrations in someone's body. When you hit a creature with an unarmed strike, you can spend 3 ki points to start these imperceptible vibrations, which last for a number of days equal to your monk level. The vibrations are harmless unless you use your action to end them. To do so, you and the target must be on the same plane of existence. When you use this action, the creature must make a Constitution saving throw. If it fails, it is reduced to 0 hit points. If it succeeds, it takes 10d10 necrotic damage.\n\nYou can have only one creature under the effect of this feature at a time. You can choose to end the vibrations harmlessly without using an action.",
+    "actions": [
+      {
+        "id": "quivering-palm",
+        "name": "Quivering Palm",
+        "activation": "action",
+        "cost": {
+          "srd:monk:ki-points": 3
+        },
+        "save": {
+          "ability": "con",
+          "dc": "8 + @prof + @abilities.wis.mod",
+          "onSuccess": "half"
+        },
+        "damage": "10d10",
+        "damageType": "necrotic",
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  }
+]

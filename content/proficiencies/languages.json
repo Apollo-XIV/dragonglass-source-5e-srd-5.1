@@ -1,0 +1,362 @@
+[
+  {
+    "id": "srd:language:abyssal",
+    "kind": "language",
+    "name": "Abyssal",
+    "source": "srd",
+    "tags": [
+      "exotic-language"
+    ],
+    "modifiers": [
+      {
+        "target": "languages",
+        "op": "include",
+        "value": [
+          "Abyssal"
+        ]
+      }
+    ],
+    "text": "Script: Infernal. Typically spoken by demons.",
+    "page": "PHB 123"
+  },
+  {
+    "id": "srd:language:celestial",
+    "kind": "language",
+    "name": "Celestial",
+    "source": "srd",
+    "tags": [
+      "exotic-language"
+    ],
+    "modifiers": [
+      {
+        "target": "languages",
+        "op": "include",
+        "value": [
+          "Celestial"
+        ]
+      }
+    ],
+    "text": "Script: Celestial. Typically spoken by celestials.",
+    "page": "PHB 123"
+  },
+  {
+    "id": "srd:language:common",
+    "kind": "language",
+    "name": "Common",
+    "source": "srd",
+    "tags": [
+      "standard-language"
+    ],
+    "modifiers": [
+      {
+        "target": "languages",
+        "op": "include",
+        "value": [
+          "Common"
+        ]
+      }
+    ],
+    "text": "Script: Common. Typically spoken by humans.",
+    "page": "PHB 123"
+  },
+  {
+    "id": "srd:language:deep-speech",
+    "kind": "language",
+    "name": "Deep Speech",
+    "source": "srd",
+    "tags": [
+      "exotic-language"
+    ],
+    "modifiers": [
+      {
+        "target": "languages",
+        "op": "include",
+        "value": [
+          "Deep Speech"
+        ]
+      }
+    ],
+    "text": "Script: none. Typically spoken by mind flayers, beholders.",
+    "page": "PHB 123"
+  },
+  {
+    "id": "srd:language:draconic",
+    "kind": "language",
+    "name": "Draconic",
+    "source": "srd",
+    "tags": [
+      "exotic-language"
+    ],
+    "modifiers": [
+      {
+        "target": "languages",
+        "op": "include",
+        "value": [
+          "Draconic"
+        ]
+      }
+    ],
+    "text": "Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants.\n\nScript: Draconic. Typically spoken by dragons, dragonborn.",
+    "page": "PHB 123"
+  },
+  {
+    "id": "srd:language:druidic",
+    "kind": "language",
+    "name": "Druidic",
+    "source": "srd",
+    "tags": [
+      "secret-language"
+    ],
+    "modifiers": [
+      {
+        "target": "languages",
+        "op": "include",
+        "value": [
+          "Druidic"
+        ]
+      }
+    ],
+    "text": "Druidic is the secret language of druids. It can be spoken or used to leave hidden messages. Creatures who know this language automatically spot such a message. Others spot the message's presence with a successful DC 15 Wisdom (Perception) check but can't decipher it without magic.\n\nTypically spoken by druids/druids, treants.",
+    "page": "PHB 64"
+  },
+  {
+    "id": "srd:language:dwarvish",
+    "kind": "language",
+    "name": "Dwarvish",
+    "source": "srd",
+    "tags": [
+      "standard-language"
+    ],
+    "modifiers": [
+      {
+        "target": "languages",
+        "op": "include",
+        "value": [
+          "Dwarvish"
+        ]
+      }
+    ],
+    "text": "Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak.\n\nScript: Dwarvish. Typically spoken by dwarves.",
+    "page": "PHB 123"
+  },
+  {
+    "id": "srd:language:elvish",
+    "kind": "language",
+    "name": "Elvish",
+    "source": "srd",
+    "tags": [
+      "standard-language"
+    ],
+    "modifiers": [
+      {
+        "target": "languages",
+        "op": "include",
+        "value": [
+          "Elvish"
+        ]
+      }
+    ],
+    "text": "Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires.\n\nScript: Elvish. Typically spoken by elves.",
+    "page": "PHB 123"
+  },
+  {
+    "id": "srd:language:giant",
+    "kind": "language",
+    "name": "Giant",
+    "source": "srd",
+    "tags": [
+      "standard-language"
+    ],
+    "modifiers": [
+      {
+        "target": "languages",
+        "op": "include",
+        "value": [
+          "Giant"
+        ]
+      }
+    ],
+    "text": "Script: Dwarvish. Typically spoken by ogres, giants.",
+    "page": "PHB 123"
+  },
+  {
+    "id": "srd:language:gnomish",
+    "kind": "language",
+    "name": "Gnomish",
+    "source": "srd",
+    "tags": [
+      "standard-language"
+    ],
+    "modifiers": [
+      {
+        "target": "languages",
+        "op": "include",
+        "value": [
+          "Gnomish"
+        ]
+      }
+    ],
+    "text": "The Gnomish language, which uses the Dwarvish script, is renowned for its technical treatises and its catalogs of knowledge about the natural world.\n\nScript: Dwarvish. Typically spoken by gnomes.",
+    "page": "PHB 123"
+  },
+  {
+    "id": "srd:language:goblin",
+    "kind": "language",
+    "name": "Goblin",
+    "source": "srd",
+    "tags": [
+      "standard-language"
+    ],
+    "modifiers": [
+      {
+        "target": "languages",
+        "op": "include",
+        "value": [
+          "Goblin"
+        ]
+      }
+    ],
+    "text": "Script: Dwarvish. Typically spoken by goblinoids.",
+    "page": "PHB 123"
+  },
+  {
+    "id": "srd:language:halfling",
+    "kind": "language",
+    "name": "Halfling",
+    "source": "srd",
+    "tags": [
+      "standard-language"
+    ],
+    "modifiers": [
+      {
+        "target": "languages",
+        "op": "include",
+        "value": [
+          "Halfling"
+        ]
+      }
+    ],
+    "text": "The Halfling language isn't secret, but halflings are loath to share it with others. They write very little, so they don't have a rich body of literature. Their oral tradition, however, is very strong. Almost all halflings speak Common to converse with the people in whose lands they dwell or through which they are traveling.\n\nScript: Common. Typically spoken by halflings.",
+    "page": "PHB 123"
+  },
+  {
+    "id": "srd:language:infernal",
+    "kind": "language",
+    "name": "Infernal",
+    "source": "srd",
+    "tags": [
+      "exotic-language"
+    ],
+    "modifiers": [
+      {
+        "target": "languages",
+        "op": "include",
+        "value": [
+          "Infernal"
+        ]
+      }
+    ],
+    "text": "Script: Infernal. Typically spoken by devils.",
+    "page": "PHB 123"
+  },
+  {
+    "id": "srd:language:orc",
+    "kind": "language",
+    "name": "Orc",
+    "source": "srd",
+    "tags": [
+      "standard-language"
+    ],
+    "modifiers": [
+      {
+        "target": "languages",
+        "op": "include",
+        "value": [
+          "Orc"
+        ]
+      }
+    ],
+    "text": "Orc is a harsh, grating language with hard consonants. It has no script of its own but is written in the Dwarvish script.\n\nScript: Dwarvish. Typically spoken by orcs.",
+    "page": "PHB 123"
+  },
+  {
+    "id": "srd:language:primordial",
+    "kind": "language",
+    "name": "Primordial",
+    "source": "srd",
+    "tags": [
+      "exotic-language"
+    ],
+    "modifiers": [
+      {
+        "target": "languages",
+        "op": "include",
+        "value": [
+          "Primordial"
+        ]
+      }
+    ],
+    "text": "Primordial is a guttural language, filled with harsh syllables and hard consonants.\n\nScript: Dwarvish. Typically spoken by elementals.",
+    "page": "PHB 123"
+  },
+  {
+    "id": "srd:language:sylvan",
+    "kind": "language",
+    "name": "Sylvan",
+    "source": "srd",
+    "tags": [
+      "exotic-language"
+    ],
+    "modifiers": [
+      {
+        "target": "languages",
+        "op": "include",
+        "value": [
+          "Sylvan"
+        ]
+      }
+    ],
+    "text": "Script: Elvish. Typically spoken by fey creatures.",
+    "page": "PHB 123"
+  },
+  {
+    "id": "srd:language:thieves-cant",
+    "kind": "language",
+    "name": "Thieves' Cant",
+    "source": "srd",
+    "tags": [
+      "secret-language"
+    ],
+    "modifiers": [
+      {
+        "target": "languages",
+        "op": "include",
+        "value": [
+          "Thieves' Cant"
+        ]
+      }
+    ],
+    "text": "Thieves' cant is a secret mix of dialect, jargon, and code that allows messages to be hidden in seemingly normal conversation. Only a creature that knows thieves' cant understands such messages. It takes four times longer to convey such a message than it does to speak the same idea plainly.\n\nTypically spoken by assassins, rogues.",
+    "page": "PHB 94"
+  },
+  {
+    "id": "srd:language:undercommon",
+    "kind": "language",
+    "name": "Undercommon",
+    "source": "srd",
+    "tags": [
+      "exotic-language"
+    ],
+    "modifiers": [
+      {
+        "target": "languages",
+        "op": "include",
+        "value": [
+          "Undercommon"
+        ]
+      }
+    ],
+    "text": "Script: Elvish. Typically spoken by underdark traders.",
+    "page": "PHB 123"
+  }
+]

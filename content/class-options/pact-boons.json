@@ -1,0 +1,59 @@
+[
+  {
+    "id": "srd:pact-boon:pact-of-the-blade",
+    "kind": "pact-boon",
+    "name": "Pact of the Blade",
+    "source": "srd",
+    "tags": [
+      "warlock-pact-boon"
+    ],
+    "text": "You can use your action to create a pact weapon in your empty hand. You can choose the form that this melee weapon takes each time you create it (see chapter 5 for weapon options). You are proficient with it while you wield it. This weapon counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.\n\nYour pact weapon disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature again, if you dismiss the weapon (no action required), or if you die.\n\nYou can transform one magic weapon into your pact weapon by performing a special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. You can then dismiss the weapon, shunting it into an extradimensional space, and it appears whenever you create your pact weapon thereafter. You can't affect an artifact or a sentient weapon in this way. The weapon ceases being your pact weapon if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks.",
+    "page": "PHB 107",
+    "actions": [
+      {
+        "id": "pact-of-the-blade",
+        "name": "Pact of the Blade",
+        "activation": "action",
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:pact-boon:pact-of-the-chain",
+    "kind": "pact-boon",
+    "name": "Pact of the Chain",
+    "source": "srd",
+    "tags": [
+      "warlock-pact-boon"
+    ],
+    "text": "You learn the find familiar spell and can cast it as a ritual. The spell doesn't count against your number of spells known.\n\nWhen you cast the spell, you can choose one of the normal forms for your familiar or one of the following special forms: imp, pseudodragon, quasit, or sprite.\n\nAdditionally, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to use its reaction to make one attack of its own.",
+    "page": "PHB 107"
+  },
+  {
+    "id": "srd:pact-boon:pact-of-the-tome",
+    "kind": "pact-boon",
+    "name": "Pact of the Tome",
+    "source": "srd",
+    "tags": [
+      "warlock-pact-boon"
+    ],
+    "text": "Your patron gives you a grimoire called a Book of Shadows. When you gain this feature, choose three cantrips from any class's spell list. The cantrips do not need to be from the same spell list. While the book is on your person, you can cast those cantrips at will. They don't count against your number of cantrips known. Any cantrip you cast with this feature is considered a warlock cantrip for you. If you lose your Book of Shadows, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous book. The book turns to ash when you die.",
+    "page": "PHB 108",
+    "choices": [
+      {
+        "id": "srd:pact-boon:pact-of-the-tome:known-spells",
+        "name": "Cantrip",
+        "count": 3,
+        "from": {
+          "kind": "spell",
+          "allTags": [
+            "spell-level:0"
+          ]
+        }
+      }
+    ]
+  }
+]

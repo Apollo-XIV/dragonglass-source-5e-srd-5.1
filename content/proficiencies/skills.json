@@ -1,0 +1,344 @@
+[
+  {
+    "id": "srd:skill:acrobatics",
+    "kind": "skill",
+    "name": "Acrobatics",
+    "source": "srd",
+    "ability": "dex",
+    "tags": [
+      "skill"
+    ],
+    "text": "Your Dexterity (Acrobatics) check covers your attempt to stay on your feet in a tricky situation, such as when you're trying to run across a sheet of ice, balance on a tightrope, or stay upright on a rocking ship's deck. The DM might also call for a Dexterity (Acrobatics) check to see if you can perform acrobatic stunts, including dives, rolls, somersaults, and flips.",
+    "modifiers": [
+      {
+        "target": "skills.acrobatics",
+        "op": "proficiency",
+        "value": "proficient"
+      }
+    ],
+    "page": "PHB 176"
+  },
+  {
+    "id": "srd:skill:animal-handling",
+    "kind": "skill",
+    "name": "Animal Handling",
+    "source": "srd",
+    "ability": "wis",
+    "tags": [
+      "skill"
+    ],
+    "text": "When there is any question whether you can calm down a domesticated animal, keep a mount from getting spooked, or intuit an animal's intentions, the DM might call for a Wisdom (Animal Handling) check. You also make a Wisdom (Animal Handling) check to control your mount when you attempt a risky maneuver.",
+    "modifiers": [
+      {
+        "target": "skills.animal-handling",
+        "op": "proficiency",
+        "value": "proficient"
+      }
+    ],
+    "page": "PHB 178"
+  },
+  {
+    "id": "srd:skill:arcana",
+    "kind": "skill",
+    "name": "Arcana",
+    "source": "srd",
+    "ability": "int",
+    "tags": [
+      "skill"
+    ],
+    "text": "Your Intelligence (Arcana) check measures your ability to recall lore about spells, magic items, eldritch symbols, magical traditions, the planes of existence, and the inhabitants of those planes.",
+    "modifiers": [
+      {
+        "target": "skills.arcana",
+        "op": "proficiency",
+        "value": "proficient"
+      }
+    ],
+    "page": "PHB 177"
+  },
+  {
+    "id": "srd:skill:athletics",
+    "kind": "skill",
+    "name": "Athletics",
+    "source": "srd",
+    "ability": "str",
+    "tags": [
+      "skill"
+    ],
+    "text": "Your Strength (Athletics) check covers difficult situations you encounter while climbing, jumping, or swimming. Examples include the following activities:\n\n- You attempt to climb a sheer or slippery cliff, avoid hazards while scaling a wall, or cling to a surface while something is trying to knock you off.\n- You try to jump an unusually long distance or pull off a stunt mid jump.\n- You struggle to swim or stay afloat in treacherous currents, storm-tossed waves, or areas of thick seaweed. Or another creature tries to push or pull you underwater or otherwise interfere with your swimming.",
+    "modifiers": [
+      {
+        "target": "skills.athletics",
+        "op": "proficiency",
+        "value": "proficient"
+      }
+    ],
+    "page": "PHB 175"
+  },
+  {
+    "id": "srd:skill:deception",
+    "kind": "skill",
+    "name": "Deception",
+    "source": "srd",
+    "ability": "cha",
+    "tags": [
+      "skill"
+    ],
+    "text": "Your Charisma (Deception) check determines whether you can convincingly hide the truth, either verbally or through your actions. This deception can encompass everything from misleading others through ambiguity to telling outright lies. Typical situations include trying to fast-talk a guard, con a merchant, earn money through gambling, pass yourself off in a disguise, dull someone's suspicions with false assurances, or maintain a straight face while telling a blatant lie.",
+    "modifiers": [
+      {
+        "target": "skills.deception",
+        "op": "proficiency",
+        "value": "proficient"
+      }
+    ],
+    "page": "PHB 178"
+  },
+  {
+    "id": "srd:skill:history",
+    "kind": "skill",
+    "name": "History",
+    "source": "srd",
+    "ability": "int",
+    "tags": [
+      "skill"
+    ],
+    "text": "Your Intelligence (History) check measures your ability to recall lore about historical events, legendary people, ancient kingdoms, past disputes, recent wars, and lost civilizations.",
+    "modifiers": [
+      {
+        "target": "skills.history",
+        "op": "proficiency",
+        "value": "proficient"
+      }
+    ],
+    "page": "PHB 177"
+  },
+  {
+    "id": "srd:skill:insight",
+    "kind": "skill",
+    "name": "Insight",
+    "source": "srd",
+    "ability": "wis",
+    "tags": [
+      "skill"
+    ],
+    "text": "Your Wisdom (Insight) check decides whether you can determine the true intentions of a creature, such as when searching out a lie or predicting someone's next move. Doing so involves gleaning clues from body language, speech habits, and changes in mannerisms.",
+    "modifiers": [
+      {
+        "target": "skills.insight",
+        "op": "proficiency",
+        "value": "proficient"
+      }
+    ],
+    "page": "PHB 178"
+  },
+  {
+    "id": "srd:skill:intimidation",
+    "kind": "skill",
+    "name": "Intimidation",
+    "source": "srd",
+    "ability": "cha",
+    "tags": [
+      "skill"
+    ],
+    "text": "When you attempt to influence someone through overt threats, hostile actions, and physical violence, the DM might ask you to make a Charisma (Intimidation) check. Examples include trying to pry information out of a prisoner, convincing street thugs to back down from a confrontation, or using the edge of a broken bottle to convince a sneering vizier to reconsider a decision.",
+    "modifiers": [
+      {
+        "target": "skills.intimidation",
+        "op": "proficiency",
+        "value": "proficient"
+      }
+    ],
+    "page": "PHB 179"
+  },
+  {
+    "id": "srd:skill:investigation",
+    "kind": "skill",
+    "name": "Investigation",
+    "source": "srd",
+    "ability": "int",
+    "tags": [
+      "skill"
+    ],
+    "text": "When you look around for clues and make deductions based on those clues, you make an Intelligence (Investigation) check. You might deduce the location of a hidden object, discern from the appearance of a wound what kind of weapon dealt it, or determine the weakest point in a tunnel that could cause it to collapse. Poring through ancient scrolls in search of a hidden fragment of knowledge might also call for an Intelligence (Investigation) check.",
+    "modifiers": [
+      {
+        "target": "skills.investigation",
+        "op": "proficiency",
+        "value": "proficient"
+      }
+    ],
+    "page": "PHB 178"
+  },
+  {
+    "id": "srd:skill:medicine",
+    "kind": "skill",
+    "name": "Medicine",
+    "source": "srd",
+    "ability": "wis",
+    "tags": [
+      "skill"
+    ],
+    "text": "A Wisdom (Medicine) check lets you try to stabilize a dying companion or diagnose an illness.",
+    "modifiers": [
+      {
+        "target": "skills.medicine",
+        "op": "proficiency",
+        "value": "proficient"
+      }
+    ],
+    "page": "PHB 178"
+  },
+  {
+    "id": "srd:skill:nature",
+    "kind": "skill",
+    "name": "Nature",
+    "source": "srd",
+    "ability": "int",
+    "tags": [
+      "skill"
+    ],
+    "text": "Your Intelligence (Nature) check measures your ability to recall lore about terrain, plants and animals, the weather, and natural cycles.",
+    "modifiers": [
+      {
+        "target": "skills.nature",
+        "op": "proficiency",
+        "value": "proficient"
+      }
+    ],
+    "page": "PHB 178"
+  },
+  {
+    "id": "srd:skill:perception",
+    "kind": "skill",
+    "name": "Perception",
+    "source": "srd",
+    "ability": "wis",
+    "tags": [
+      "skill"
+    ],
+    "text": "Your Wisdom (Perception) check lets you spot, hear, or otherwise detect the presence of something. It measures your general awareness of your surroundings and the keenness of your senses.\n\nFor example, you might try to hear a conversation through a closed door, eavesdrop under an open window, or hear monsters moving stealthily in the forest. Or you might try to spot things that are obscured or easy to miss, whether they are orcs lying in ambush on a road, thugs hiding in the shadows of an alley, or candlelight under a closed secret door.",
+    "modifiers": [
+      {
+        "target": "skills.perception",
+        "op": "proficiency",
+        "value": "proficient"
+      }
+    ],
+    "page": "PHB 178"
+  },
+  {
+    "id": "srd:skill:performance",
+    "kind": "skill",
+    "name": "Performance",
+    "source": "srd",
+    "ability": "cha",
+    "tags": [
+      "skill"
+    ],
+    "text": "Your Charisma (Performance) check determines how well you can delight an audience with music, dance, acting, storytelling, or some other form of entertainment.",
+    "modifiers": [
+      {
+        "target": "skills.performance",
+        "op": "proficiency",
+        "value": "proficient"
+      }
+    ],
+    "page": "PHB 179"
+  },
+  {
+    "id": "srd:skill:persuasion",
+    "kind": "skill",
+    "name": "Persuasion",
+    "source": "srd",
+    "ability": "cha",
+    "tags": [
+      "skill"
+    ],
+    "text": "When you attempt to influence someone or a group of people with tact, social graces, or good nature, the DM might ask you to make a Charisma (Persuasion) check. Typically, you use persuasion when acting in good faith, to foster friendships, make cordial requests, or exhibit proper etiquette. Examples of persuading others include convincing a chamberlain to let your party see the king, negotiating peace between warring tribes, or inspiring a crowd of townsfolk.",
+    "modifiers": [
+      {
+        "target": "skills.persuasion",
+        "op": "proficiency",
+        "value": "proficient"
+      }
+    ],
+    "page": "PHB 179"
+  },
+  {
+    "id": "srd:skill:religion",
+    "kind": "skill",
+    "name": "Religion",
+    "source": "srd",
+    "ability": "int",
+    "tags": [
+      "skill"
+    ],
+    "text": "Your Intelligence (Religion) check measures your ability to recall lore about deities, rites and prayers, religious hierarchies, holy symbols, and the practices of secret cults.",
+    "modifiers": [
+      {
+        "target": "skills.religion",
+        "op": "proficiency",
+        "value": "proficient"
+      }
+    ],
+    "page": "PHB 178"
+  },
+  {
+    "id": "srd:skill:sleight-of-hand",
+    "kind": "skill",
+    "name": "Sleight of Hand",
+    "source": "srd",
+    "ability": "dex",
+    "tags": [
+      "skill"
+    ],
+    "text": "Whenever you attempt an act of legerdemain or manual trickery, such as planting something on someone else or concealing an object on your person, make a Dexterity (Sleight of Hand) check. The DM might also call for a Dexterity (Sleight of Hand) check to determine whether you can lift a coin purse off another person or slip something out of another person's pocket.",
+    "modifiers": [
+      {
+        "target": "skills.sleight-of-hand",
+        "op": "proficiency",
+        "value": "proficient"
+      }
+    ],
+    "page": "PHB 177"
+  },
+  {
+    "id": "srd:skill:stealth",
+    "kind": "skill",
+    "name": "Stealth",
+    "source": "srd",
+    "ability": "dex",
+    "tags": [
+      "skill"
+    ],
+    "text": "Make a Dexterity (Stealth) check when you attempt to conceal yourself from enemies, slink past guards, slip away without being noticed, or sneak up on someone without being seen or heard.",
+    "modifiers": [
+      {
+        "target": "skills.stealth",
+        "op": "proficiency",
+        "value": "proficient"
+      }
+    ],
+    "page": "PHB 177"
+  },
+  {
+    "id": "srd:skill:survival",
+    "kind": "skill",
+    "name": "Survival",
+    "source": "srd",
+    "ability": "wis",
+    "tags": [
+      "skill"
+    ],
+    "text": "The DM might ask you to make a Wisdom (Survival) check to follow tracks, hunt wild game, guide your group through frozen wastelands, identify signs that owlbears live nearby, predict the weather, or avoid quicksand and other natural hazards.",
+    "modifiers": [
+      {
+        "target": "skills.survival",
+        "op": "proficiency",
+        "value": "proficient"
+      }
+    ],
+    "page": "PHB 178"
+  }
+]

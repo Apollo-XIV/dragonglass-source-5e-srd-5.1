@@ -1,0 +1,386 @@
+[
+  {
+    "id": "srd:subclass:hunter",
+    "kind": "subclass",
+    "name": "Hunter",
+    "source": "srd",
+    "page": "PHB 93",
+    "class": "srd:class:ranger",
+    "tags": [
+      "ranger-subclass",
+      "srd-subclass"
+    ],
+    "levels": {
+      "3": {
+        "grants": [
+          "srd:hunter:hunter"
+        ]
+      },
+      "7": {
+        "grants": [
+          "srd:hunter:defensive-tactics"
+        ]
+      },
+      "11": {
+        "grants": [
+          "srd:hunter:multiattack"
+        ]
+      },
+      "15": {
+        "grants": [
+          "srd:hunter:superior-hunters-defense"
+        ]
+      }
+    }
+  },
+  {
+    "id": "srd:hunter:colossus-slayer",
+    "kind": "subclass-feature",
+    "name": "Colossus Slayer",
+    "source": "srd",
+    "page": "PHB 93",
+    "tags": [
+      "hunter-feature",
+      "ranger-feature",
+      "hunter-hunters-prey-option"
+    ],
+    "text": "Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it's below its hit point maximum. You can deal this extra damage only once per turn.",
+    "actions": [
+      {
+        "id": "colossus-slayer",
+        "name": "Colossus Slayer",
+        "activation": "special",
+        "damage": "1d8",
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:hunter:giant-killer",
+    "kind": "subclass-feature",
+    "name": "Giant Killer",
+    "source": "srd",
+    "page": "PHB 93",
+    "tags": [
+      "hunter-feature",
+      "ranger-feature",
+      "hunter-hunters-prey-option"
+    ],
+    "text": "When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature.",
+    "actions": [
+      {
+        "id": "giant-killer",
+        "name": "Giant Killer",
+        "activation": "reaction",
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:hunter:horde-breaker",
+    "kind": "subclass-feature",
+    "name": "Horde Breaker",
+    "source": "srd",
+    "page": "PHB 93",
+    "tags": [
+      "hunter-feature",
+      "ranger-feature",
+      "hunter-hunters-prey-option"
+    ],
+    "text": "Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon.",
+    "actions": [
+      {
+        "id": "horde-breaker",
+        "name": "Horde Breaker",
+        "activation": "special",
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:hunter:hunters-prey",
+    "kind": "subclass-feature",
+    "name": "Hunter's Prey",
+    "source": "srd",
+    "page": "PHB 93",
+    "tags": [
+      "hunter-feature",
+      "ranger-feature"
+    ],
+    "text": "At 3rd level, you gain one of the following features of your choice.",
+    "choices": [
+      {
+        "id": "srd:hunter:hunters-prey:options",
+        "name": "Hunter's Prey",
+        "count": 1,
+        "from": {
+          "kind": "subclass-feature",
+          "tags": [
+            "hunter-hunters-prey-option"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:hunter:hunter",
+    "kind": "subclass-feature",
+    "name": "Hunter",
+    "source": "srd",
+    "page": "PHB 93",
+    "tags": [
+      "hunter-feature",
+      "ranger-feature"
+    ],
+    "text": "Emulating the Hunter archetype means accepting your place as a bulwark between civilization and the terrors of the wilderness. As you walk the Hunter's path, you learn specialized techniques for fighting the threats you face, from rampaging ogres and hordes of orcs to towering giants and terrifying dragons.",
+    "grants": [
+      "srd:hunter:hunters-prey"
+    ]
+  },
+  {
+    "id": "srd:hunter:escape-the-horde",
+    "kind": "subclass-feature",
+    "name": "Escape the Horde",
+    "source": "srd",
+    "page": "PHB 93",
+    "tags": [
+      "hunter-feature",
+      "ranger-feature",
+      "hunter-defensive-tactics-option"
+    ],
+    "text": "Opportunity attacks against you are made with disadvantage."
+  },
+  {
+    "id": "srd:hunter:multiattack-defense",
+    "kind": "subclass-feature",
+    "name": "Multiattack Defense",
+    "source": "srd",
+    "page": "PHB 93",
+    "tags": [
+      "hunter-feature",
+      "ranger-feature",
+      "hunter-defensive-tactics-option"
+    ],
+    "text": "When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that creature for the rest of the turn."
+  },
+  {
+    "id": "srd:hunter:steel-will",
+    "kind": "subclass-feature",
+    "name": "Steel Will",
+    "source": "srd",
+    "page": "PHB 93",
+    "tags": [
+      "hunter-feature",
+      "ranger-feature",
+      "hunter-defensive-tactics-option"
+    ],
+    "text": "You have advantage on saving throws against being frightened.",
+    "modifiers": [
+      {
+        "target": "saves.all",
+        "op": "advantage",
+        "when": {
+          "text": "against being frightened",
+          "context": "frightened"
+        },
+        "provenance": {
+          "source": "prose",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:hunter:defensive-tactics",
+    "kind": "subclass-feature",
+    "name": "Defensive Tactics",
+    "source": "srd",
+    "page": "PHB 93",
+    "tags": [
+      "hunter-feature",
+      "ranger-feature"
+    ],
+    "text": "At 7th level, you gain one of the following features of your choice.",
+    "choices": [
+      {
+        "id": "srd:hunter:defensive-tactics:options",
+        "name": "Defensive Tactics",
+        "count": 1,
+        "from": {
+          "kind": "subclass-feature",
+          "tags": [
+            "hunter-defensive-tactics-option"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:hunter:volley",
+    "kind": "subclass-feature",
+    "name": "Volley",
+    "source": "srd",
+    "page": "PHB 93",
+    "tags": [
+      "hunter-feature",
+      "ranger-feature",
+      "hunter-multiattack-option"
+    ],
+    "text": "You can use your action to make a ranged attack against any number of creatures within 10 feet of a point you can see within your weapon's range. You must have ammunition for each target, as normal, and you make a separate attack roll for each target.",
+    "actions": [
+      {
+        "id": "volley",
+        "name": "Volley",
+        "activation": "action",
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:hunter:whirlwind-attack",
+    "kind": "subclass-feature",
+    "name": "Whirlwind Attack",
+    "source": "srd",
+    "page": "PHB 93",
+    "tags": [
+      "hunter-feature",
+      "ranger-feature",
+      "hunter-multiattack-option"
+    ],
+    "text": "You can use your action to make a melee attack against any number of creatures within 5 feet of you, with a separate attack roll for each target.",
+    "actions": [
+      {
+        "id": "whirlwind-attack",
+        "name": "Whirlwind Attack",
+        "activation": "action",
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:hunter:multiattack",
+    "kind": "subclass-feature",
+    "name": "Multiattack",
+    "source": "srd",
+    "page": "PHB 93",
+    "tags": [
+      "hunter-feature",
+      "ranger-feature"
+    ],
+    "text": "At 11th level, you gain one of the following features of your choice.",
+    "choices": [
+      {
+        "id": "srd:hunter:multiattack:options",
+        "name": "Multiattack",
+        "count": 1,
+        "from": {
+          "kind": "subclass-feature",
+          "tags": [
+            "hunter-multiattack-option"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:hunter:evasion",
+    "kind": "subclass-feature",
+    "name": "Evasion",
+    "source": "srd",
+    "page": "PHB 93",
+    "tags": [
+      "hunter-feature",
+      "ranger-feature",
+      "hunter-superior-hunters-defense-option"
+    ],
+    "text": "You can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or a lightning bolt spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
+  },
+  {
+    "id": "srd:hunter:stand-against-the-tide",
+    "kind": "subclass-feature",
+    "name": "Stand Against the Tide",
+    "source": "srd",
+    "page": "PHB 93",
+    "tags": [
+      "hunter-feature",
+      "ranger-feature",
+      "hunter-superior-hunters-defense-option"
+    ],
+    "text": "When a hostile creature misses you with a melee attack, you can use your reaction to force that creature to repeat the same attack against another creature (other than itself) of your choice.",
+    "actions": [
+      {
+        "id": "stand-against-the-tide",
+        "name": "Stand Against the Tide",
+        "activation": "reaction",
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:hunter:uncanny-dodge",
+    "kind": "subclass-feature",
+    "name": "Uncanny Dodge",
+    "source": "srd",
+    "page": "PHB 93",
+    "tags": [
+      "hunter-feature",
+      "ranger-feature",
+      "hunter-superior-hunters-defense-option"
+    ],
+    "text": "When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.",
+    "actions": [
+      {
+        "id": "uncanny-dodge",
+        "name": "Uncanny Dodge",
+        "activation": "reaction",
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:hunter:superior-hunters-defense",
+    "kind": "subclass-feature",
+    "name": "Superior Hunter's Defense",
+    "source": "srd",
+    "page": "PHB 93",
+    "tags": [
+      "hunter-feature",
+      "ranger-feature"
+    ],
+    "text": "At 15th level, you gain one of the following features of your choice.",
+    "choices": [
+      {
+        "id": "srd:hunter:superior-hunters-defense:options",
+        "name": "Superior Hunter's Defense",
+        "count": 1,
+        "from": {
+          "kind": "subclass-feature",
+          "tags": [
+            "hunter-superior-hunters-defense-option"
+          ]
+        }
+      }
+    ]
+  }
+]

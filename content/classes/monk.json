@@ -1,0 +1,346 @@
+[
+  {
+    "id": "srd:class:monk",
+    "kind": "class",
+    "name": "Monk",
+    "source": "srd",
+    "page": "PHB 76",
+    "key": "monk",
+    "hitDie": "d8",
+    "tags": [
+      "srd-class"
+    ],
+    "text": "**Hit Dice:** 1d8 per monk level.\n\n**Hit Points at 1st Level:** 8 + your Constitution modifier.\n\n**Hit Points at Higher Levels:** 1d8 (or 5) + your Constitution modifier per monk level after 1st.\n\n**Armor:** None\n**Weapons:** Simple, shortswords\n**Tools:** Any one type of artisan's tools or any one musical instrument of your choice\n**Saving Throws:** Strength, Dexterity\n**Skills:** Choose 2 from acrobatics, athletics, history, insight, religion, stealth\n\n**Equipment:** You start with the following equipment, in addition to the equipment granted by your background:\n\n- (a) a shortsword or (b) any simple weapon\n- (a) a dungeoneer's pack or (b) an explorer's pack\n- 10 darts\n\nAlternatively, you may start with 5d4 gp to buy your own equipment.",
+    "multiclassRequires": {
+      "all": [
+        {
+          "type": "ability",
+          "ability": "dex",
+          "min": 13
+        },
+        {
+          "type": "ability",
+          "ability": "wis",
+          "min": 13
+        }
+      ],
+      "text": "Dexterity 13 and Wisdom 13"
+    },
+    "primaryAbility": [
+      "dex",
+      "wis"
+    ],
+    "x-multiclass-proficiencies": {
+      "weapons": [
+        "simple",
+        "{@item shortsword|phb|shortswords}"
+      ]
+    },
+    "tables": {
+      "martial-arts": [
+        "1d4",
+        "1d4",
+        "1d4",
+        "1d4",
+        "1d6",
+        "1d6",
+        "1d6",
+        "1d6",
+        "1d6",
+        "1d6",
+        "1d8",
+        "1d8",
+        "1d8",
+        "1d8",
+        "1d8",
+        "1d8",
+        "1d10",
+        "1d10",
+        "1d10",
+        "1d10"
+      ],
+      "ki-points": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "unarmored-movement": [
+        0,
+        10,
+        10,
+        10,
+        10,
+        15,
+        15,
+        15,
+        15,
+        20,
+        20,
+        20,
+        20,
+        25,
+        25,
+        25,
+        25,
+        30,
+        30,
+        30
+      ]
+    },
+    "levels": {
+      "1": {
+        "choices": [
+          {
+            "id": "srd:class:monk:skill",
+            "name": "Skill Proficiency",
+            "count": 2,
+            "from": {
+              "ids": [
+                "srd:skill:acrobatics",
+                "srd:skill:athletics",
+                "srd:skill:history",
+                "srd:skill:insight",
+                "srd:skill:religion",
+                "srd:skill:stealth"
+              ]
+            }
+          },
+          {
+            "id": "srd:class:monk:tool",
+            "name": "Tool Proficiency",
+            "count": 1,
+            "from": {
+              "kind": "tool",
+              "tags": [
+                "artisans-tools",
+                "musical-instrument"
+              ]
+            },
+            "text": "any one type of artisan's tools or any one musical instrument of your choice"
+          }
+        ],
+        "modifiers": [
+          {
+            "target": "saves.str",
+            "op": "proficiency",
+            "value": "proficient"
+          },
+          {
+            "target": "saves.dex",
+            "op": "proficiency",
+            "value": "proficient"
+          },
+          {
+            "target": "proficiencies.weapon",
+            "op": "include",
+            "value": [
+              "simple",
+              "srd:item:shortsword"
+            ]
+          }
+        ],
+        "grants": [
+          "srd:monk:unarmored-defense",
+          "srd:monk:martial-arts"
+        ]
+      },
+      "2": {
+        "grants": [
+          "srd:monk:ki",
+          "srd:monk:unarmored-movement"
+        ]
+      },
+      "3": {
+        "grants": [
+          "srd:monk:deflect-missiles",
+          "srd:monk:monastic-tradition"
+        ],
+        "choices": [
+          {
+            "id": "srd:class:monk:subclass",
+            "name": "Monastic Tradition",
+            "count": 1,
+            "from": {
+              "kind": "subclass",
+              "tags": [
+                "monk-subclass"
+              ]
+            }
+          }
+        ]
+      },
+      "4": {
+        "choices": [
+          {
+            "id": "srd:class:monk:asi-4",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ],
+        "grants": [
+          "srd:monk:slow-fall"
+        ]
+      },
+      "5": {
+        "grants": [
+          "srd:monk:extra-attack",
+          "srd:monk:stunning-strike"
+        ]
+      },
+      "6": {
+        "grants": [
+          "srd:monk:ki-empowered-strikes"
+        ]
+      },
+      "7": {
+        "grants": [
+          "srd:monk:evasion",
+          "srd:monk:stillness-of-mind"
+        ]
+      },
+      "8": {
+        "choices": [
+          {
+            "id": "srd:class:monk:asi-8",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "9": {
+        "grants": [
+          "srd:monk:unarmored-movement-improvement"
+        ]
+      },
+      "10": {
+        "grants": [
+          "srd:monk:purity-of-body"
+        ]
+      },
+      "12": {
+        "choices": [
+          {
+            "id": "srd:class:monk:asi-12",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "13": {
+        "grants": [
+          "srd:monk:tongue-of-the-sun-and-moon"
+        ]
+      },
+      "14": {
+        "grants": [
+          "srd:monk:diamond-soul"
+        ]
+      },
+      "15": {
+        "grants": [
+          "srd:monk:timeless-body"
+        ]
+      },
+      "16": {
+        "choices": [
+          {
+            "id": "srd:class:monk:asi-16",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "18": {
+        "grants": [
+          "srd:monk:empty-body"
+        ]
+      },
+      "19": {
+        "choices": [
+          {
+            "id": "srd:class:monk:asi-19",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "20": {
+        "grants": [
+          "srd:monk:perfect-self"
+        ]
+      }
+    }
+  }
+]

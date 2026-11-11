@@ -1,0 +1,44 @@
+[
+  {
+    "id": "srd:casting-ability:str",
+    "kind": "casting-ability",
+    "name": "Strength",
+    "source": "srd",
+    "ability": "str"
+  },
+  {
+    "id": "srd:casting-ability:dex",
+    "kind": "casting-ability",
+    "name": "Dexterity",
+    "source": "srd",
+    "ability": "dex"
+  },
+  {
+    "id": "srd:casting-ability:con",
+    "kind": "casting-ability",
+    "name": "Constitution",
+    "source": "srd",
+    "ability": "con"
+  },
+  {
+    "id": "srd:casting-ability:int",
+    "kind": "casting-ability",
+    "name": "Intelligence",
+    "source": "srd",
+    "ability": "int"
+  },
+  {
+    "id": "srd:casting-ability:wis",
+    "kind": "casting-ability",
+    "name": "Wisdom",
+    "source": "srd",
+    "ability": "wis"
+  },
+  {
+    "id": "srd:casting-ability:cha",
+    "kind": "casting-ability",
+    "name": "Charisma",
+    "source": "srd",
+    "ability": "cha"
+  }
+]

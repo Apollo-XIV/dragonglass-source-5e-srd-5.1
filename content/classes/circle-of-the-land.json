@@ -1,0 +1,582 @@
+[
+  {
+    "id": "srd:subclass:circle-of-the-land",
+    "kind": "subclass",
+    "name": "Circle of the Land",
+    "source": "srd",
+    "page": "PHB 68",
+    "class": "srd:class:druid",
+    "tags": [
+      "druid-subclass",
+      "srd-subclass"
+    ],
+    "choices": [
+      {
+        "id": "srd:subclass:circle-of-the-land:terrain",
+        "name": "Circle of the Land terrain",
+        "count": 1,
+        "from": {
+          "kind": "terrain",
+          "tags": [
+            "circle-of-the-land-terrain-option"
+          ]
+        }
+      }
+    ],
+    "levels": {
+      "2": {
+        "grants": [
+          "srd:land:circle-of-the-land"
+        ]
+      },
+      "6": {
+        "grants": [
+          "srd:land:lands-stride"
+        ]
+      },
+      "10": {
+        "grants": [
+          "srd:land:natures-ward"
+        ]
+      },
+      "14": {
+        "grants": [
+          "srd:land:natures-sanctuary"
+        ]
+      }
+    }
+  },
+  {
+    "id": "srd:terrain:arctic",
+    "kind": "terrain",
+    "name": "Arctic",
+    "source": "srd",
+    "tags": [
+      "circle-of-the-land-terrain-option"
+    ],
+    "levels": {
+      "3": {
+        "grants": [
+          "srd:spell:hold-person",
+          "srd:spell:spike-growth"
+        ]
+      },
+      "5": {
+        "grants": [
+          "srd:spell:sleet-storm",
+          "srd:spell:slow"
+        ]
+      },
+      "7": {
+        "grants": [
+          "srd:spell:freedom-of-movement",
+          "srd:spell:ice-storm"
+        ]
+      },
+      "9": {
+        "grants": [
+          "srd:spell:commune-with-nature",
+          "srd:spell:cone-of-cold"
+        ]
+      }
+    },
+    "levelsBy": "class",
+    "choices": [
+      {
+        "id": "srd:terrain:arctic:known-spells-1",
+        "name": "Cantrip",
+        "count": 1,
+        "from": {
+          "kind": "spell",
+          "allTags": [
+            "spell-level:0",
+            "druid-spell"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:terrain:coast",
+    "kind": "terrain",
+    "name": "Coast",
+    "source": "srd",
+    "tags": [
+      "circle-of-the-land-terrain-option"
+    ],
+    "levels": {
+      "3": {
+        "grants": [
+          "srd:spell:mirror-image",
+          "srd:spell:misty-step"
+        ]
+      },
+      "5": {
+        "grants": [
+          "srd:spell:water-breathing",
+          "srd:spell:water-walk"
+        ]
+      },
+      "7": {
+        "grants": [
+          "srd:spell:control-water",
+          "srd:spell:freedom-of-movement"
+        ]
+      },
+      "9": {
+        "grants": [
+          "srd:spell:conjure-elemental",
+          "srd:spell:scrying"
+        ]
+      }
+    },
+    "levelsBy": "class",
+    "choices": [
+      {
+        "id": "srd:terrain:coast:known-spells-1",
+        "name": "Cantrip",
+        "count": 1,
+        "from": {
+          "kind": "spell",
+          "allTags": [
+            "spell-level:0",
+            "druid-spell"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:terrain:desert",
+    "kind": "terrain",
+    "name": "Desert",
+    "source": "srd",
+    "tags": [
+      "circle-of-the-land-terrain-option"
+    ],
+    "levels": {
+      "3": {
+        "grants": [
+          "srd:spell:blur",
+          "srd:spell:silence"
+        ]
+      },
+      "5": {
+        "grants": [
+          "srd:spell:create-food-and-water",
+          "srd:spell:protection-from-energy"
+        ]
+      },
+      "7": {
+        "grants": [
+          "srd:spell:blight",
+          "srd:spell:hallucinatory-terrain"
+        ]
+      },
+      "9": {
+        "grants": [
+          "srd:spell:insect-plague",
+          "srd:spell:wall-of-stone"
+        ]
+      }
+    },
+    "levelsBy": "class",
+    "choices": [
+      {
+        "id": "srd:terrain:desert:known-spells-1",
+        "name": "Cantrip",
+        "count": 1,
+        "from": {
+          "kind": "spell",
+          "allTags": [
+            "spell-level:0",
+            "druid-spell"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:terrain:forest",
+    "kind": "terrain",
+    "name": "Forest",
+    "source": "srd",
+    "tags": [
+      "circle-of-the-land-terrain-option"
+    ],
+    "levels": {
+      "3": {
+        "grants": [
+          "srd:spell:barkskin",
+          "srd:spell:spider-climb"
+        ]
+      },
+      "5": {
+        "grants": [
+          "srd:spell:call-lightning",
+          "srd:spell:plant-growth"
+        ]
+      },
+      "7": {
+        "grants": [
+          "srd:spell:divination",
+          "srd:spell:freedom-of-movement"
+        ]
+      },
+      "9": {
+        "grants": [
+          "srd:spell:commune-with-nature",
+          "srd:spell:tree-stride"
+        ]
+      }
+    },
+    "levelsBy": "class",
+    "choices": [
+      {
+        "id": "srd:terrain:forest:known-spells-1",
+        "name": "Cantrip",
+        "count": 1,
+        "from": {
+          "kind": "spell",
+          "allTags": [
+            "spell-level:0",
+            "druid-spell"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:terrain:grassland",
+    "kind": "terrain",
+    "name": "Grassland",
+    "source": "srd",
+    "tags": [
+      "circle-of-the-land-terrain-option"
+    ],
+    "levels": {
+      "3": {
+        "grants": [
+          "srd:spell:invisibility",
+          "srd:spell:pass-without-trace"
+        ]
+      },
+      "5": {
+        "grants": [
+          "srd:spell:daylight",
+          "srd:spell:haste"
+        ]
+      },
+      "7": {
+        "grants": [
+          "srd:spell:divination",
+          "srd:spell:freedom-of-movement"
+        ]
+      },
+      "9": {
+        "grants": [
+          "srd:spell:dream",
+          "srd:spell:insect-plague"
+        ]
+      }
+    },
+    "levelsBy": "class",
+    "choices": [
+      {
+        "id": "srd:terrain:grassland:known-spells-1",
+        "name": "Cantrip",
+        "count": 1,
+        "from": {
+          "kind": "spell",
+          "allTags": [
+            "spell-level:0",
+            "druid-spell"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:terrain:mountain",
+    "kind": "terrain",
+    "name": "Mountain",
+    "source": "srd",
+    "tags": [
+      "circle-of-the-land-terrain-option"
+    ],
+    "levels": {
+      "3": {
+        "grants": [
+          "srd:spell:spider-climb",
+          "srd:spell:spike-growth"
+        ]
+      },
+      "5": {
+        "grants": [
+          "srd:spell:lightning-bolt",
+          "srd:spell:meld-into-stone"
+        ]
+      },
+      "7": {
+        "grants": [
+          "srd:spell:stone-shape",
+          "srd:spell:stoneskin"
+        ]
+      },
+      "9": {
+        "grants": [
+          "srd:spell:passwall",
+          "srd:spell:wall-of-stone"
+        ]
+      }
+    },
+    "levelsBy": "class",
+    "choices": [
+      {
+        "id": "srd:terrain:mountain:known-spells-1",
+        "name": "Cantrip",
+        "count": 1,
+        "from": {
+          "kind": "spell",
+          "allTags": [
+            "spell-level:0",
+            "druid-spell"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:terrain:swamp",
+    "kind": "terrain",
+    "name": "Swamp",
+    "source": "srd",
+    "tags": [
+      "circle-of-the-land-terrain-option"
+    ],
+    "levels": {
+      "3": {
+        "grants": [
+          "srd:spell:darkness",
+          "srd:spell:acid-arrow"
+        ]
+      },
+      "5": {
+        "grants": [
+          "srd:spell:water-walk",
+          "srd:spell:stinking-cloud"
+        ]
+      },
+      "7": {
+        "grants": [
+          "srd:spell:freedom-of-movement",
+          "srd:spell:locate-creature"
+        ]
+      },
+      "9": {
+        "grants": [
+          "srd:spell:insect-plague",
+          "srd:spell:scrying"
+        ]
+      }
+    },
+    "levelsBy": "class",
+    "choices": [
+      {
+        "id": "srd:terrain:swamp:known-spells-1",
+        "name": "Cantrip",
+        "count": 1,
+        "from": {
+          "kind": "spell",
+          "allTags": [
+            "spell-level:0",
+            "druid-spell"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:terrain:underdark",
+    "kind": "terrain",
+    "name": "Underdark",
+    "source": "srd",
+    "tags": [
+      "circle-of-the-land-terrain-option"
+    ],
+    "levels": {
+      "3": {
+        "grants": [
+          "srd:spell:spider-climb",
+          "srd:spell:web"
+        ]
+      },
+      "5": {
+        "grants": [
+          "srd:spell:gaseous-form",
+          "srd:spell:stinking-cloud"
+        ]
+      },
+      "7": {
+        "grants": [
+          "srd:spell:greater-invisibility",
+          "srd:spell:stone-shape"
+        ]
+      },
+      "9": {
+        "grants": [
+          "srd:spell:cloudkill",
+          "srd:spell:insect-plague"
+        ]
+      }
+    },
+    "levelsBy": "class",
+    "choices": [
+      {
+        "id": "srd:terrain:underdark:known-spells-1",
+        "name": "Cantrip",
+        "count": 1,
+        "from": {
+          "kind": "spell",
+          "allTags": [
+            "spell-level:0",
+            "druid-spell"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:land:bonus-cantrip",
+    "kind": "subclass-feature",
+    "name": "Bonus Cantrip",
+    "source": "srd",
+    "page": "PHB 68",
+    "tags": [
+      "land-feature",
+      "druid-feature"
+    ],
+    "text": "You learn one additional druid cantrip of your choice. This cantrip doesn't count against the number of druid cantrips you know."
+  },
+  {
+    "id": "srd:land:natural-recovery",
+    "kind": "subclass-feature",
+    "name": "Natural Recovery",
+    "source": "srd",
+    "page": "PHB 68",
+    "tags": [
+      "land-feature",
+      "druid-feature"
+    ],
+    "text": "Starting at 2nd level, you can regain some of your magical energy by sitting in meditation and communing with nature. During a short rest, you choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your druid level (rounded up), and none of the slots can be 6th level or higher. You can't use this feature again until you finish a long rest.\n\nFor example, when you are a 4th-level druid, you can recover up to two levels worth of spell slots. You can recover either a 2nd-level slot or two 1st-level slots.",
+    "resources": [
+      {
+        "id": "srd:land:natural-recovery",
+        "name": "Natural Recovery",
+        "max": 1,
+        "recharge": [
+          {
+            "on": "long-rest",
+            "amount": "all"
+          }
+        ],
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ],
+    "actions": [
+      {
+        "id": "natural-recovery",
+        "name": "Natural Recovery",
+        "activation": "special",
+        "cost": {
+          "srd:land:natural-recovery": 1
+        },
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:land:circle-spells",
+    "kind": "subclass-feature",
+    "name": "Circle Spells",
+    "source": "srd",
+    "page": "PHB 68",
+    "tags": [
+      "land-feature",
+      "druid-feature"
+    ],
+    "text": "Your mystical connection to the land infuses you with the ability to cast certain spells. At 3rd, 5th, 7th, and 9th level you gain access to circle spells connected to the land where you became a druid. Choose that land—arctic, coast, desert, forest, grassland, mountain, swamp, or Underdark—and consult the associated list of spells.\n\nOnce you gain access to a circle spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you.\n\n**Arctic**\n| Druid Level | Circle Spells |\n| --- | --- |\n| 3rd | hold person, spike growth |\n| 5th | sleet storm, slow |\n| 7th | freedom of movement, ice storm |\n| 9th | commune with nature, cone of cold |\n\n**Coast**\n| Druid Level | Circle Spells |\n| --- | --- |\n| 3rd | mirror image, misty step |\n| 5th | water breathing, water walk |\n| 7th | control water, freedom of movement |\n| 9th | conjure elemental, scrying |\n\n**Desert**\n| Druid Level | Circle Spells |\n| --- | --- |\n| 3rd | blur, silence |\n| 5th | create food and water, protection from energy |\n| 7th | blight, hallucinatory terrain |\n| 9th | insect plague, wall of stone |\n\n**Forest**\n| Druid Level | Circle Spells |\n| --- | --- |\n| 3rd | barkskin, spider climb |\n| 5th | call lightning, plant growth |\n| 7th | divination, freedom of movement |\n| 9th | commune with nature, tree stride |\n\n**Grassland**\n| Druid Level | Circle Spells |\n| --- | --- |\n| 3rd | invisibility, pass without trace |\n| 5th | daylight, haste |\n| 7th | divination, freedom of movement |\n| 9th | dream, insect plague |\n\n**Mountain**\n| Druid Level | Circle Spells |\n| --- | --- |\n| 3rd | spider climb, spike growth |\n| 5th | lightning bolt, meld into stone |\n| 7th | stone shape, stoneskin |\n| 9th | passwall, wall of stone |\n\n**Swamp**\n| Druid Level | Circle Spells |\n| --- | --- |\n| 3rd | darkness, Melf's acid arrow |\n| 5th | water walk, stinking cloud |\n| 7th | freedom of movement, locate creature |\n| 9th | insect plague, scrying |\n\n**Underdark**\n| Druid Level | Circle Spells |\n| --- | --- |\n| 3rd | spider climb, web |\n| 5th | gaseous form, stinking cloud |\n| 7th | greater invisibility, stone shape |\n| 9th | cloudkill, insect plague |"
+  },
+  {
+    "id": "srd:land:circle-of-the-land",
+    "kind": "subclass-feature",
+    "name": "Circle of the Land",
+    "source": "srd",
+    "page": "PHB 68",
+    "tags": [
+      "land-feature",
+      "druid-feature"
+    ],
+    "text": "The Circle of the Land is made up of mystics and sages who safeguard ancient knowledge and rites through a vast oral tradition. These druids meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. The circle's wisest members preside as the chief priests of communities that hold to the Old Faith and serve as advisors to the rulers of those folk. As a member of this circle, your magic is influenced by the land where you were initiated into the circle's mysterious rites.",
+    "grants": [
+      "srd:land:bonus-cantrip",
+      "srd:land:natural-recovery",
+      "srd:land:circle-spells"
+    ]
+  },
+  {
+    "id": "srd:land:lands-stride",
+    "kind": "subclass-feature",
+    "name": "Land's Stride",
+    "source": "srd",
+    "page": "PHB 68",
+    "tags": [
+      "land-feature",
+      "druid-feature"
+    ],
+    "text": "Starting at 6th level, moving through nonmagical difficult terrain costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.\n\nIn addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such as those created by the entangle spell."
+  },
+  {
+    "id": "srd:land:natures-ward",
+    "kind": "subclass-feature",
+    "name": "Nature's Ward",
+    "source": "srd",
+    "page": "PHB 68",
+    "tags": [
+      "land-feature",
+      "druid-feature"
+    ],
+    "text": "When you reach 10th level, you can't be charmed or frightened by elementals or fey, and you are immune to poison and disease.",
+    "modifiers": [
+      {
+        "target": "conditionImmunities",
+        "op": "include",
+        "value": [
+          "poisoned"
+        ],
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:land:natures-sanctuary",
+    "kind": "subclass-feature",
+    "name": "Nature's Sanctuary",
+    "source": "srd",
+    "page": "PHB 68",
+    "tags": [
+      "land-feature",
+      "druid-feature"
+    ],
+    "text": "When you reach 14th level, creatures of the natural world sense your connection to nature and become hesitant to attack you. When a beast or plant creature attacks you, that creature must make a Wisdom saving throw against your druid spell save DC. On a failed save, the creature must choose a different target, or the attack automatically misses. On a successful save, the creature is immune to this effect for 24 hours.\n\nThe creature is aware of this effect before it makes its attack against you."
+  }
+]

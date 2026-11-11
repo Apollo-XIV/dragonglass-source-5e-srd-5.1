@@ -1,0 +1,1161 @@
+[
+  {
+    "id": "srd:dragonborn:draconic-ancestry",
+    "kind": "species-trait",
+    "name": "Draconic Ancestry",
+    "source": "srd",
+    "tags": [
+      "dragonborn-trait"
+    ],
+    "text": "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table.\n\n**Draconic Ancestry**\n| Dragon | Damage Type | Breath Weapon |\n| --- | --- | --- |\n| Black | Acid | 5 by 30 ft. line (Dex. save) |\n| Blue | Lightning | 5 by 30 ft. line (Dex. save) |\n| Brass | Fire | 5 by 30 ft. line (Dex. save) |\n| Bronze | Lightning | 5 by 30 ft. line (Dex. save) |\n| Copper | Acid | 5 by 30 ft. line (Dex. save) |\n| Gold | Fire | 15 ft. cone (Dex. save) |\n| Green | Poison | 15 ft. cone (Con. save) |\n| Red | Fire | 15 ft. cone (Dex. save) |\n| Silver | Cold | 15 ft. cone (Con. save) |\n| White | Cold | 15 ft. cone (Con. save) |",
+    "page": "PHB 32"
+  },
+  {
+    "id": "srd:dragonborn:breath-weapon",
+    "kind": "species-trait",
+    "name": "Breath Weapon",
+    "source": "srd",
+    "tags": [
+      "dragonborn-trait"
+    ],
+    "text": "You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation.\n\nWhen you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level.\n\nAfter you use your breath weapon, you can't use it again until you complete a short or long rest.",
+    "page": "PHB 32",
+    "actions": [
+      {
+        "id": "breath-weapon",
+        "name": "Breath Weapon",
+        "activation": "action",
+        "provenance": {
+          "source": "prose",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:dragonborn:damage-resistance",
+    "kind": "species-trait",
+    "name": "Damage Resistance",
+    "source": "srd",
+    "tags": [
+      "dragonborn-trait"
+    ],
+    "text": "You have resistance to the damage type associated with your draconic ancestry.",
+    "page": "PHB 32"
+  },
+  {
+    "id": "srd:species:dragonborn",
+    "kind": "species",
+    "name": "Dragonborn",
+    "source": "srd",
+    "tags": [
+      "srd-species"
+    ],
+    "text": "**Age.** Young dragonborn grow quickly. They walk hours after hatching, attain the size and development of a 10-year-old human child by the age of 3, and reach adulthood by 15. They live to be around 80.\n\n**Size.** Dragonborn are taller and heavier than humans, standing well over 6 feet tall and averaging almost 250 pounds. Your size is Medium.\n\n**Languages.** You can speak, read, and write Common and Draconic. Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants.",
+    "page": "PHB 32",
+    "x-size": "Medium",
+    "grants": [
+      "srd:language:common",
+      "srd:language:draconic",
+      "srd:dragonborn:draconic-ancestry",
+      "srd:dragonborn:breath-weapon",
+      "srd:dragonborn:damage-resistance"
+    ],
+    "choices": [
+      {
+        "id": "srd:species:dragonborn:resistance",
+        "name": "Damage Resistance",
+        "count": 1,
+        "from": {
+          "ids": [
+            "srd:resistance:acid",
+            "srd:resistance:cold",
+            "srd:resistance:fire",
+            "srd:resistance:lightning",
+            "srd:resistance:poison"
+          ]
+        }
+      }
+    ],
+    "modifiers": [
+      {
+        "target": "abilities.str.score",
+        "op": "add",
+        "value": 2
+      },
+      {
+        "target": "abilities.cha.score",
+        "op": "add",
+        "value": 1
+      },
+      {
+        "target": "speed.walk",
+        "op": "base",
+        "value": 30
+      }
+    ]
+  },
+  {
+    "id": "srd:dwarf:darkvision",
+    "kind": "species-trait",
+    "name": "Darkvision",
+    "source": "srd",
+    "tags": [
+      "dwarf-trait"
+    ],
+    "text": "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
+    "page": "PHB 18"
+  },
+  {
+    "id": "srd:dwarf:dwarven-resilience",
+    "kind": "species-trait",
+    "name": "Dwarven Resilience",
+    "source": "srd",
+    "tags": [
+      "dwarf-trait"
+    ],
+    "text": "You have advantage on saving throws against poison, and you have resistance against poison damage.",
+    "page": "PHB 18",
+    "modifiers": [
+      {
+        "target": "saves.all",
+        "op": "advantage",
+        "when": {
+          "text": "against poison",
+          "context": "poison"
+        },
+        "provenance": {
+          "source": "prose",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:dwarf:dwarven-combat-training",
+    "kind": "species-trait",
+    "name": "Dwarven Combat Training",
+    "source": "srd",
+    "tags": [
+      "dwarf-trait"
+    ],
+    "text": "You have proficiency with the battleaxe, handaxe, light hammer, and warhammer.",
+    "page": "PHB 18"
+  },
+  {
+    "id": "srd:dwarf:tool-proficiency",
+    "kind": "species-trait",
+    "name": "Tool Proficiency",
+    "source": "srd",
+    "tags": [
+      "dwarf-trait"
+    ],
+    "text": "You gain proficiency with the artisan's tools of your choice: Smith's tools, brewer's supplies, or mason's tools.",
+    "page": "PHB 18"
+  },
+  {
+    "id": "srd:dwarf:stonecunning",
+    "kind": "species-trait",
+    "name": "Stonecunning",
+    "source": "srd",
+    "tags": [
+      "dwarf-trait"
+    ],
+    "text": "Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.",
+    "page": "PHB 18"
+  },
+  {
+    "id": "srd:species:dwarf",
+    "kind": "species",
+    "name": "Dwarf",
+    "source": "srd",
+    "tags": [
+      "srd-species"
+    ],
+    "text": "**Age.** Dwarves mature at the same rate as humans, but they're considered young until they reach the age of 50. On average, they live about 350 years.\n\n**Size.** Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium.\n\n**Speed.** Your speed is not reduced by wearing heavy armor.\n\n**Languages.** You can speak, read, and write Common and Dwarvish. Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak.",
+    "page": "PHB 18",
+    "x-size": "Medium",
+    "grants": [
+      "srd:language:common",
+      "srd:language:dwarvish",
+      "srd:dwarf:darkvision",
+      "srd:dwarf:dwarven-resilience",
+      "srd:dwarf:dwarven-combat-training",
+      "srd:dwarf:tool-proficiency",
+      "srd:dwarf:stonecunning"
+    ],
+    "choices": [
+      {
+        "id": "srd:species:dwarf:tool",
+        "name": "Tool Proficiency",
+        "count": 1,
+        "from": {
+          "ids": [
+            "srd:tool:smiths-tools",
+            "srd:tool:brewers-supplies",
+            "srd:tool:masons-tools"
+          ]
+        }
+      },
+      {
+        "id": "srd:species:dwarf:subspecies",
+        "name": "Subrace",
+        "count": 1,
+        "from": {
+          "kind": "subspecies",
+          "tags": [
+            "dwarf-subspecies"
+          ]
+        }
+      }
+    ],
+    "modifiers": [
+      {
+        "target": "abilities.con.score",
+        "op": "add",
+        "value": 2
+      },
+      {
+        "target": "proficiencies.weapon",
+        "op": "include",
+        "value": [
+          "srd:item:battleaxe",
+          "srd:item:handaxe",
+          "srd:item:light-hammer",
+          "srd:item:warhammer"
+        ]
+      },
+      {
+        "target": "speed.walk",
+        "op": "base",
+        "value": 25
+      },
+      {
+        "target": "senses.darkvision",
+        "op": "base",
+        "value": 60
+      },
+      {
+        "target": "resistances",
+        "op": "include",
+        "value": [
+          "poison"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "srd:hill-dwarf:dwarven-toughness",
+    "kind": "species-trait",
+    "name": "Dwarven Toughness",
+    "source": "srd",
+    "tags": [
+      "hill-dwarf-trait"
+    ],
+    "text": "Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.",
+    "page": "PHB 20",
+    "modifiers": [
+      {
+        "target": "hp.max",
+        "op": "add",
+        "value": "@level",
+        "provenance": {
+          "source": "prose",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:subspecies:hill-dwarf",
+    "kind": "subspecies",
+    "name": "Hill Dwarf",
+    "source": "srd",
+    "tags": [
+      "dwarf-subspecies",
+      "srd-subspecies"
+    ],
+    "species": "srd:species:dwarf",
+    "text": "",
+    "page": "PHB 20",
+    "modifiers": [
+      {
+        "target": "abilities.wis.score",
+        "op": "add",
+        "value": 1
+      }
+    ],
+    "grants": [
+      "srd:hill-dwarf:dwarven-toughness"
+    ]
+  },
+  {
+    "id": "srd:elf:darkvision",
+    "kind": "species-trait",
+    "name": "Darkvision",
+    "source": "srd",
+    "tags": [
+      "elf-trait"
+    ],
+    "text": "Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
+    "page": "PHB 21"
+  },
+  {
+    "id": "srd:elf:keen-senses",
+    "kind": "species-trait",
+    "name": "Keen Senses",
+    "source": "srd",
+    "tags": [
+      "elf-trait"
+    ],
+    "text": "You have proficiency in the Perception skill.",
+    "page": "PHB 21"
+  },
+  {
+    "id": "srd:elf:fey-ancestry",
+    "kind": "species-trait",
+    "name": "Fey Ancestry",
+    "source": "srd",
+    "tags": [
+      "elf-trait"
+    ],
+    "text": "You have advantage on saving throws against being charmed, and magic can't put you to sleep.",
+    "page": "PHB 21",
+    "modifiers": [
+      {
+        "target": "saves.all",
+        "op": "advantage",
+        "when": {
+          "text": "against being charmed",
+          "context": "charmed"
+        },
+        "provenance": {
+          "source": "prose",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:elf:trance",
+    "kind": "species-trait",
+    "name": "Trance",
+    "source": "srd",
+    "tags": [
+      "elf-trait"
+    ],
+    "text": "Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.\n\nIf you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed.",
+    "page": "PHB 21"
+  },
+  {
+    "id": "srd:species:elf",
+    "kind": "species",
+    "name": "Elf",
+    "source": "srd",
+    "tags": [
+      "srd-species"
+    ],
+    "text": "**Age.** Although elves reach physical maturity at about the same age as humans, the elven understanding of adulthood goes beyond physical growth to encompass worldly experience. An elf typically claims adulthood and an adult name around the age of 100 and can live to be 750 years old.\n\n**Size.** Elves range from under 5 to over 6 feet tall and have slender builds. Your size is Medium.\n\n**Languages.** You can speak, read, and write Common and Elvish. Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires.",
+    "page": "PHB 21",
+    "x-size": "Medium",
+    "grants": [
+      "srd:skill:perception",
+      "srd:language:common",
+      "srd:language:elvish",
+      "srd:elf:darkvision",
+      "srd:elf:keen-senses",
+      "srd:elf:fey-ancestry",
+      "srd:elf:trance"
+    ],
+    "modifiers": [
+      {
+        "target": "abilities.dex.score",
+        "op": "add",
+        "value": 2
+      },
+      {
+        "target": "speed.walk",
+        "op": "base",
+        "value": 30
+      },
+      {
+        "target": "senses.darkvision",
+        "op": "base",
+        "value": 60
+      }
+    ],
+    "choices": [
+      {
+        "id": "srd:species:elf:subspecies",
+        "name": "Subrace",
+        "count": 1,
+        "from": {
+          "kind": "subspecies",
+          "tags": [
+            "elf-subspecies"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:high-elf:elf-weapon-training",
+    "kind": "species-trait",
+    "name": "Elf Weapon Training",
+    "source": "srd",
+    "tags": [
+      "high-elf-trait"
+    ],
+    "text": "You have proficiency with the longsword, shortsword, shortbow, and longbow.",
+    "page": "PHB 23"
+  },
+  {
+    "id": "srd:high-elf:cantrip",
+    "kind": "species-trait",
+    "name": "Cantrip",
+    "source": "srd",
+    "tags": [
+      "high-elf-trait"
+    ],
+    "text": "You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it.",
+    "page": "PHB 23"
+  },
+  {
+    "id": "srd:high-elf:extra-language",
+    "kind": "species-trait",
+    "name": "Extra Language",
+    "source": "srd",
+    "tags": [
+      "high-elf-trait"
+    ],
+    "text": "You can speak, read, and write one extra language of your choosing.",
+    "page": "PHB 23"
+  },
+  {
+    "id": "srd:subspecies:high-elf",
+    "kind": "subspecies",
+    "name": "High Elf",
+    "source": "srd",
+    "tags": [
+      "elf-subspecies",
+      "srd-subspecies"
+    ],
+    "species": "srd:species:elf",
+    "text": "",
+    "page": "PHB 23",
+    "grants": [
+      "srd:language:common",
+      "srd:language:elvish",
+      "srd:high-elf:elf-weapon-training",
+      "srd:high-elf:cantrip",
+      "srd:high-elf:extra-language"
+    ],
+    "choices": [
+      {
+        "id": "srd:subspecies:high-elf:language",
+        "name": "Language",
+        "count": 1,
+        "from": {
+          "kind": "language",
+          "tags": [
+            "standard-language"
+          ]
+        }
+      },
+      {
+        "id": "srd:subspecies:high-elf:known-spells",
+        "name": "Cantrip",
+        "count": 1,
+        "from": {
+          "kind": "spell",
+          "allTags": [
+            "spell-level:0",
+            "wizard-spell"
+          ]
+        }
+      }
+    ],
+    "modifiers": [
+      {
+        "target": "abilities.int.score",
+        "op": "add",
+        "value": 1
+      },
+      {
+        "target": "proficiencies.weapon",
+        "op": "include",
+        "value": [
+          "srd:item:longsword",
+          "srd:item:shortsword",
+          "srd:item:shortbow",
+          "srd:item:longbow"
+        ]
+      },
+      {
+        "target": "speed.walk",
+        "op": "base",
+        "value": 30
+      }
+    ]
+  },
+  {
+    "id": "srd:gnome:darkvision",
+    "kind": "species-trait",
+    "name": "Darkvision",
+    "source": "srd",
+    "tags": [
+      "gnome-trait"
+    ],
+    "text": "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
+    "page": "PHB 35"
+  },
+  {
+    "id": "srd:gnome:gnome-cunning",
+    "kind": "species-trait",
+    "name": "Gnome Cunning",
+    "source": "srd",
+    "tags": [
+      "gnome-trait"
+    ],
+    "text": "You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic.",
+    "page": "PHB 35"
+  },
+  {
+    "id": "srd:species:gnome",
+    "kind": "species",
+    "name": "Gnome",
+    "source": "srd",
+    "tags": [
+      "srd-species"
+    ],
+    "text": "**Age.** Gnomes mature at the same rate humans do, and most are expected to settle down into an adult life by around age 40. They can live 350 to almost 500 years.\n\n**Size.** Gnomes are between 3 and 4 feet tall and average about 40 pounds. Your size is Small.\n\n**Languages.** You can speak, read, and write Common and Gnomish. The Gnomish language, which uses the Dwarvish script, is renowned for its technical treatises and its catalogs of knowledge about the natural world.",
+    "page": "PHB 35",
+    "x-size": "Small",
+    "grants": [
+      "srd:language:common",
+      "srd:language:gnomish",
+      "srd:gnome:darkvision",
+      "srd:gnome:gnome-cunning"
+    ],
+    "modifiers": [
+      {
+        "target": "abilities.int.score",
+        "op": "add",
+        "value": 2
+      },
+      {
+        "target": "speed.walk",
+        "op": "base",
+        "value": 25
+      },
+      {
+        "target": "senses.darkvision",
+        "op": "base",
+        "value": 60
+      }
+    ],
+    "choices": [
+      {
+        "id": "srd:species:gnome:subspecies",
+        "name": "Subrace",
+        "count": 1,
+        "from": {
+          "kind": "subspecies",
+          "tags": [
+            "gnome-subspecies"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:rock-gnome:artificers-lore",
+    "kind": "species-trait",
+    "name": "Artificer's Lore",
+    "source": "srd",
+    "tags": [
+      "rock-gnome-trait"
+    ],
+    "text": "Whenever you make an Intelligence (History) check related to magic items, alchemical objects, or technological devices, you can add twice your proficiency bonus, instead of any proficiency bonus you normally apply.",
+    "page": "PHB 37"
+  },
+  {
+    "id": "srd:rock-gnome:tinker",
+    "kind": "species-trait",
+    "name": "Tinker",
+    "source": "srd",
+    "tags": [
+      "rock-gnome-trait"
+    ],
+    "text": "You have proficiency with artisan's tools (tinker's tools). Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up to three such devices active at a time.\n\nWhen you create a device, choose one of the following options:\n\n**Clockwork Toy.** This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in a random direction. It makes noises as appropriate to the creature it represents.\n\n**Fire Starter.** The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.\n\n**Music Box.** When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed.",
+    "page": "PHB 37"
+  },
+  {
+    "id": "srd:subspecies:rock-gnome",
+    "kind": "subspecies",
+    "name": "Rock Gnome",
+    "source": "srd",
+    "tags": [
+      "gnome-subspecies",
+      "srd-subspecies"
+    ],
+    "species": "srd:species:gnome",
+    "text": "",
+    "page": "PHB 37",
+    "grants": [
+      "srd:tool:tinkers-tools",
+      "srd:rock-gnome:artificers-lore",
+      "srd:rock-gnome:tinker"
+    ],
+    "modifiers": [
+      {
+        "target": "abilities.con.score",
+        "op": "add",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "srd:half-elf:darkvision",
+    "kind": "species-trait",
+    "name": "Darkvision",
+    "source": "srd",
+    "tags": [
+      "half-elf-trait"
+    ],
+    "text": "Thanks to your elf blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
+    "page": "PHB 38"
+  },
+  {
+    "id": "srd:half-elf:fey-ancestry",
+    "kind": "species-trait",
+    "name": "Fey Ancestry",
+    "source": "srd",
+    "tags": [
+      "half-elf-trait"
+    ],
+    "text": "You have advantage on saving throws against being charmed, and magic can't put you to sleep.",
+    "page": "PHB 38",
+    "modifiers": [
+      {
+        "target": "saves.all",
+        "op": "advantage",
+        "when": {
+          "text": "against being charmed",
+          "context": "charmed"
+        },
+        "provenance": {
+          "source": "prose",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:half-elf:skill-versatility",
+    "kind": "species-trait",
+    "name": "Skill Versatility",
+    "source": "srd",
+    "tags": [
+      "half-elf-trait"
+    ],
+    "text": "You gain proficiency in two skills of your choice.",
+    "page": "PHB 38"
+  },
+  {
+    "id": "srd:species:half-elf",
+    "kind": "species",
+    "name": "Half-Elf",
+    "source": "srd",
+    "tags": [
+      "srd-species"
+    ],
+    "text": "**Age.** Half-elves mature at the same rate humans do and reach adulthood around the age of 20. They live much longer than humans, however, often exceeding 180 years.\n\n**Size.** Half-elves are about the same size as humans, ranging from 5 to 6 feet tall. Your size is Medium.\n\n**Languages.** You can speak, read, and write Common, Elvish, and one extra language of your choice.",
+    "page": "PHB 38",
+    "x-size": "Medium",
+    "grants": [
+      "srd:language:common",
+      "srd:language:elvish",
+      "srd:half-elf:darkvision",
+      "srd:half-elf:fey-ancestry",
+      "srd:half-elf:skill-versatility"
+    ],
+    "choices": [
+      {
+        "id": "srd:species:half-elf:abilities",
+        "name": "Ability Score Increase",
+        "count": 2,
+        "repeatable": false,
+        "from": {
+          "ids": [
+            "srd:ability-point:str",
+            "srd:ability-point:dex",
+            "srd:ability-point:con",
+            "srd:ability-point:int",
+            "srd:ability-point:wis"
+          ]
+        }
+      },
+      {
+        "id": "srd:species:half-elf:skill",
+        "name": "Skill Proficiency",
+        "count": 2,
+        "from": {
+          "kind": "skill"
+        }
+      },
+      {
+        "id": "srd:species:half-elf:language",
+        "name": "Language",
+        "count": 1,
+        "from": {
+          "kind": "language",
+          "tags": [
+            "standard-language"
+          ]
+        }
+      }
+    ],
+    "modifiers": [
+      {
+        "target": "abilities.cha.score",
+        "op": "add",
+        "value": 2
+      },
+      {
+        "target": "speed.walk",
+        "op": "base",
+        "value": 30
+      },
+      {
+        "target": "senses.darkvision",
+        "op": "base",
+        "value": 60
+      }
+    ]
+  },
+  {
+    "id": "srd:half-orc:darkvision",
+    "kind": "species-trait",
+    "name": "Darkvision",
+    "source": "srd",
+    "tags": [
+      "half-orc-trait"
+    ],
+    "text": "Thanks to your orc blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
+    "page": "PHB 40"
+  },
+  {
+    "id": "srd:half-orc:menacing",
+    "kind": "species-trait",
+    "name": "Menacing",
+    "source": "srd",
+    "tags": [
+      "half-orc-trait"
+    ],
+    "text": "You gain proficiency in the Intimidation skill.",
+    "page": "PHB 40"
+  },
+  {
+    "id": "srd:half-orc:relentless-endurance",
+    "kind": "species-trait",
+    "name": "Relentless Endurance",
+    "source": "srd",
+    "tags": [
+      "half-orc-trait"
+    ],
+    "text": "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest.",
+    "page": "PHB 40",
+    "resources": [
+      {
+        "id": "srd:half-orc:relentless-endurance",
+        "name": "Relentless Endurance",
+        "max": 1,
+        "recharge": [
+          {
+            "on": "long-rest",
+            "amount": "all"
+          }
+        ],
+        "provenance": {
+          "source": "prose",
+          "review": "auto"
+        }
+      }
+    ],
+    "actions": [
+      {
+        "id": "relentless-endurance",
+        "name": "Relentless Endurance",
+        "activation": "special",
+        "provenance": {
+          "source": "prose",
+          "review": "auto"
+        },
+        "cost": {
+          "srd:half-orc:relentless-endurance": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:half-orc:savage-attacks",
+    "kind": "species-trait",
+    "name": "Savage Attacks",
+    "source": "srd",
+    "tags": [
+      "half-orc-trait"
+    ],
+    "text": "When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit.",
+    "page": "PHB 40"
+  },
+  {
+    "id": "srd:species:half-orc",
+    "kind": "species",
+    "name": "Half-Orc",
+    "source": "srd",
+    "tags": [
+      "srd-species"
+    ],
+    "text": "**Age.** Half-orcs mature a little faster than humans, reaching adulthood around age 14. They age noticeably faster and rarely live longer than 75 years.\n\n**Size.** Half-orcs are somewhat larger and bulkier than humans, and they range from 5 to well over 6 feet tall. Your size is Medium.\n\n**Languages.** You can speak, read, and write Common and Orc. Orc is a harsh, grating language with hard consonants. It has no script of its own but is written in the Dwarvish script.",
+    "page": "PHB 40",
+    "x-size": "Medium",
+    "grants": [
+      "srd:skill:intimidation",
+      "srd:language:common",
+      "srd:language:orc",
+      "srd:half-orc:darkvision",
+      "srd:half-orc:menacing",
+      "srd:half-orc:relentless-endurance",
+      "srd:half-orc:savage-attacks"
+    ],
+    "modifiers": [
+      {
+        "target": "abilities.str.score",
+        "op": "add",
+        "value": 2
+      },
+      {
+        "target": "abilities.con.score",
+        "op": "add",
+        "value": 1
+      },
+      {
+        "target": "speed.walk",
+        "op": "base",
+        "value": 30
+      },
+      {
+        "target": "senses.darkvision",
+        "op": "base",
+        "value": 60
+      }
+    ]
+  },
+  {
+    "id": "srd:halfling:lucky",
+    "kind": "species-trait",
+    "name": "Lucky",
+    "source": "srd",
+    "tags": [
+      "halfling-trait"
+    ],
+    "text": "When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.",
+    "page": "PHB 26"
+  },
+  {
+    "id": "srd:halfling:brave",
+    "kind": "species-trait",
+    "name": "Brave",
+    "source": "srd",
+    "tags": [
+      "halfling-trait"
+    ],
+    "text": "You have advantage on saving throws against being frightened.",
+    "page": "PHB 26",
+    "modifiers": [
+      {
+        "target": "saves.all",
+        "op": "advantage",
+        "when": {
+          "text": "against being frightened",
+          "context": "frightened"
+        },
+        "provenance": {
+          "source": "prose",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:halfling:halfling-nimbleness",
+    "kind": "species-trait",
+    "name": "Halfling Nimbleness",
+    "source": "srd",
+    "tags": [
+      "halfling-trait"
+    ],
+    "text": "You can move through the space of any creature that is of a size larger than yours.",
+    "page": "PHB 26"
+  },
+  {
+    "id": "srd:species:halfling",
+    "kind": "species",
+    "name": "Halfling",
+    "source": "srd",
+    "tags": [
+      "srd-species"
+    ],
+    "text": "**Age.** A halfling reaches adulthood at the age of 20 and generally lives into the middle of his or her second century.\n\n**Size.** Halflings average about 3 feet tall and weigh about 40 pounds. Your size is Small.\n\n**Languages.** You can speak, read, and write Common and Halfling. The Halfling language isn't secret, but halflings are loath to share it with others. They write very little, so they don't have a rich body of literature. Their oral tradition, however, is very strong. Almost all halflings speak Common to converse with the people in whose lands they dwell or through which they are traveling.",
+    "page": "PHB 26",
+    "x-size": "Small",
+    "grants": [
+      "srd:language:common",
+      "srd:language:halfling",
+      "srd:halfling:lucky",
+      "srd:halfling:brave",
+      "srd:halfling:halfling-nimbleness"
+    ],
+    "modifiers": [
+      {
+        "target": "abilities.dex.score",
+        "op": "add",
+        "value": 2
+      },
+      {
+        "target": "speed.walk",
+        "op": "base",
+        "value": 25
+      }
+    ],
+    "choices": [
+      {
+        "id": "srd:species:halfling:subspecies",
+        "name": "Subrace",
+        "count": 1,
+        "from": {
+          "kind": "subspecies",
+          "tags": [
+            "halfling-subspecies"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:lightfoot-halfling:naturally-stealthy",
+    "kind": "species-trait",
+    "name": "Naturally Stealthy",
+    "source": "srd",
+    "tags": [
+      "lightfoot-halfling-trait"
+    ],
+    "text": "You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you.",
+    "page": "PHB 28"
+  },
+  {
+    "id": "srd:subspecies:lightfoot-halfling",
+    "kind": "subspecies",
+    "name": "Lightfoot Halfling",
+    "source": "srd",
+    "tags": [
+      "halfling-subspecies",
+      "srd-subspecies"
+    ],
+    "species": "srd:species:halfling",
+    "text": "",
+    "page": "PHB 28",
+    "modifiers": [
+      {
+        "target": "abilities.cha.score",
+        "op": "add",
+        "value": 1
+      }
+    ],
+    "grants": [
+      "srd:lightfoot-halfling:naturally-stealthy"
+    ]
+  },
+  {
+    "id": "srd:species:human",
+    "kind": "species",
+    "name": "Human",
+    "source": "srd",
+    "tags": [
+      "srd-species"
+    ],
+    "text": "**Age.** Humans reach adulthood in their late teens and live less than a century.\n\n**Size.** Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium.\n\n**Languages.** You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish military phrases, and so on.",
+    "page": "PHB 29",
+    "x-size": "Medium",
+    "grants": [
+      "srd:language:common"
+    ],
+    "choices": [
+      {
+        "id": "srd:species:human:language",
+        "name": "Language",
+        "count": 1,
+        "from": {
+          "kind": "language",
+          "tags": [
+            "standard-language"
+          ]
+        }
+      }
+    ],
+    "modifiers": [
+      {
+        "target": "speed.walk",
+        "op": "base",
+        "value": 30
+      },
+      {
+        "target": "abilities.str.score",
+        "op": "add",
+        "value": 1
+      },
+      {
+        "target": "abilities.dex.score",
+        "op": "add",
+        "value": 1
+      },
+      {
+        "target": "abilities.con.score",
+        "op": "add",
+        "value": 1
+      },
+      {
+        "target": "abilities.int.score",
+        "op": "add",
+        "value": 1
+      },
+      {
+        "target": "abilities.wis.score",
+        "op": "add",
+        "value": 1
+      },
+      {
+        "target": "abilities.cha.score",
+        "op": "add",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "srd:tiefling:darkvision",
+    "kind": "species-trait",
+    "name": "Darkvision",
+    "source": "srd",
+    "tags": [
+      "tiefling-trait"
+    ],
+    "text": "Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
+    "page": "PHB 42"
+  },
+  {
+    "id": "srd:tiefling:hellish-resistance",
+    "kind": "species-trait",
+    "name": "Hellish Resistance",
+    "source": "srd",
+    "tags": [
+      "tiefling-trait"
+    ],
+    "text": "You have resistance to fire damage.",
+    "page": "PHB 42"
+  },
+  {
+    "id": "srd:tiefling:infernal-legacy",
+    "kind": "species-trait",
+    "name": "Infernal Legacy",
+    "source": "srd",
+    "tags": [
+      "tiefling-trait"
+    ],
+    "text": "You know the thaumaturgy cantrip. Once you reach 3rd level, you can cast the hellish rebuke spell as a 2nd-level spell with this trait; you regain the ability to cast it when you finish a long rest. Once you reach 5th level, you can also cast the darkness spell once per day with this trait; you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells.",
+    "page": "PHB 42"
+  },
+  {
+    "id": "srd:species:tiefling",
+    "kind": "species",
+    "name": "Tiefling",
+    "source": "srd",
+    "tags": [
+      "srd-species"
+    ],
+    "text": "**Age.** Tieflings mature at the same rate as humans but live a few years longer.\n\n**Size.** Tieflings are about the same size and build as humans. Your size is Medium.\n\n**Languages.** You can speak, read, and write Common and Infernal.",
+    "page": "PHB 42",
+    "x-size": "Medium",
+    "grants": [
+      "srd:language:common",
+      "srd:language:infernal",
+      "srd:spell:thaumaturgy",
+      "srd:tiefling:darkvision",
+      "srd:tiefling:hellish-resistance",
+      "srd:tiefling:infernal-legacy"
+    ],
+    "modifiers": [
+      {
+        "target": "abilities.int.score",
+        "op": "add",
+        "value": 1
+      },
+      {
+        "target": "abilities.cha.score",
+        "op": "add",
+        "value": 2
+      },
+      {
+        "target": "speed.walk",
+        "op": "base",
+        "value": 30
+      },
+      {
+        "target": "senses.darkvision",
+        "op": "base",
+        "value": 60
+      },
+      {
+        "target": "resistances",
+        "op": "include",
+        "value": [
+          "fire"
+        ]
+      }
+    ],
+    "levels": {
+      "3": {
+        "innateSpells": [
+          {
+            "spell": "srd:spell:hellish-rebuke",
+            "ability": "cha",
+            "uses": 1,
+            "recharge": [
+              {
+                "on": "long-rest",
+                "amount": "all"
+              }
+            ],
+            "notes": "Cast at 2nd level."
+          }
+        ]
+      },
+      "5": {
+        "innateSpells": [
+          {
+            "spell": "srd:spell:darkness",
+            "ability": "cha",
+            "uses": 1,
+            "recharge": [
+              {
+                "on": "long-rest",
+                "amount": "all"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "levelsBy": "character"
+  }
+]

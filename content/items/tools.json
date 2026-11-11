@@ -1,0 +1,567 @@
+[
+  {
+    "id": "srd:item:alchemists-supplies",
+    "kind": "item",
+    "name": "Alchemist's Supplies",
+    "source": "srd",
+    "tags": [
+      "tool",
+      "artisans-tools"
+    ],
+    "page": "PHB 154",
+    "itemType": "tool",
+    "weight": 8,
+    "value": 5000,
+    "text": "Alchemist's supplies enable a character to produce useful concoctions, such as acid or alchemist's fire.\n\n**Components.** Alchemist's supplies include two glass beakers, a metal frame to hold a beaker in place over an open flame, a glass stirring rod, a small mortar and pestle, and a pouch of common alchemical ingredients, including salt, powdered iron, and purified water.\n\n**Arcana.** Proficiency with alchemist's supplies allows you to unlock more information on Arcana checks involving potions and similar materials.\n\n**Investigation.** When you inspect an area for clues, proficiency with alchemist's supplies grants additional insight into any chemicals or other substances that might have been used in the area.\n\n**Alchemical Crafting.** You can use this tool proficiency to create alchemical items. A character can spend money to collect raw materials, which weigh 1 pound for every 50 gp spent. The DM can allow a character to make a check using the indicated skill with advantage. As part of a long rest, you can use alchemist's supplies to make one dose of acid, alchemist's fire, antitoxin, oil, perfume, or soap. Subtract half the value of the created item from the total gp worth of raw materials you are carrying.\n\n**Alchemist's Supplies**\n| Activity | DC |\n| --- | --- |\n| Create a puff of thick smoke | 10 |\n| Identify a poison | 10 |\n| Identify a substance | 15 |\n| Start a fire | 15 |\n| Neutralize acid | 20 |"
+  },
+  {
+    "id": "srd:item:artisans-tools",
+    "kind": "item",
+    "name": "Artisan's Tools",
+    "source": "srd",
+    "tags": [
+      "tool",
+      "artisans-tools",
+      "item-group"
+    ],
+    "page": "PHB 154",
+    "itemType": "tool",
+    "text": "**Artisan's Tools.** These special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency.\n\nThis group covers: Alchemist's Supplies, Brewer's Supplies, Calligrapher's Supplies, Carpenter's Tools, Cartographer's Tools, Cobbler's Tools, Cook's Utensils, Glassblower's Tools, Jeweler's Tools, Leatherworker's Tools, Mason's Tools, Painter's Supplies, Potter's Tools, Smith's Tools, Tinker's Tools, Weaver's Tools, Woodcarver's Tools."
+  },
+  {
+    "id": "srd:item:bagpipes",
+    "kind": "item",
+    "name": "Bagpipes",
+    "source": "srd",
+    "tags": [
+      "tool",
+      "musical-instrument"
+    ],
+    "page": "PHB 154",
+    "itemType": "tool",
+    "weight": 6,
+    "value": 3000,
+    "text": "**Instrument.** If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.\n\nProficiency with a musical instrument indicates you are familiar with the techniques used to play it. You also have knowledge of some songs commonly performed with that instrument.\n\n**History.** Your expertise aids you in recalling lore related to your instrument.\n\n**Performance.** Your ability to put on a good show is improved when you incorporate an instrument into your act.\n\n**Compose a Tune.** As part of a long rest, you can compose a new tune and lyrics for your instrument. You might use this ability to impress a noble or spread scandalous rumors with a catchy tune.\n\n**Musical Instrument**\n| Activity | DC |\n| --- | --- |\n| Identify a tune | 10 |\n| Improvise a tune | 20 |"
+  },
+  {
+    "id": "srd:item:brewers-supplies",
+    "kind": "item",
+    "name": "Brewer's Supplies",
+    "source": "srd",
+    "tags": [
+      "tool",
+      "artisans-tools"
+    ],
+    "page": "PHB 154",
+    "itemType": "tool",
+    "weight": 9,
+    "value": 2000,
+    "text": "Brewing is the art of producing beer. Not only does beer serve as an alcoholic beverage, but the process of brewing purifies water. Crafting beer takes weeks of fermentation, but only a few hours of work.\n\n**Components.** Brewer's supplies include a large glass jug, a quantity of hops, a siphon, and several feet of tubing.\n\n**History.** Proficiency with brewer's supplies gives you additional insight on Intelligence (History) checks concerning events that involve alcohol as a significant element.\n\n**Medicine.** This tool proficiency grants additional insight when you treat anyone suffering from alcohol poisoning or when you can use alcohol to dull pain.\n\n**Persuasion.** A stiff drink can help soften the hardest heart. Your proficiency with brewer's supplies can help you ply someone with drink, giving them just enough alcohol to mellow their mood.\n\n**Potable Water.** Your knowledge of brewing enables you to purify water that would otherwise be undrinkable. As part of a long rest, you can purify up to 6 gallons of water, or 1 gallon as part of a short rest.\n\n**Brewer's Supplies**\n| Activity | DC |\n| --- | --- |\n| Detect poison or impurities in a drink | 10 |\n| Identify alcohol | 15 |\n| Ignore effects of alcohol | 20 |"
+  },
+  {
+    "id": "srd:item:calligraphers-supplies",
+    "kind": "item",
+    "name": "Calligrapher's Supplies",
+    "source": "srd",
+    "tags": [
+      "tool",
+      "artisans-tools"
+    ],
+    "page": "PHB 154",
+    "itemType": "tool",
+    "weight": 5,
+    "value": 1000,
+    "text": "Calligraphy treats writing as a delicate, beautiful art. Calligraphers produce text that is pleasing to the eye, using a style that is difficult to forge. Their supplies also give them some ability to examine scripts and determine if they are legitimate, since a calligrapher's training involves long hours of studying writing and attempting to replicate its style and design.\n\n**Components.** Calligrapher's supplies include ink, a dozen sheets of parchment, and three quills.\n\n**Arcana.** Although calligraphy is of little help in deciphering the content of magical writings, proficiency with these supplies can aid in identifying who wrote a script of a magical nature.\n\n**History.** This tool proficiency can augment the benefit of successful checks made to analyze or investigate ancient writings, scrolls, or other texts, including runes etched in stone or messages in frescoes or other displays.\n\n**Decipher Treasure Map.** This tool proficiency grants you expertise in examining maps. You can make an Intelligence check to determine a map's age, whether a map includes any hidden messages, or similar facts.\n\n**Calligrapher's Supplies**\n| Activity | DC |\n| --- | --- |\n| Identify writer of nonmagical script | 10 |\n| Determine writer's state of mind | 15 |\n| Spot forged text | 15 |\n| Forge a signature | 20 |"
+  },
+  {
+    "id": "srd:item:carpenters-tools",
+    "kind": "item",
+    "name": "Carpenter's Tools",
+    "source": "srd",
+    "tags": [
+      "tool",
+      "artisans-tools"
+    ],
+    "page": "PHB 154",
+    "itemType": "tool",
+    "weight": 6,
+    "value": 800,
+    "text": "Skill at carpentry enables a character to construct wooden structures. A carpenter can build a house, a shack, a wooden cabinet, or similar items.\n\n**Components.** Carpenter's tools include a saw, a hammer, nails, a hatchet, a square, a ruler, an adze, a plane, and a chisel.\n\n**History.** This tool proficiency aids you in identifying the use and the origin of wooden buildings and other large wooden objects.\n\n**Investigation.** You gain additional insight when inspecting areas within wooden structures, because you know tricks of construction that can conceal areas from discovery.\n\n**Perception.** You can spot irregularities in wooden walls or floors, making it easier to find trap doors and secret passages.\n\n**Stealth.** You can quickly assess the weak spots in a wooden floor, making it easier to avoid the places that creak and groan when they're stepped on.\n\n**Fortify.** With 1 minute of work and raw materials, you can make a door or window harder to force open. Increase the DC needed to open it by 5.\n\n**Temporary Shelter.** As part of a long rest, you can construct a lean-to or a similar shelter to keep your group dry and in the shade for the duration of the rest. Because it was fashioned quickly from whatever wood was available, the shelter collapses 1d3 days after being assembled.\n\n**Carpenter's Tools**\n| Activity | DC |\n| --- | --- |\n| Build a simple wooden structure | 10 |\n| Design a complex wooden structure | 15 |\n| Find a weak point in a wooden wall | 15 |\n| Pry apart a door | 20 |"
+  },
+  {
+    "id": "srd:item:cartographers-tools",
+    "kind": "item",
+    "name": "Cartographer's Tools",
+    "source": "srd",
+    "tags": [
+      "tool",
+      "artisans-tools"
+    ],
+    "page": "PHB 154",
+    "itemType": "tool",
+    "weight": 6,
+    "value": 1500,
+    "text": "Using cartographer's tools, you can create accurate maps to make travel easier for yourself and those who come after you. These maps can range from large-scale depictions of mountain ranges to diagrams that show the layout of a dungeon level.\n\n**Components.** Cartographer's tools consist of a quill, ink, parchment, a pair of compasses, calipers, and a ruler.\n\n**Arcana, History, Religion.** You can use your knowledge of maps and locations to unearth more detailed information when you use these skills. For instance, you might spot hidden messages in a map, identify when the map was made to determine if geographical features have changed since then, and so forth.\n\n**Nature.** Your familiarity with physical geography makes it easier for you to answer questions or solve issues relating to the terrain around you.\n\n**Survival.** Your understanding of geography makes it easier to find paths to civilization, to predict areas where villages or towns might be found, and to avoid becoming lost. You have studied so many maps that common patterns, such as how trade routes evolve and where settlements arise in relation to geographic locations, are familiar to you.\n\n**Craft a Map.** While traveling, you can draw a map as you go in addition to engaging in other activity.\n\n**Cartographer's Tools**\n| Activity | DC |\n| --- | --- |\n| Determine a map's age and origin | 10 |\n| Estimate direction and distance to a landmark | 15 |\n| Discern that a map is fake | 15 |\n| Fill in a missing part of a map | 20 |"
+  },
+  {
+    "id": "srd:item:cobblers-tools",
+    "kind": "item",
+    "name": "Cobbler's Tools",
+    "source": "srd",
+    "tags": [
+      "tool",
+      "artisans-tools"
+    ],
+    "page": "PHB 154",
+    "itemType": "tool",
+    "weight": 5,
+    "value": 500,
+    "text": "Although the cobbler's trade might seem too humble for an adventurer, a good pair of boots will see a character across rugged wilderness and through deadly dungeons.\n\n**Components.** Cobbler's tools consist of a hammer, an awl, a knife, a shoe stand, a cutter, spare leather, and thread.\n\n**Arcana, History.** Your knowledge of shoes aids you in identifying the magical properties of enchanted boots or the history of such items.\n\n**Investigation.** Footwear holds a surprising number of secrets. You can learn where someone has recently visited by examining the wear and the dirt that has accumulated on their shoes. Your experience in repairing shoes makes it easier for you to identify where damage might come from.\n\n**Maintain Shoes.** As part of a long rest, you can repair your companions' shoes. For the next 24 hours, up to six creatures of your choice who wear shoes you worked on can travel up to 10 hours a day without making saving throws to avoid exhaustion.\n\n**Craft Hidden Compartment.** With 8 hours of work, you can add a hidden compartment to a pair of shoes. The compartment can hold an object up to 3 inches long and 1 inch wide and deep. You make an Intelligence check using your tool proficiency to determine the Intelligence (Investigation) check DC needed to find the compartment.\n\n**Cobbler's Tools**\n| Activity | DC |\n| --- | --- |\n| Determine a shoe's age and origin | 10 |\n| Find a hidden compartment in a boot heel | 15 |"
+  },
+  {
+    "id": "srd:item:cooks-utensils",
+    "kind": "item",
+    "name": "Cook's Utensils",
+    "source": "srd",
+    "tags": [
+      "tool",
+      "artisans-tools"
+    ],
+    "page": "PHB 154",
+    "itemType": "tool",
+    "weight": 8,
+    "value": 100,
+    "text": "Adventuring is a hard life. With a cook along on the journey, your meals will be much better than the typical mix of hardtack and dried fruit.\n\n**Components.** Cook's utensils include a metal pot, knives, forks, a stirring spoon, and a ladle.\n\n**History.** Your knowledge of cooking techniques allows you to assess the social patterns involved in a culture's eating habits.\n\n**Medicine.** When administering treatment, you can transform medicine that is bitter or sour into a pleasing concoction.\n\n**Survival.** When foraging for food, you can make do with ingredients you scavenge that others would be unable to transform into nourishing meals.\n\n**Prepare Meals.** As part of a short rest, you can prepare a tasty meal that helps your companions regain their strength. You and up to five creatures of your choice regain 1 extra hit point per Hit Die spent during a short rest, provided you have access to your cook's utensils and sufficient food.\n\n**Cook's Utensils**\n| Activity | DC |\n| --- | --- |\n| Create a typical meal | 10 |\n| Duplicate a meal | 10 |\n| Spot poison or impurities in food | 15 |\n| Create a gourmet meal | 15 |"
+  },
+  {
+    "id": "srd:item:dice-set",
+    "kind": "item",
+    "name": "Dice Set",
+    "source": "srd",
+    "tags": [
+      "tool",
+      "gaming-set"
+    ],
+    "page": "PHB 154",
+    "itemType": "tool",
+    "value": 10,
+    "text": "**Gaming Set.** If you are proficient with a gaming set, you can add your proficiency bonus to ability checks you make to play a game with that set. Each type of gaming set requires a separate proficiency.\n\nProficiency with a gaming set applies to one type of game, such as Three-Dragon Ante or games of chance that use dice.\n\n**Components.** A gaming set has all the pieces needed to play a specific game or type of game, such as a complete deck of cards or a board and tokens.\n\n**History.** Your mastery of a game includes knowledge of its history, as well as of important events it was connected to or prominent historical figures involved with it.\n\n**Insight.** Playing games with someone is a good way to gain understanding of their personality, granting you a better ability to discern their lies from their truths and read their mood.\n\n**Sleight of Hand.** Sleight of Hand is a useful skill for cheating at a game, as it allows you to swap pieces, palm cards, or alter a die roll. Alternatively, engrossing a target in a game by manipulating the components with dexterous movements is a great distraction for a pickpocketing attempt.\n\n**Gaming Set**\n| Activity | DC |\n| --- | --- |\n| Catch a player cheating | 15 |\n| Gain insight into an opponent's personality | 15 |"
+  },
+  {
+    "id": "srd:item:disguise-kit",
+    "kind": "item",
+    "name": "Disguise Kit",
+    "source": "srd",
+    "tags": [
+      "tool",
+      "kit"
+    ],
+    "page": "PHB 154",
+    "itemType": "tool",
+    "weight": 3,
+    "value": 2500,
+    "text": "This pouch of cosmetics, hair dye, and small props lets you create disguises that change your physical appearance. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to create a visual disguise."
+  },
+  {
+    "id": "srd:item:drum",
+    "kind": "item",
+    "name": "Drum",
+    "source": "srd",
+    "tags": [
+      "tool",
+      "musical-instrument"
+    ],
+    "page": "PHB 154",
+    "itemType": "tool",
+    "weight": 3,
+    "value": 600,
+    "text": "**Instrument.** If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.\n\nProficiency with a musical instrument indicates you are familiar with the techniques used to play it. You also have knowledge of some songs commonly performed with that instrument.\n\n**History.** Your expertise aids you in recalling lore related to your instrument.\n\n**Performance.** Your ability to put on a good show is improved when you incorporate an instrument into your act.\n\n**Compose a Tune.** As part of a long rest, you can compose a new tune and lyrics for your instrument. You might use this ability to impress a noble or spread scandalous rumors with a catchy tune.\n\n**Musical Instrument**\n| Activity | DC |\n| --- | --- |\n| Identify a tune | 10 |\n| Improvise a tune | 20 |"
+  },
+  {
+    "id": "srd:item:dulcimer",
+    "kind": "item",
+    "name": "Dulcimer",
+    "source": "srd",
+    "tags": [
+      "tool",
+      "musical-instrument"
+    ],
+    "page": "PHB 154",
+    "itemType": "tool",
+    "weight": 10,
+    "value": 2500,
+    "text": "**Instrument.** If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.\n\nProficiency with a musical instrument indicates you are familiar with the techniques used to play it. You also have knowledge of some songs commonly performed with that instrument.\n\n**History.** Your expertise aids you in recalling lore related to your instrument.\n\n**Performance.** Your ability to put on a good show is improved when you incorporate an instrument into your act.\n\n**Compose a Tune.** As part of a long rest, you can compose a new tune and lyrics for your instrument. You might use this ability to impress a noble or spread scandalous rumors with a catchy tune.\n\n**Musical Instrument**\n| Activity | DC |\n| --- | --- |\n| Identify a tune | 10 |\n| Improvise a tune | 20 |"
+  },
+  {
+    "id": "srd:item:flute",
+    "kind": "item",
+    "name": "Flute",
+    "source": "srd",
+    "tags": [
+      "tool",
+      "musical-instrument"
+    ],
+    "page": "PHB 154",
+    "itemType": "tool",
+    "weight": 1,
+    "value": 200,
+    "text": "**Instrument.** If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.\n\nProficiency with a musical instrument indicates you are familiar with the techniques used to play it. You also have knowledge of some songs commonly performed with that instrument.\n\n**History.** Your expertise aids you in recalling lore related to your instrument.\n\n**Performance.** Your ability to put on a good show is improved when you incorporate an instrument into your act.\n\n**Compose a Tune.** As part of a long rest, you can compose a new tune and lyrics for your instrument. You might use this ability to impress a noble or spread scandalous rumors with a catchy tune.\n\n**Musical Instrument**\n| Activity | DC |\n| --- | --- |\n| Identify a tune | 10 |\n| Improvise a tune | 20 |"
+  },
+  {
+    "id": "srd:item:forgery-kit",
+    "kind": "item",
+    "name": "Forgery Kit",
+    "source": "srd",
+    "tags": [
+      "tool",
+      "kit"
+    ],
+    "page": "PHB 154",
+    "itemType": "tool",
+    "weight": 5,
+    "value": 1500,
+    "text": "This small box contains a variety of papers and parchments, pens and inks, seals and sealing wax, gold and silver leaf, and other supplies necessary to create convincing forgeries of physical documents. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to create a physical forgery of a document."
+  },
+  {
+    "id": "srd:item:gaming-set",
+    "kind": "item",
+    "name": "Gaming Set",
+    "source": "srd",
+    "tags": [
+      "tool",
+      "gaming-set",
+      "item-group"
+    ],
+    "page": "PHB 154",
+    "itemType": "tool",
+    "text": "**Gaming Set.** If you are proficient with a gaming set, you can add your proficiency bonus to ability checks you make to play a game with that set. Each type of gaming set requires a separate proficiency.\n\nProficiency with a gaming set applies to one type of game, such as Three-Dragon Ante or games of chance that use dice.\n\n**Components.** A gaming set has all the pieces needed to play a specific game or type of game, such as a complete deck of cards or a board and tokens.\n\n**History.** Your mastery of a game includes knowledge of its history, as well as of important events it was connected to or prominent historical figures involved with it.\n\n**Insight.** Playing games with someone is a good way to gain understanding of their personality, granting you a better ability to discern their lies from their truths and read their mood.\n\n**Sleight of Hand.** Sleight of Hand is a useful skill for cheating at a game, as it allows you to swap pieces, palm cards, or alter a die roll. Alternatively, engrossing a target in a game by manipulating the components with dexterous movements is a great distraction for a pickpocketing attempt.\n\n**Gaming Set**\n| Activity | DC |\n| --- | --- |\n| Catch a player cheating | 15 |\n| Gain insight into an opponent's personality | 15 |\n\nThis group covers: Dice Set, Dragonchess Set, Playing Card Set, Three-Dragon Ante Set."
+  },
+  {
+    "id": "srd:item:glassblowers-tools",
+    "kind": "item",
+    "name": "Glassblower's Tools",
+    "source": "srd",
+    "tags": [
+      "tool",
+      "artisans-tools"
+    ],
+    "page": "PHB 154",
+    "itemType": "tool",
+    "weight": 5,
+    "value": 3000,
+    "text": "Someone who is proficient with glassblower's tools has not only the ability to shape glass, but also specialized knowledge of the methods used to produce glass objects.\n\n**Components.** The tools include a blowpipe, a small marver, blocks, and tweezers. You need a source of heat to work glass.\n\n**Arcana, History.** Your knowledge of glassmaking techniques aids you when you examine glass objects, such as potion bottles or glass items found in a treasure hoard. For instance, you can study how a glass potion bottle has been changed by its contents to help determine a potion's effects. (A potion might leave behind a residue, deform the glass, or stain it.)\n\n**Investigation.** When you study an area, your knowledge can aid you if the clues include broken glass or glass objects.\n\n**Identify Weakness.** With 1 minute of study, you can identify the weak points in a glass object. Any damage dealt to the object by striking a weak spot is doubled.\n\n**Glassblower's Tools**\n| Activity | DC |\n| --- | --- |\n| Identify source of glass | 10 |\n| Determine what a glass object once held | 20 |"
+  },
+  {
+    "id": "srd:item:herbalism-kit",
+    "kind": "item",
+    "name": "Herbalism Kit",
+    "source": "srd",
+    "tags": [
+      "tool",
+      "kit"
+    ],
+    "page": "PHB 154",
+    "itemType": "tool",
+    "weight": 3,
+    "value": 500,
+    "text": "This kit contains a variety of instruments such as clippers, mortar and pestle, and pouches and vials used by herbalists to create remedies and potions. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to identify or apply herbs. Also, proficiency with this kit is required to create antitoxin and potions of healing."
+  },
+  {
+    "id": "srd:item:horn",
+    "kind": "item",
+    "name": "Horn",
+    "source": "srd",
+    "tags": [
+      "tool",
+      "musical-instrument"
+    ],
+    "page": "PHB 154",
+    "itemType": "tool",
+    "weight": 2,
+    "value": 300,
+    "text": "**Instrument.** If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.\n\nProficiency with a musical instrument indicates you are familiar with the techniques used to play it. You also have knowledge of some songs commonly performed with that instrument.\n\n**History.** Your expertise aids you in recalling lore related to your instrument.\n\n**Performance.** Your ability to put on a good show is improved when you incorporate an instrument into your act.\n\n**Compose a Tune.** As part of a long rest, you can compose a new tune and lyrics for your instrument. You might use this ability to impress a noble or spread scandalous rumors with a catchy tune.\n\n**Musical Instrument**\n| Activity | DC |\n| --- | --- |\n| Identify a tune | 10 |\n| Improvise a tune | 20 |"
+  },
+  {
+    "id": "srd:item:jewelers-tools",
+    "kind": "item",
+    "name": "Jeweler's Tools",
+    "source": "srd",
+    "tags": [
+      "tool",
+      "artisans-tools"
+    ],
+    "page": "PHB 154",
+    "itemType": "tool",
+    "weight": 2,
+    "value": 2500,
+    "text": "Training with jeweler's tools includes the basic techniques needed to beautify gems. It also gives you expertise in identifying precious stones.\n\n**Components.** Jeweler's tools consist of a small saw and hammer, files, pliers, and tweezers.\n\n**Arcana.** Proficiency with jeweler's tools grants you knowledge about the reputed mystical uses of gems. This insight proves handy when you make Arcana checks related to gems or gem-encrusted items.\n\n**Investigation.** When you inspect jeweled objects, your proficiency with jeweler's tools aids you in picking out clues they might hold.\n\n**Identify Gems.** You can identify gems and determine their value at a glance.\n\n**Jeweler's Tools**\n| Activity | DC |\n| --- | --- |\n| Modify a gem's appearance | 15 |\n| Determine a gem's history | 20 |"
+  },
+  {
+    "id": "srd:item:leatherworkers-tools",
+    "kind": "item",
+    "name": "Leatherworker's Tools",
+    "source": "srd",
+    "tags": [
+      "tool",
+      "artisans-tools"
+    ],
+    "page": "PHB 154",
+    "itemType": "tool",
+    "weight": 5,
+    "value": 500,
+    "text": "Knowledge of leatherworking extends to lore concerning animal hides and their properties. It also confers knowledge of leather armor and similar goods.\n\n**Components.** Leatherworker's tools include a knife, a small mallet, an edger, a hole punch, thread, and leather scraps.\n\n**Arcana.** Your expertise in working with leather grants you added insight when you inspect magic items crafted from leather, such as boots and some cloaks.\n\n**Investigation.** You gain added insight when studying leather items or clues related to them, as you draw on your knowledge of leather to pick out details that others would overlook.\n\n**Identify Hides.** When looking at a hide or a leather item, you can determine the source of the leather and any special techniques used to treat it. For example, you can spot the difference between leather crafted using dwarven methods and leather crafted using halfling methods.\n\n**Leatherworker's Tools**\n| Activity | DC |\n| --- | --- |\n| Modify a leather item's appearance | 10 |\n| Determine a leather item's history | 20 |"
+  },
+  {
+    "id": "srd:item:lute",
+    "kind": "item",
+    "name": "Lute",
+    "source": "srd",
+    "tags": [
+      "tool",
+      "musical-instrument"
+    ],
+    "page": "PHB 154",
+    "itemType": "tool",
+    "weight": 2,
+    "value": 3500,
+    "text": "**Instrument.** If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.\n\nProficiency with a musical instrument indicates you are familiar with the techniques used to play it. You also have knowledge of some songs commonly performed with that instrument.\n\n**History.** Your expertise aids you in recalling lore related to your instrument.\n\n**Performance.** Your ability to put on a good show is improved when you incorporate an instrument into your act.\n\n**Compose a Tune.** As part of a long rest, you can compose a new tune and lyrics for your instrument. You might use this ability to impress a noble or spread scandalous rumors with a catchy tune.\n\n**Musical Instrument**\n| Activity | DC |\n| --- | --- |\n| Identify a tune | 10 |\n| Improvise a tune | 20 |"
+  },
+  {
+    "id": "srd:item:lyre",
+    "kind": "item",
+    "name": "Lyre",
+    "source": "srd",
+    "tags": [
+      "tool",
+      "musical-instrument"
+    ],
+    "page": "PHB 154",
+    "itemType": "tool",
+    "weight": 2,
+    "value": 3000,
+    "text": "**Instrument.** If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.\n\nProficiency with a musical instrument indicates you are familiar with the techniques used to play it. You also have knowledge of some songs commonly performed with that instrument.\n\n**History.** Your expertise aids you in recalling lore related to your instrument.\n\n**Performance.** Your ability to put on a good show is improved when you incorporate an instrument into your act.\n\n**Compose a Tune.** As part of a long rest, you can compose a new tune and lyrics for your instrument. You might use this ability to impress a noble or spread scandalous rumors with a catchy tune.\n\n**Musical Instrument**\n| Activity | DC |\n| --- | --- |\n| Identify a tune | 10 |\n| Improvise a tune | 20 |"
+  },
+  {
+    "id": "srd:item:masons-tools",
+    "kind": "item",
+    "name": "Mason's Tools",
+    "source": "srd",
+    "tags": [
+      "tool",
+      "artisans-tools"
+    ],
+    "page": "PHB 154",
+    "itemType": "tool",
+    "weight": 8,
+    "value": 1000,
+    "text": "Mason's tools allow you to craft stone structures, including walls and buildings crafted from brick.\n\n**Components.** Mason's tools consist of a trowel, a hammer, a chisel, brushes, and a square.\n\n**History.** Your expertise aids you in identifying a stone building's date of construction and purpose, along with insight into who might have built it.\n\n**Investigation.** You gain additional insight when inspecting areas within stone structures.\n\n**Perception.** You can spot irregularities in stone walls or floors, making it easier to find trap doors and secret passages.\n\n**Demolition.** Your knowledge of masonry allows you to spot weak points in brick walls. You deal double damage to such structures with your weapon attacks.\n\n**Mason's Tools**\n| Activity | DC |\n| --- | --- |\n| Chisel a small hole in a stone wall | 10 |\n| Find a weak point in a stone wall | 15 |"
+  },
+  {
+    "id": "srd:item:musical-instrument",
+    "kind": "item",
+    "name": "Musical Instrument",
+    "source": "srd",
+    "tags": [
+      "tool",
+      "musical-instrument",
+      "item-group"
+    ],
+    "page": "PHB 154",
+    "itemType": "tool",
+    "text": "**Instrument.** If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.\n\nProficiency with a musical instrument indicates you are familiar with the techniques used to play it. You also have knowledge of some songs commonly performed with that instrument.\n\n**History.** Your expertise aids you in recalling lore related to your instrument.\n\n**Performance.** Your ability to put on a good show is improved when you incorporate an instrument into your act.\n\n**Compose a Tune.** As part of a long rest, you can compose a new tune and lyrics for your instrument. You might use this ability to impress a noble or spread scandalous rumors with a catchy tune.\n\n**Musical Instrument**\n| Activity | DC |\n| --- | --- |\n| Identify a tune | 10 |\n| Improvise a tune | 20 |\n\nThis group covers: Bagpipes, Drum, Dulcimer, Flute, Horn, Lute, Lyre, Pan Flute, Shawm, Viol."
+  },
+  {
+    "id": "srd:item:navigators-tools",
+    "kind": "item",
+    "name": "Navigator's Tools",
+    "source": "srd",
+    "tags": [
+      "tool",
+      "kit"
+    ],
+    "page": "PHB 154",
+    "itemType": "tool",
+    "weight": 2,
+    "value": 2500,
+    "text": "This set of instruments is used for navigation at sea. Proficiency with navigator's tools lets you chart a ship's course and follow navigation charts. In addition, these tools allow you to add your proficiency bonus to any ability check you make to avoid getting lost at sea."
+  },
+  {
+    "id": "srd:item:painters-supplies",
+    "kind": "item",
+    "name": "Painter's Supplies",
+    "source": "srd",
+    "tags": [
+      "tool",
+      "artisans-tools"
+    ],
+    "page": "PHB 154",
+    "itemType": "tool",
+    "weight": 5,
+    "value": 1000,
+    "text": "Proficiency with painter's supplies represents your ability to paint and draw. You also acquire an understanding of art history, which can aid you in examining works of art.\n\n**Components.** Painter's supplies include an easel, canvas, paints, brushes, charcoal sticks, and a palette.\n\n**Arcana, History, Religion.** Your expertise aids you in uncovering lore of any sort that is attached to a work of art, such as the magical properties of a painting or the origins of a strange mural found in a dungeon.\n\n**Investigation, Perception.** When you inspect a painting or a similar work of visual art, your knowledge of the practices behind creating it can grant you additional insight.\n\n**Painting and Drawing.** As part of a short or long rest, you can produce a simple work of art. Although your work might lack precision, you can capture an image or a scene, or make a quick copy of a piece of art you saw.\n\n**Painter's Supplies**\n| Activity | DC |\n| --- | --- |\n| Paint an accurate portrait | 10 |\n| Create a painting with a hidden message | 20 |"
+  },
+  {
+    "id": "srd:item:pan-flute",
+    "kind": "item",
+    "name": "Pan Flute",
+    "source": "srd",
+    "tags": [
+      "tool",
+      "musical-instrument"
+    ],
+    "page": "PHB 154",
+    "itemType": "tool",
+    "weight": 2,
+    "value": 1200,
+    "text": "**Instrument.** If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.\n\nProficiency with a musical instrument indicates you are familiar with the techniques used to play it. You also have knowledge of some songs commonly performed with that instrument.\n\n**History.** Your expertise aids you in recalling lore related to your instrument.\n\n**Performance.** Your ability to put on a good show is improved when you incorporate an instrument into your act.\n\n**Compose a Tune.** As part of a long rest, you can compose a new tune and lyrics for your instrument. You might use this ability to impress a noble or spread scandalous rumors with a catchy tune.\n\n**Musical Instrument**\n| Activity | DC |\n| --- | --- |\n| Identify a tune | 10 |\n| Improvise a tune | 20 |"
+  },
+  {
+    "id": "srd:item:playing-card-set",
+    "kind": "item",
+    "name": "Playing Card Set",
+    "source": "srd",
+    "tags": [
+      "tool",
+      "gaming-set"
+    ],
+    "page": "PHB 154",
+    "itemType": "tool",
+    "value": 50,
+    "text": "**Gaming Set.** If you are proficient with a gaming set, you can add your proficiency bonus to ability checks you make to play a game with that set. Each type of gaming set requires a separate proficiency.\n\nProficiency with a gaming set applies to one type of game, such as Three-Dragon Ante or games of chance that use dice.\n\n**Components.** A gaming set has all the pieces needed to play a specific game or type of game, such as a complete deck of cards or a board and tokens.\n\n**History.** Your mastery of a game includes knowledge of its history, as well as of important events it was connected to or prominent historical figures involved with it.\n\n**Insight.** Playing games with someone is a good way to gain understanding of their personality, granting you a better ability to discern their lies from their truths and read their mood.\n\n**Sleight of Hand.** Sleight of Hand is a useful skill for cheating at a game, as it allows you to swap pieces, palm cards, or alter a die roll. Alternatively, engrossing a target in a game by manipulating the components with dexterous movements is a great distraction for a pickpocketing attempt.\n\n**Gaming Set**\n| Activity | DC |\n| --- | --- |\n| Catch a player cheating | 15 |\n| Gain insight into an opponent's personality | 15 |"
+  },
+  {
+    "id": "srd:item:poisoners-kit",
+    "kind": "item",
+    "name": "Poisoner's Kit",
+    "source": "srd",
+    "tags": [
+      "tool",
+      "kit"
+    ],
+    "page": "PHB 154",
+    "itemType": "tool",
+    "weight": 2,
+    "value": 5000,
+    "text": "A poisoner's kit includes the vials, chemicals, and other equipment necessary for the creation of poisons. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to craft or use poisons.\n\nAdditionally, the Crafting and Harvesting Poison rules require the use of a poisoner's kit."
+  },
+  {
+    "id": "srd:item:potters-tools",
+    "kind": "item",
+    "name": "Potter's Tools",
+    "source": "srd",
+    "tags": [
+      "tool",
+      "artisans-tools"
+    ],
+    "page": "PHB 154",
+    "itemType": "tool",
+    "weight": 3,
+    "value": 1000,
+    "text": "Potter's tools are used to create a variety of ceramic objects, most typically pots and similar vessels.\n\n**Components.** Potter's tools include potter's needles, ribs, scrapers, a knife, and calipers.\n\n**History.** Your expertise aids you in identifying ceramic objects, including when they were created and their likely place or culture of origin.\n\n**Investigation, Perception.** You gain additional insight when inspecting ceramics, uncovering clues others would overlook by spotting minor irregularities.\n\n**Reconstruction.** By examining pottery shards, you can determine an object's original, intact form and its likely purpose.\n\n**Potter's Tools**\n| Activity | DC |\n| --- | --- |\n| Determine what a vessel once held | 10 |\n| Create a serviceable pot | 15 |\n| Find a weak point in a ceramic object | 20 |"
+  },
+  {
+    "id": "srd:item:shawm",
+    "kind": "item",
+    "name": "Shawm",
+    "source": "srd",
+    "tags": [
+      "tool",
+      "musical-instrument"
+    ],
+    "page": "PHB 154",
+    "itemType": "tool",
+    "weight": 1,
+    "value": 200,
+    "text": "**Instrument.** If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.\n\nProficiency with a musical instrument indicates you are familiar with the techniques used to play it. You also have knowledge of some songs commonly performed with that instrument.\n\n**History.** Your expertise aids you in recalling lore related to your instrument.\n\n**Performance.** Your ability to put on a good show is improved when you incorporate an instrument into your act.\n\n**Compose a Tune.** As part of a long rest, you can compose a new tune and lyrics for your instrument. You might use this ability to impress a noble or spread scandalous rumors with a catchy tune.\n\n**Musical Instrument**\n| Activity | DC |\n| --- | --- |\n| Identify a tune | 10 |\n| Improvise a tune | 20 |"
+  },
+  {
+    "id": "srd:item:smiths-tools",
+    "kind": "item",
+    "name": "Smith's Tools",
+    "source": "srd",
+    "tags": [
+      "tool",
+      "artisans-tools"
+    ],
+    "page": "PHB 154",
+    "itemType": "tool",
+    "weight": 8,
+    "value": 2000,
+    "text": "Smith's tools allow you to work metal, heating it to alter its shape, repair damage, or work raw ingots into useful items.\n\n**Components.** Smith's tools include hammers, tongs, charcoal, rags, and a whetstone.\n\n**Arcana and History.** Your expertise lends you additional insight when examining metal objects, such as weapons.\n\n**Investigation.** You can spot clues and make deductions that others might overlook when an investigation involves armor, weapons, or other metalwork.\n\n**Repair.** With access to your tools and an open flame hot enough to make metal pliable, you can restore 10 hit points to a damaged metal object for each hour of work.\n\n**Smith's Tools**\n| Activity | DC |\n| --- | --- |\n| Sharpen a dull blade | 10 |\n| Repair a suit of armor | 15 |\n| Sunder a nonmagical metal object | 15 |"
+  },
+  {
+    "id": "srd:item:thieves-tools",
+    "kind": "item",
+    "name": "Thieves' Tools",
+    "source": "srd",
+    "tags": [
+      "tool",
+      "kit"
+    ],
+    "page": "PHB 154",
+    "itemType": "tool",
+    "weight": 1,
+    "value": 2500,
+    "text": "This set of tools includes a small file, a set of lock picks, a small mirror mounted on a metal handle, a set of narrow-bladed scissors, and a pair of pliers. Proficiency with these tools lets you add your proficiency bonus to any ability checks you make to disarm traps or open locks."
+  },
+  {
+    "id": "srd:item:tinkers-tools",
+    "kind": "item",
+    "name": "Tinker's Tools",
+    "source": "srd",
+    "tags": [
+      "tool",
+      "artisans-tools"
+    ],
+    "page": "PHB 154",
+    "itemType": "tool",
+    "weight": 10,
+    "value": 5000,
+    "text": "A set of tinker's tools is designed to enable you to repair many mundane objects. Though you can't manufacture much with tinker's tools, you can mend torn clothes, sharpen a worn sword, and patch a tattered suit of chain mail.\n\n**Components.** Tinker's tools include a variety of hand tools, thread, needles, a whetstone, scraps of cloth and leather, and a small pot of glue.\n\n**History.** You can determine the age and origin of objects, even if you have only a few pieces remaining from the original.\n\n**Investigation.** When you inspect a damaged object, you gain knowledge of how it was damaged and how long ago.\n\n**Repair.** You can restore 10 hit points to a damaged object for each hour of work. For any object, you need access to the raw materials required to repair it. For metal objects, you need access to an open flame hot enough to make the metal pliable.\n\n**Tinker's Tools**\n| Activity | DC |\n| --- | --- |\n| Temporarily repair a disabled device | 10 |\n| Repair an item in half the time | 15 |\n| Improvise a temporary item using scraps | 20 |"
+  },
+  {
+    "id": "srd:item:viol",
+    "kind": "item",
+    "name": "Viol",
+    "source": "srd",
+    "tags": [
+      "tool",
+      "musical-instrument"
+    ],
+    "page": "PHB 154",
+    "itemType": "tool",
+    "weight": 1,
+    "value": 3000,
+    "text": "**Instrument.** If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.\n\nProficiency with a musical instrument indicates you are familiar with the techniques used to play it. You also have knowledge of some songs commonly performed with that instrument.\n\n**History.** Your expertise aids you in recalling lore related to your instrument.\n\n**Performance.** Your ability to put on a good show is improved when you incorporate an instrument into your act.\n\n**Compose a Tune.** As part of a long rest, you can compose a new tune and lyrics for your instrument. You might use this ability to impress a noble or spread scandalous rumors with a catchy tune.\n\n**Musical Instrument**\n| Activity | DC |\n| --- | --- |\n| Identify a tune | 10 |\n| Improvise a tune | 20 |"
+  },
+  {
+    "id": "srd:item:weavers-tools",
+    "kind": "item",
+    "name": "Weaver's Tools",
+    "source": "srd",
+    "tags": [
+      "tool",
+      "artisans-tools"
+    ],
+    "page": "PHB 154",
+    "itemType": "tool",
+    "weight": 5,
+    "value": 100,
+    "text": "Weaver's tools allow you to create cloth and tailor it into articles of clothing.\n\n**Components.** Weaver's tools include thread, needles, and scraps of cloth. You know how to work a loom, but such equipment is too large to transport.\n\n**Arcana, History.** Your expertise lends you additional insight when examining cloth objects, including cloaks and robes.\n\n**Investigation.** Using your knowledge of the process of creating cloth objects, you can spot clues and make deductions that others would overlook when you examine tapestries, upholstery, clothing, and other woven items.\n\n**Repair.** As part of a short rest, you can repair a single damaged cloth object.\n\n**Craft Clothing.** Assuming you have access to sufficient cloth and thread, you can create an outfit for a creature as part of a long rest.\n\n**Weaver's Tools**\n| Activity | DC |\n| --- | --- |\n| Repurpose cloth | 10 |\n| Mend a hole in a piece of cloth | 10 |\n| Tailor an outfit | 15 |"
+  },
+  {
+    "id": "srd:item:woodcarvers-tools",
+    "kind": "item",
+    "name": "Woodcarver's Tools",
+    "source": "srd",
+    "tags": [
+      "tool",
+      "artisans-tools"
+    ],
+    "page": "PHB 154",
+    "itemType": "tool",
+    "weight": 5,
+    "value": 100,
+    "text": "Woodcarver's tools allow you to craft intricate objects from wood, such as wooden tokens or arrows.\n\n**Components.** Woodcarver's tools consist of a knife, a gouge, and a small saw.\n\n**Arcana, History.** Your expertise lends you additional insight when you examine wooden objects, such as figurines or arrows.\n\n**Nature.** Your knowledge of wooden objects gives you some added insight when you examine trees.\n\n**Repair.** As part of a short rest, you can repair a single damaged wooden object.\n\n**Craft Arrows.** As part of a short rest, you can craft up to five arrows. As part of a long rest, you can craft up to twenty. You must have enough wood on hand to produce them.\n\n**Woodcarver's Tools**\n| Activity | DC |\n| --- | --- |\n| Craft a small wooden figurine | 10 |\n| Carve an intricate pattern in wood | 15 |"
+  }
+]

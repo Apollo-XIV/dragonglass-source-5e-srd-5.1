@@ -1,0 +1,144 @@
+[
+  {
+    "id": "srd:sorcerer:spellcasting",
+    "kind": "class-feature",
+    "name": "Spellcasting",
+    "source": "srd",
+    "page": "PHB 99",
+    "tags": [
+      "sorcerer-feature"
+    ],
+    "text": "An event in your past, or in the life of a parent or ancestor, left an indelible mark on you, infusing you with arcane magic. This font of magic, whatever its origin, fuels your spells. See chapter 10 for the general rules of spellcasting and chapter 11 for the sorcerer spell list.\n\n**Cantrips.** At 1st level, you know four cantrips of your choice from the sorcerer spell list. You learn an additional sorcerer cantrip of your choice at 4th level and another at 10th level.\n\n**Spell Slots.** The Sorcerer table shows how many spell slots you have to cast your sorcerer spells of 1st level and higher. To cast one of these sorcerer spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.\n\nFor example, if you know the 1st-level spell burning hands and have a 1st-level and a 2nd-level spell slot available, you can cast burning hands using either slot.\n\n**Spells Known of 1st Level and Higher.** You know two 1st-level spells of your choice from the sorcerer spell list.\n\nYou learn an additional sorcerer spell of your choice at each level except 12th, 14th, 16th, 18th, 19th, and 20th. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 3rd level in this class, you can learn one new spell of 1st or 2nd level.\n\nAdditionally, when you gain a level in this class, you can choose one of the sorcerer spells you know and replace it with another spell from the sorcerer spell list, which also must be of a level for which you have spell slots.\n\n**Spellcasting Ability.** Charisma is your spellcasting ability for your sorcerer spells, since the power of your magic relies on your ability to project your will into the world. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a sorcerer spell you cast and when making an attack roll with one.\n\n**Spell save DC** = 8 + your proficiency bonus + your Charisma modifier\n\n**Spell attack modifier** = your proficiency bonus + your Charisma modifier\n\n**Spellcasting Focus.** You can use an arcane focus as a spellcasting focus for your sorcerer spells."
+  },
+  {
+    "id": "srd:sorcerer:sorcerous-origin",
+    "kind": "class-feature",
+    "name": "Sorcerous Origin",
+    "source": "srd",
+    "page": "PHB 99",
+    "tags": [
+      "sorcerer-feature"
+    ],
+    "text": "Choose a sorcerous origin, which describes the source of your innate magical power, from the list of available origins.\n\nYour choice grants you features when you choose it at 1st level and again at 6th, 14th, and 18th level."
+  },
+  {
+    "id": "srd:sorcerer:sorcery-points",
+    "kind": "class-feature",
+    "name": "Sorcery Points",
+    "source": "srd",
+    "page": "PHB 99",
+    "tags": [
+      "sorcerer-feature"
+    ],
+    "text": "You have 2 sorcery points, and you gain one additional point every time you level up, to a maximum of 20 at level 20. You can never have more sorcery points than shown on the table for your level. You regain all spent sorcery points when you finish a long rest."
+  },
+  {
+    "id": "srd:sorcerer:flexible-casting",
+    "kind": "class-feature",
+    "name": "Flexible Casting",
+    "source": "srd",
+    "page": "PHB 99",
+    "tags": [
+      "sorcerer-feature"
+    ],
+    "text": "You can use your sorcery points to gain additional spell slots, or sacrifice spell slots to gain additional sorcery points. You learn other ways to use your sorcery points as you reach higher levels.\n\n**Creating Spell Slots.** You can transform unexpended sorcery points into one spell slot as a bonus action on your turn. The created spell slots vanish at the end of a long rest. The Creating Spell Slots table shows the cost of creating a spell slot of a given level. You can create spell slots no higher in level than 5th.\n\n**Creating Spell Slots**\n| Spell Slot Level | Sorcery Point Cost |\n| --- | --- |\n| 1st | 2 |\n| 2nd | 3 |\n| 3rd | 5 |\n| 4th | 6 |\n| 5th | 7 |\n\n**Converting a Spell Slot to Sorcery Points.** As a bonus action on your turn, you can expend one spell slot and gain a number of sorcery points equal to the slot's level.",
+    "actions": [
+      {
+        "id": "flexible-casting",
+        "name": "Flexible Casting",
+        "activation": "bonus-action",
+        "provenance": {
+          "source": "prose",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:sorcerer:font-of-magic",
+    "kind": "class-feature",
+    "name": "Font of Magic",
+    "source": "srd",
+    "page": "PHB 99",
+    "tags": [
+      "sorcerer-feature"
+    ],
+    "text": "At 2nd level, you tap into a deep wellspring of magic within yourself. This wellspring is represented by sorcery points, which allow you to create a variety of magical effects.",
+    "grants": [
+      "srd:sorcerer:sorcery-points",
+      "srd:sorcerer:flexible-casting"
+    ],
+    "resources": [
+      {
+        "id": "srd:sorcerer:sorcery-points",
+        "name": "Sorcery Points",
+        "max": "@table(sorcerer, sorcery-points)",
+        "recharge": [
+          {
+            "on": "long-rest",
+            "amount": "all"
+          }
+        ],
+        "provenance": {
+          "source": "hand",
+          "review": "unreviewed"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:sorcerer:metamagic",
+    "kind": "class-feature",
+    "name": "Metamagic",
+    "source": "srd",
+    "page": "PHB 99",
+    "tags": [
+      "sorcerer-feature"
+    ],
+    "text": "At 3rd level, you gain the ability to twist your spells to suit your needs. You gain two of the following Metamagic options of your choice. You gain another one at 10th and 17th level.\n\nYou can use only one Metamagic option on a spell when you cast it, unless otherwise noted."
+  },
+  {
+    "id": "srd:sorcerer:metamagic-10",
+    "kind": "class-feature",
+    "name": "Metamagic",
+    "source": "srd",
+    "page": "PHB 99",
+    "tags": [
+      "sorcerer-feature"
+    ],
+    "text": "At 10th level, you learn an additional metamagic option."
+  },
+  {
+    "id": "srd:sorcerer:metamagic-17",
+    "kind": "class-feature",
+    "name": "Metamagic",
+    "source": "srd",
+    "page": "PHB 99",
+    "tags": [
+      "sorcerer-feature"
+    ],
+    "text": "At 17th level, you learn an additional metamagic option."
+  },
+  {
+    "id": "srd:sorcerer:sorcerous-restoration",
+    "kind": "class-feature",
+    "name": "Sorcerous Restoration",
+    "source": "srd",
+    "page": "PHB 99",
+    "tags": [
+      "sorcerer-feature"
+    ],
+    "text": "At 20th level, you regain 4 expended sorcery points whenever you finish a short rest.",
+    "actions": [
+      {
+        "id": "sorcerous-restoration",
+        "name": "Sorcerous Restoration",
+        "activation": "special",
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  }
+]

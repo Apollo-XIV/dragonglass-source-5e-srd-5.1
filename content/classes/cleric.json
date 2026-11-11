@@ -1,0 +1,307 @@
+[
+  {
+    "id": "srd:class:cleric",
+    "kind": "class",
+    "name": "Cleric",
+    "source": "srd",
+    "page": "PHB 56",
+    "key": "cleric",
+    "hitDie": "d8",
+    "tags": [
+      "srd-class"
+    ],
+    "text": "**Hit Dice:** 1d8 per cleric level.\n\n**Hit Points at 1st Level:** 8 + your Constitution modifier.\n\n**Hit Points at Higher Levels:** 1d8 (or 5) + your Constitution modifier per cleric level after 1st.\n\n**Armor:** Light, medium, shield\n**Weapons:** Simple\n**Tools:** None\n**Saving Throws:** Wisdom, Charisma\n**Skills:** Choose 2 from history, insight, medicine, persuasion, religion\n\n**Equipment:** You start with the following equipment, in addition to the equipment granted by your background:\n\n- (a) a mace or (b) a warhammer (if proficient)\n- (a) scale mail, (b) leather armor, or (c) chain mail (if proficient)\n- (a) a light crossbow and 20 bolts or (b) any simple weapon\n- (a) a priest's pack or (b) an explorer's pack\n- A shield and a holy symbol\n\nAlternatively, you may start with 5d4 × 10 gp to buy your own equipment.",
+    "multiclassRequires": {
+      "all": [
+        {
+          "type": "ability",
+          "ability": "wis",
+          "min": 13
+        }
+      ],
+      "text": "Wisdom 13"
+    },
+    "primaryAbility": [
+      "wis"
+    ],
+    "x-multiclass-proficiencies": {
+      "armor": [
+        "light",
+        "medium",
+        "shield"
+      ],
+      "armorProficiencies": [
+        {
+          "light": true,
+          "medium": true,
+          "shield": true
+        }
+      ]
+    },
+    "spellcasting": {
+      "ability": "wis",
+      "progression": "full",
+      "type": "prepared",
+      "list": "cleric-spell",
+      "cantrips": "@table(cleric, cantrips-known)",
+      "prepared": "@level(cleric) + @abilities.wis.mod"
+    },
+    "tables": {
+      "cantrips-known": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "channel-divinity": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ]
+    },
+    "levels": {
+      "1": {
+        "choices": [
+          {
+            "id": "srd:class:cleric:skill",
+            "name": "Skill Proficiency",
+            "count": 2,
+            "from": {
+              "ids": [
+                "srd:skill:history",
+                "srd:skill:insight",
+                "srd:skill:medicine",
+                "srd:skill:persuasion",
+                "srd:skill:religion"
+              ]
+            }
+          },
+          {
+            "id": "srd:class:cleric:subclass",
+            "name": "Divine Domain",
+            "count": 1,
+            "from": {
+              "kind": "subclass",
+              "tags": [
+                "cleric-subclass"
+              ]
+            }
+          }
+        ],
+        "modifiers": [
+          {
+            "target": "saves.wis",
+            "op": "proficiency",
+            "value": "proficient"
+          },
+          {
+            "target": "saves.cha",
+            "op": "proficiency",
+            "value": "proficient"
+          },
+          {
+            "target": "proficiencies.armor",
+            "op": "include",
+            "value": [
+              "light",
+              "medium",
+              "shield"
+            ]
+          },
+          {
+            "target": "proficiencies.weapon",
+            "op": "include",
+            "value": [
+              "simple"
+            ]
+          }
+        ],
+        "grants": [
+          "srd:cleric:spellcasting",
+          "srd:cleric:divine-domain"
+        ]
+      },
+      "2": {
+        "grants": [
+          "srd:cleric:channel-divinity"
+        ]
+      },
+      "4": {
+        "choices": [
+          {
+            "id": "srd:class:cleric:asi-4",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "5": {
+        "grants": [
+          "srd:cleric:destroy-undead-cr-1-2"
+        ]
+      },
+      "6": {
+        "grants": [
+          "srd:cleric:channel-divinity-6"
+        ]
+      },
+      "8": {
+        "choices": [
+          {
+            "id": "srd:class:cleric:asi-8",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ],
+        "grants": [
+          "srd:cleric:destroy-undead-cr-1"
+        ]
+      },
+      "10": {
+        "grants": [
+          "srd:cleric:divine-intervention"
+        ]
+      },
+      "11": {
+        "grants": [
+          "srd:cleric:destroy-undead-cr-2"
+        ]
+      },
+      "12": {
+        "choices": [
+          {
+            "id": "srd:class:cleric:asi-12",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "14": {
+        "grants": [
+          "srd:cleric:destroy-undead-cr-3"
+        ]
+      },
+      "16": {
+        "choices": [
+          {
+            "id": "srd:class:cleric:asi-16",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "17": {
+        "grants": [
+          "srd:cleric:destroy-undead-cr-4"
+        ]
+      },
+      "18": {
+        "grants": [
+          "srd:cleric:channel-divinity-18"
+        ]
+      },
+      "19": {
+        "choices": [
+          {
+            "id": "srd:class:cleric:asi-19",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "20": {
+        "grants": [
+          "srd:cleric:divine-intervention-improvement"
+        ]
+      }
+    }
+  }
+]

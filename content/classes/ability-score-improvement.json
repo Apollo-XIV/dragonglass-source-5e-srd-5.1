@@ -1,0 +1,25 @@
+[
+  {
+    "id": "srd:feature:ability-score-improvement",
+    "kind": "feature",
+    "name": "Ability Score Improvement",
+    "source": "srd",
+    "tags": [
+      "ability-score-improvement"
+    ],
+    "text": "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.\n\nIf your DM allows the use of feats, you may instead take a feat.",
+    "choices": [
+      {
+        "id": "srd:asi:points",
+        "name": "Ability increases",
+        "count": 2,
+        "repeatable": true,
+        "maxPer": 2,
+        "from": {
+          "kind": "ability-point"
+        },
+        "text": "Two points to spend: one point each in two abilities, or both in one."
+      }
+    ]
+  }
+]

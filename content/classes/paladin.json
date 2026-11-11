@@ -1,0 +1,284 @@
+[
+  {
+    "id": "srd:class:paladin",
+    "kind": "class",
+    "name": "Paladin",
+    "source": "srd",
+    "page": "PHB 82",
+    "key": "paladin",
+    "hitDie": "d10",
+    "tags": [
+      "srd-class"
+    ],
+    "text": "**Hit Dice:** 1d10 per paladin level.\n\n**Hit Points at 1st Level:** 10 + your Constitution modifier.\n\n**Hit Points at Higher Levels:** 1d10 (or 6) + your Constitution modifier per paladin level after 1st.\n\n**Armor:** Light, medium, heavy, shield\n**Weapons:** Simple, martial\n**Tools:** None\n**Saving Throws:** Wisdom, Charisma\n**Skills:** Choose 2 from athletics, insight, intimidation, medicine, persuasion, religion\n\n**Equipment:** You start with the following equipment, in addition to the equipment granted by your background:\n\n- (a) a martial weapon and a shield or (b) two martial weapons\n- (a) five javelins or (b) any simple melee weapon\n- (a) a priest's pack or (b) an explorer's pack\n- Chain mail and a holy symbol\n\nAlternatively, you may start with 5d4 × 10 gp to buy your own equipment.",
+    "multiclassRequires": {
+      "all": [
+        {
+          "type": "ability",
+          "ability": "str",
+          "min": 13
+        },
+        {
+          "type": "ability",
+          "ability": "cha",
+          "min": 13
+        }
+      ],
+      "text": "Strength 13 and Charisma 13"
+    },
+    "primaryAbility": [
+      "str",
+      "cha"
+    ],
+    "x-multiclass-proficiencies": {
+      "weapons": [
+        "simple",
+        "martial"
+      ],
+      "armor": [
+        "light",
+        "medium",
+        "shield"
+      ],
+      "armorProficiencies": [
+        {
+          "light": true,
+          "medium": true,
+          "shield": true
+        }
+      ]
+    },
+    "spellcasting": {
+      "ability": "cha",
+      "progression": "half",
+      "type": "prepared",
+      "list": "paladin-spell",
+      "startsAt": 2,
+      "prepared": "floor(@level(paladin) / 2) + @abilities.cha.mod"
+    },
+    "levels": {
+      "1": {
+        "choices": [
+          {
+            "id": "srd:class:paladin:skill",
+            "name": "Skill Proficiency",
+            "count": 2,
+            "from": {
+              "ids": [
+                "srd:skill:athletics",
+                "srd:skill:insight",
+                "srd:skill:intimidation",
+                "srd:skill:medicine",
+                "srd:skill:persuasion",
+                "srd:skill:religion"
+              ]
+            }
+          }
+        ],
+        "modifiers": [
+          {
+            "target": "saves.wis",
+            "op": "proficiency",
+            "value": "proficient"
+          },
+          {
+            "target": "saves.cha",
+            "op": "proficiency",
+            "value": "proficient"
+          },
+          {
+            "target": "proficiencies.armor",
+            "op": "include",
+            "value": [
+              "light",
+              "medium",
+              "heavy",
+              "shield"
+            ]
+          },
+          {
+            "target": "proficiencies.weapon",
+            "op": "include",
+            "value": [
+              "simple",
+              "martial"
+            ]
+          }
+        ],
+        "grants": [
+          "srd:paladin:divine-sense",
+          "srd:paladin:lay-on-hands"
+        ]
+      },
+      "2": {
+        "grants": [
+          "srd:paladin:divine-smite",
+          "srd:paladin:fighting-style",
+          "srd:paladin:spellcasting"
+        ],
+        "choices": [
+          {
+            "id": "srd:class:paladin:fighting-style-2",
+            "name": "Fighting Style",
+            "count": 1,
+            "from": {
+              "kind": "fighting-style",
+              "tags": [
+                "paladin-fighting-style"
+              ]
+            }
+          }
+        ]
+      },
+      "3": {
+        "grants": [
+          "srd:paladin:divine-health",
+          "srd:paladin:sacred-oath"
+        ],
+        "choices": [
+          {
+            "id": "srd:class:paladin:subclass",
+            "name": "Sacred Oath",
+            "count": 1,
+            "from": {
+              "kind": "subclass",
+              "tags": [
+                "paladin-subclass"
+              ]
+            }
+          }
+        ]
+      },
+      "4": {
+        "choices": [
+          {
+            "id": "srd:class:paladin:asi-4",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "5": {
+        "grants": [
+          "srd:paladin:extra-attack"
+        ]
+      },
+      "6": {
+        "grants": [
+          "srd:paladin:aura-of-protection"
+        ]
+      },
+      "8": {
+        "choices": [
+          {
+            "id": "srd:class:paladin:asi-8",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "10": {
+        "grants": [
+          "srd:paladin:aura-of-courage"
+        ]
+      },
+      "11": {
+        "grants": [
+          "srd:paladin:improved-divine-smite"
+        ]
+      },
+      "12": {
+        "choices": [
+          {
+            "id": "srd:class:paladin:asi-12",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "14": {
+        "grants": [
+          "srd:paladin:cleansing-touch"
+        ]
+      },
+      "16": {
+        "choices": [
+          {
+            "id": "srd:class:paladin:asi-16",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "18": {
+        "grants": [
+          "srd:paladin:aura-improvements"
+        ]
+      },
+      "19": {
+        "choices": [
+          {
+            "id": "srd:class:paladin:asi-19",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      }
+    }
+  }
+]

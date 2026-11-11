@@ -1,0 +1,238 @@
+[
+  {
+    "id": "srd:ranger:favored-enemy",
+    "kind": "class-feature",
+    "name": "Favored Enemy",
+    "source": "srd",
+    "page": "PHB 89",
+    "tags": [
+      "ranger-feature"
+    ],
+    "text": "Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy.\n\nChoose a type of favored enemy: aberrations, beasts, celestials, constructs, dragons, elementals, fey, fiends, giants, monstrosities, oozes, plants, or undead. Alternatively, you can select two races of humanoid (such as gnolls and orcs) as favored enemies.\n\nYou have advantage on Wisdom (Survival) checks to track your favored enemies, as well as on Intelligence checks to recall information about them.\n\nWhen you gain this feature, you also learn one language of your choice that is spoken by your favored enemies, if they speak one at all.\n\nYou choose one additional favored enemy, as well as an associated language, at 6th and 14th level. As you gain levels, your choices should reflect the types of monsters you have encountered on your adventures."
+  },
+  {
+    "id": "srd:ranger:natural-explorer",
+    "kind": "class-feature",
+    "name": "Natural Explorer",
+    "source": "srd",
+    "page": "PHB 89",
+    "tags": [
+      "ranger-feature"
+    ],
+    "text": "You are particularly familiar with one type of natural environment and are adept at traveling and surviving in such regions. Choose one type of favored terrain: arctic, coast, desert, forest, grassland, mountain, swamp, or the Underdark. When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency bonus is doubled if you are using a skill that you're proficient in.\n\nWhile traveling for an hour or more in your favored terrain, you gain the following benefits:\n\n- Difficult terrain doesn't slow your group's travel.\n- Your group can't become lost except by magical means.\n- Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.\n- If you are traveling alone, you can move stealthily at a normal pace.\n- When you forage, you find twice as much food as you normally would.\n- While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.\n\nYou choose additional favored terrain types at 6th and 10th level."
+  },
+  {
+    "id": "srd:ranger:fighting-style",
+    "kind": "class-feature",
+    "name": "Fighting Style",
+    "source": "srd",
+    "page": "PHB 89",
+    "tags": [
+      "ranger-feature"
+    ],
+    "text": "At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again."
+  },
+  {
+    "id": "srd:ranger:spellcasting",
+    "kind": "class-feature",
+    "name": "Spellcasting",
+    "source": "srd",
+    "page": "PHB 89",
+    "tags": [
+      "ranger-feature"
+    ],
+    "text": "By the time you reach 2nd level, you have learned to use the magical essence of nature to cast spells, much as a druid does. See chapter 10 for the general rules of spellcasting and chapter 11 for the ranger spell list.\n\n**Spell Slots.** The Ranger table shows how many spell slots you have to cast your ranger spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.\n\nFor example, if you know the 1st-level spell animal friendship and have a 1st-level and a 2nd-level spell slot available, you can cast animal friendship using either slot.\n\n**Spells Known of 1st Level and Higher.** You know two 1st-level spells of your choice from the ranger spell list.\n\nThe Spells Known column of the Ranger table shows when you learn more ranger spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level.\n\nAdditionally, when you gain a level in this class, you can choose one of the ranger spells you know and replace it with another spell from the ranger spell list, which also must be of a level for which you have spell slots.\n\n**Spellcasting Ability.** Wisdom is your spellcasting ability for your ranger spells, since your magic draws on your attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a ranger spell you cast and when making an attack roll with one.\n\n**Spell save DC** = 8 + your proficiency bonus + your Wisdom modifier\n\n**Spell attack modifier** = your proficiency bonus + your Wisdom modifier"
+  },
+  {
+    "id": "srd:ranger:ranger-archetype",
+    "kind": "class-feature",
+    "name": "Ranger Archetype",
+    "source": "srd",
+    "page": "PHB 89",
+    "tags": [
+      "ranger-feature"
+    ],
+    "text": "At 3rd level, you choose an archetype that you strive to emulate from the list of available archetypes. Your choice grants features at 3rd level, and again at 7th, 11th, and 15th level."
+  },
+  {
+    "id": "srd:ranger:primeval-awareness",
+    "kind": "class-feature",
+    "name": "Primeval Awareness",
+    "source": "srd",
+    "page": "PHB 89",
+    "tags": [
+      "ranger-feature"
+    ],
+    "text": "Beginning at 3rd level, you can use your action and expend one ranger spell slot to focus your awareness on the region around you. For 1 minute per level of the spell slot you expend, you can sense whether the following types of creatures are present within 1 mile of you (or within up to 6 miles if you are in your favored terrain): aberrations, celestials, dragons, elementals, fey, fiends, and undead. This feature doesn't reveal the creatures' location or number.",
+    "actions": [
+      {
+        "id": "primeval-awareness",
+        "name": "Primeval Awareness",
+        "activation": "action",
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:ranger:extra-attack",
+    "kind": "class-feature",
+    "name": "Extra Attack",
+    "source": "srd",
+    "page": "PHB 89",
+    "tags": [
+      "ranger-feature"
+    ],
+    "text": "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
+  },
+  {
+    "id": "srd:ranger:favored-enemy-and-natural-explorer-improvements",
+    "kind": "class-feature",
+    "name": "Favored Enemy and Natural Explorer improvements",
+    "source": "srd",
+    "page": "PHB 89",
+    "tags": [
+      "ranger-feature"
+    ],
+    "text": "At 6th level, you gain an additional favored terrain.\n\nAt 6th level, you choose one additional favored enemy, as well as an associated language. Your choice should reflect the types of monsters you have encountered on your adventures."
+  },
+  {
+    "id": "srd:ranger:lands-stride",
+    "kind": "class-feature",
+    "name": "Land's Stride",
+    "source": "srd",
+    "page": "PHB 89",
+    "tags": [
+      "ranger-feature"
+    ],
+    "text": "Starting at 8th level, moving through nonmagical difficult terrain costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.\n\nIn addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such as those created by the entangle spell."
+  },
+  {
+    "id": "srd:ranger:hide-in-plain-sight",
+    "kind": "class-feature",
+    "name": "Hide in Plain Sight",
+    "source": "srd",
+    "page": "PHB 89",
+    "tags": [
+      "ranger-feature"
+    ],
+    "text": "Starting at 10th level, you can spend 1 minute creating camouflage for yourself. You must have access to fresh mud, dirt, plants, soot, and other naturally occurring materials with which to create your camouflage.\n\nOnce you are camouflaged in this way, you can try to hide by pressing yourself up against a solid surface, such as a tree or wall, that is at least as tall and wide as you are. You gain a +10 bonus to Dexterity (Stealth) checks as long as you remain there without moving or taking actions. Once you move or take an action or a reaction, you must camouflage yourself again to gain this benefit.",
+    "actions": [
+      {
+        "id": "hide-in-plain-sight",
+        "name": "Hide in Plain Sight",
+        "activation": "minute",
+        "applies": "hide-in-plain-sight",
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ],
+    "effects": [
+      {
+        "id": "hide-in-plain-sight",
+        "name": "Hide in Plain Sight",
+        "modifiers": [
+          {
+            "target": "skills.stealth",
+            "op": "add",
+            "value": 10
+          }
+        ],
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:ranger:natural-explorer-improvement",
+    "kind": "class-feature",
+    "name": "Natural Explorer improvement",
+    "source": "srd",
+    "page": "PHB 89",
+    "tags": [
+      "ranger-feature"
+    ],
+    "text": "You gain an additional favored terrain."
+  },
+  {
+    "id": "srd:ranger:vanish",
+    "kind": "class-feature",
+    "name": "Vanish",
+    "source": "srd",
+    "page": "PHB 89",
+    "tags": [
+      "ranger-feature"
+    ],
+    "text": "Starting at 14th level, you can use the Hide action as a bonus action on your turn. Also, you can't be tracked by nonmagical means, unless you choose to leave a trail.",
+    "actions": [
+      {
+        "id": "vanish",
+        "name": "Vanish",
+        "activation": "bonus-action",
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:ranger:favored-enemy-improvement",
+    "kind": "class-feature",
+    "name": "Favored Enemy improvement",
+    "source": "srd",
+    "page": "PHB 89",
+    "tags": [
+      "ranger-feature"
+    ],
+    "text": "At 14th level, you choose one additional favored enemy, as well as an associated language. Your choice should reflect the types of monsters you have encountered on your adventures."
+  },
+  {
+    "id": "srd:ranger:feral-senses",
+    "kind": "class-feature",
+    "name": "Feral Senses",
+    "source": "srd",
+    "page": "PHB 89",
+    "tags": [
+      "ranger-feature"
+    ],
+    "text": "At 18th level, you gain preternatural senses that help you fight creatures you can't see. When you attack a creature you can't see, your inability to see it doesn't impose disadvantage on your attack rolls against it. You are also aware of the location of any invisible creature within 30 feet of you, provided that the creature isn't hidden from you and you aren't blinded or deafened."
+  },
+  {
+    "id": "srd:ranger:foe-slayer",
+    "kind": "class-feature",
+    "name": "Foe Slayer",
+    "source": "srd",
+    "page": "PHB 89",
+    "tags": [
+      "ranger-feature"
+    ],
+    "text": "At 20th level, you become an unparalleled hunter of your enemies. Once on each of your turns, you can add your Wisdom modifier to the attack roll or the damage roll of an attack you make against one of your favored enemies. You can choose to use this feature before or after the roll, but before any effects of the roll are applied.",
+    "actions": [
+      {
+        "id": "foe-slayer",
+        "name": "Foe Slayer",
+        "activation": "special",
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      },
+      {
+        "id": "foe-slayer-2",
+        "name": "Foe Slayer",
+        "activation": "special",
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  }
+]

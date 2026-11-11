@@ -1,0 +1,216 @@
+[
+  {
+    "id": "srd:fighter:fighting-style",
+    "kind": "class-feature",
+    "name": "Fighting Style",
+    "source": "srd",
+    "page": "PHB 72",
+    "tags": [
+      "fighter-feature"
+    ],
+    "text": "You adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take the same Fighting Style option more than once, even if you get to choose again."
+  },
+  {
+    "id": "srd:fighter:second-wind",
+    "kind": "class-feature",
+    "name": "Second Wind",
+    "source": "srd",
+    "page": "PHB 72",
+    "tags": [
+      "fighter-feature"
+    ],
+    "text": "You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your fighter level.\n\nOnce you use this feature, you must finish a short or long rest before you can use it again.",
+    "resources": [
+      {
+        "id": "srd:fighter:second-wind",
+        "name": "Second Wind",
+        "max": 1,
+        "recharge": [
+          {
+            "on": "short-rest",
+            "amount": "all"
+          }
+        ],
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ],
+    "actions": [
+      {
+        "id": "second-wind",
+        "name": "Second Wind",
+        "activation": "bonus-action",
+        "cost": {
+          "srd:fighter:second-wind": 1
+        },
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:fighter:action-surge",
+    "kind": "class-feature",
+    "name": "Action Surge",
+    "source": "srd",
+    "page": "PHB 72",
+    "tags": [
+      "fighter-feature"
+    ],
+    "text": "Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action.\n\nOnce you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn.",
+    "resources": [
+      {
+        "id": "srd:fighter:action-surge",
+        "name": "Action Surge",
+        "max": "@table(fighter, action-surge)",
+        "recharge": [
+          {
+            "on": "short-rest",
+            "amount": "all"
+          }
+        ],
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ],
+    "actions": [
+      {
+        "id": "action-surge",
+        "name": "Action Surge",
+        "activation": "special",
+        "cost": {
+          "srd:fighter:action-surge": 1
+        },
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:fighter:martial-archetype",
+    "kind": "class-feature",
+    "name": "Martial Archetype",
+    "source": "srd",
+    "page": "PHB 72",
+    "tags": [
+      "fighter-feature"
+    ],
+    "text": "At 3rd level, you choose an archetype from the list available that you strive to emulate in your combat styles and techniques. The archetype you choose grants you features at 3rd level and again at 7th, 10th, 15th, and 18th level."
+  },
+  {
+    "id": "srd:fighter:extra-attack",
+    "kind": "class-feature",
+    "name": "Extra Attack",
+    "source": "srd",
+    "page": "PHB 72",
+    "tags": [
+      "fighter-feature"
+    ],
+    "text": "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.\n\nThe number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class."
+  },
+  {
+    "id": "srd:fighter:indomitable",
+    "kind": "class-feature",
+    "name": "Indomitable",
+    "source": "srd",
+    "page": "PHB 72",
+    "tags": [
+      "fighter-feature"
+    ],
+    "text": "Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can't use this feature again until you finish a long rest.\n\nYou can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level.",
+    "resources": [
+      {
+        "id": "srd:fighter:indomitable",
+        "name": "Indomitable",
+        "max": "@table(fighter, indomitable)",
+        "recharge": [
+          {
+            "on": "long-rest",
+            "amount": "all"
+          }
+        ],
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ],
+    "actions": [
+      {
+        "id": "indomitable",
+        "name": "Indomitable",
+        "activation": "special",
+        "cost": {
+          "srd:fighter:indomitable": 1
+        },
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:fighter:extra-attack-2",
+    "kind": "class-feature",
+    "name": "Extra Attack (2)",
+    "source": "srd",
+    "page": "PHB 72",
+    "tags": [
+      "fighter-feature"
+    ],
+    "text": "At 11th level, you can attack three times whenever you take the Attack action on your turn."
+  },
+  {
+    "id": "srd:fighter:indomitable-two-uses",
+    "kind": "class-feature",
+    "name": "Indomitable (two uses)",
+    "source": "srd",
+    "page": "PHB 72",
+    "tags": [
+      "fighter-feature"
+    ],
+    "text": "At 13th level, you can use Indomitable twice between long rests."
+  },
+  {
+    "id": "srd:fighter:action-surge-two-uses",
+    "kind": "class-feature",
+    "name": "Action Surge (two uses)",
+    "source": "srd",
+    "page": "PHB 72",
+    "tags": [
+      "fighter-feature"
+    ],
+    "text": "At 17th level, you can use Action Surge twice before a rest, but only once on the same turn."
+  },
+  {
+    "id": "srd:fighter:indomitable-three-uses",
+    "kind": "class-feature",
+    "name": "Indomitable (three uses)",
+    "source": "srd",
+    "page": "PHB 72",
+    "tags": [
+      "fighter-feature"
+    ],
+    "text": "At 17th level, you can use Indomitable three times between long rests."
+  },
+  {
+    "id": "srd:fighter:extra-attack-3",
+    "kind": "class-feature",
+    "name": "Extra Attack (3)",
+    "source": "srd",
+    "page": "PHB 72",
+    "tags": [
+      "fighter-feature"
+    ],
+    "text": "At 20th level, you can attack four times whenever you take the Attack action on your turn."
+  }
+]

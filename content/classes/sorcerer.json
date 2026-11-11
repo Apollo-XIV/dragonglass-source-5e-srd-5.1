@@ -1,0 +1,327 @@
+[
+  {
+    "id": "srd:class:sorcerer",
+    "kind": "class",
+    "name": "Sorcerer",
+    "source": "srd",
+    "page": "PHB 99",
+    "key": "sorcerer",
+    "hitDie": "d6",
+    "tags": [
+      "srd-class"
+    ],
+    "text": "**Hit Dice:** 1d6 per sorcerer level.\n\n**Hit Points at 1st Level:** 6 + your Constitution modifier.\n\n**Hit Points at Higher Levels:** 1d6 (or 4) + your Constitution modifier per sorcerer level after 1st.\n\n**Armor:** None\n**Weapons:** Daggers, darts, slings, quarterstaffs, light crossbows\n**Tools:** None\n**Saving Throws:** Constitution, Charisma\n**Skills:** Choose 2 from arcana, deception, insight, intimidation, persuasion, religion\n\n**Equipment:** You start with the following equipment, in addition to the equipment granted by your background:\n\n- (a) a light crossbow and 20 bolts or (b) any simple weapon\n- (a) a component pouch or (b) an arcane focus\n- (a) a dungeoneer's pack or (b) an explorer's pack\n- Two daggers\n\nAlternatively, you may start with 3d4 × 10 gp to buy your own equipment.",
+    "multiclassRequires": {
+      "all": [
+        {
+          "type": "ability",
+          "ability": "cha",
+          "min": 13
+        }
+      ],
+      "text": "Charisma 13"
+    },
+    "primaryAbility": [
+      "cha"
+    ],
+    "spellcasting": {
+      "ability": "cha",
+      "progression": "full",
+      "type": "known",
+      "list": "sorcerer-spell",
+      "cantrips": "@table(sorcerer, cantrips-known)",
+      "known": "@table(sorcerer, spells-known)"
+    },
+    "tables": {
+      "sorcery-points": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "cantrips-known": [
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "spells-known": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        12,
+        13,
+        13,
+        14,
+        14,
+        15,
+        15,
+        15,
+        15
+      ]
+    },
+    "levels": {
+      "1": {
+        "choices": [
+          {
+            "id": "srd:class:sorcerer:skill",
+            "name": "Skill Proficiency",
+            "count": 2,
+            "from": {
+              "ids": [
+                "srd:skill:arcana",
+                "srd:skill:deception",
+                "srd:skill:insight",
+                "srd:skill:intimidation",
+                "srd:skill:persuasion",
+                "srd:skill:religion"
+              ]
+            }
+          },
+          {
+            "id": "srd:class:sorcerer:subclass",
+            "name": "Sorcerous Origin",
+            "count": 1,
+            "from": {
+              "kind": "subclass",
+              "tags": [
+                "sorcerer-subclass"
+              ]
+            }
+          }
+        ],
+        "modifiers": [
+          {
+            "target": "saves.con",
+            "op": "proficiency",
+            "value": "proficient"
+          },
+          {
+            "target": "saves.cha",
+            "op": "proficiency",
+            "value": "proficient"
+          },
+          {
+            "target": "proficiencies.weapon",
+            "op": "include",
+            "value": [
+              "srd:item:dagger",
+              "srd:item:dart",
+              "srd:item:sling",
+              "srd:item:quarterstaff",
+              "srd:item:light-crossbow"
+            ]
+          }
+        ],
+        "grants": [
+          "srd:sorcerer:spellcasting",
+          "srd:sorcerer:sorcerous-origin"
+        ]
+      },
+      "2": {
+        "grants": [
+          "srd:sorcerer:font-of-magic"
+        ]
+      },
+      "3": {
+        "grants": [
+          "srd:sorcerer:metamagic"
+        ],
+        "choices": [
+          {
+            "id": "srd:class:sorcerer:metamagic-3",
+            "name": "Metamagic",
+            "count": 2,
+            "from": {
+              "kind": "metamagic",
+              "tags": [
+                "sorcerer-metamagic"
+              ]
+            }
+          }
+        ]
+      },
+      "4": {
+        "choices": [
+          {
+            "id": "srd:class:sorcerer:asi-4",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "8": {
+        "choices": [
+          {
+            "id": "srd:class:sorcerer:asi-8",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "10": {
+        "grants": [
+          "srd:sorcerer:metamagic-10"
+        ],
+        "choices": [
+          {
+            "id": "srd:class:sorcerer:metamagic-10",
+            "name": "Metamagic",
+            "count": 1,
+            "from": {
+              "kind": "metamagic",
+              "tags": [
+                "sorcerer-metamagic"
+              ]
+            }
+          }
+        ]
+      },
+      "12": {
+        "choices": [
+          {
+            "id": "srd:class:sorcerer:asi-12",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "16": {
+        "choices": [
+          {
+            "id": "srd:class:sorcerer:asi-16",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "17": {
+        "grants": [
+          "srd:sorcerer:metamagic-17"
+        ],
+        "choices": [
+          {
+            "id": "srd:class:sorcerer:metamagic-17",
+            "name": "Metamagic",
+            "count": 1,
+            "from": {
+              "kind": "metamagic",
+              "tags": [
+                "sorcerer-metamagic"
+              ]
+            }
+          }
+        ]
+      },
+      "19": {
+        "choices": [
+          {
+            "id": "srd:class:sorcerer:asi-19",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "20": {
+        "grants": [
+          "srd:sorcerer:sorcerous-restoration"
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "id": "srd",
+  "name": "System Reference Document 5.1",
+  "description": "Converted from 5etools SRD data (2014) by 5etools-to-dragonglass.",
+  "sourcebooks": [
+    "srd"
+  ]
+}

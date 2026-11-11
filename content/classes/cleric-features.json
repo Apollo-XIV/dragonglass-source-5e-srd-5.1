@@ -1,0 +1,228 @@
+[
+  {
+    "id": "srd:cleric:spellcasting",
+    "kind": "class-feature",
+    "name": "Spellcasting",
+    "source": "srd",
+    "page": "PHB 56",
+    "tags": [
+      "cleric-feature"
+    ],
+    "text": "As a conduit for divine power, you can cast cleric spells. See chapter 10 for the general rules of spellcasting and chapter 11 for a selection of cleric spells.\n\n**Cantrips.** At 1st level, you know three cantrips of your choice from the cleric spell list. You learn additional cleric cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Cleric table.\n\n**Preparing and Casting Spells.** The Cleric table shows how many spell slots you have to cast your cleric spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.\n\nYou prepare the list of cleric spells that are available for you to cast, choosing from the cleric spell list. When you do so, choose a number of cleric spells equal to your Wisdom modifier + your cleric level (minimum of one spell). The spells must be of a level for which you have spell slots.\n\nFor example, if you are a 3rd-level cleric, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell cure wounds, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.\n\nYou can change your list of prepared spells when you finish a long rest. Preparing a new list of cleric spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list.\n\n**Spellcasting Ability.** Wisdom is your spellcasting ability for your cleric spells. The power of your spells comes from your devotion to your deity. You use your Wisdom whenever a cleric spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a cleric spell you cast and when making an attack roll with one.\n\n**Spell save DC** = 8 + your proficiency bonus + your Wisdom modifier\n\n**Spell attack modifier** = your proficiency bonus + your Wisdom modifier\n\n**Ritual Casting.** You can cast a cleric spell as a ritual if that spell has the ritual tag and you have the spell prepared.\n\n**Spellcasting Focus.** You can use a holy symbol as a spellcasting focus for your cleric spells."
+  },
+  {
+    "id": "srd:cleric:divine-domain",
+    "kind": "class-feature",
+    "name": "Divine Domain",
+    "source": "srd",
+    "page": "PHB 56",
+    "tags": [
+      "cleric-feature"
+    ],
+    "text": "Choose one domain related to your deity from the list of available domains. Each domain is detailed in their own feature, and each one provides examples of gods associated with it. Your choice grants you domain spells and other features when you choose it at 1st level. It also grants you additional ways to use Channel Divinity when you gain that feature at 2nd level, and additional benefits at 6th, 8th, and 17th levels.\n\n**Domain Spells.** Each domain has a list of spells—its domain spells—that you gain at the cleric levels noted in the domain description. Once you gain a domain spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day.\n\nIf you have a domain spell that doesn't appear on the cleric spell list, the spell is nonetheless a cleric spell for you."
+  },
+  {
+    "id": "srd:cleric:channel-divinity-turn-undead",
+    "kind": "class-feature",
+    "name": "Channel Divinity: Turn Undead",
+    "source": "srd",
+    "page": "PHB 56",
+    "tags": [
+      "cleric-feature"
+    ],
+    "text": "As an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.\n\nA turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.",
+    "actions": [
+      {
+        "id": "channel-divinity-turn-undead",
+        "name": "Channel Divinity: Turn Undead",
+        "activation": "action",
+        "cost": {
+          "srd:cleric:channel-divinity": 1
+        },
+        "save": {
+          "ability": "wis",
+          "dc": "8 + @prof + @abilities.wis.mod"
+        },
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:cleric:channel-divinity",
+    "kind": "class-feature",
+    "name": "Channel Divinity",
+    "source": "srd",
+    "page": "PHB 56",
+    "tags": [
+      "cleric-feature"
+    ],
+    "text": "At 2nd level, you gain the ability to channel divine energy directly from your deity, using that energy to fuel magical effects. You start with two such effects: Turn Undead and an effect determined by your domain. Some domains grant you additional effects as you advance in levels, as noted in the domain description.\n\nWhen you use your Channel Divinity, you choose which effect to create. You must then finish a short or long rest to use your Channel Divinity again.\n\nSome Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your cleric spell save DC.\n\nBeginning at 6th level, you can use your Channel Divinity twice between rests, and beginning at 18th level, you can use it three times between rests. When you finish a short or long rest, you regain your expended uses.",
+    "grants": [
+      "srd:cleric:channel-divinity-turn-undead"
+    ],
+    "resources": [
+      {
+        "id": "srd:cleric:channel-divinity",
+        "name": "Channel Divinity",
+        "max": "@table(cleric, channel-divinity)",
+        "recharge": [
+          {
+            "on": "short-rest",
+            "amount": "all"
+          }
+        ],
+        "provenance": {
+          "source": "hand",
+          "review": "reviewed"
+        }
+      }
+    ],
+    "actions": [
+      {
+        "id": "channel-divinity",
+        "name": "Channel Divinity",
+        "activation": "special",
+        "cost": {
+          "srd:cleric:channel-divinity": 1
+        },
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:cleric:destroy-undead-cr-1-2",
+    "kind": "class-feature",
+    "name": "Destroy Undead (CR 1/2)",
+    "source": "srd",
+    "page": "PHB 56",
+    "tags": [
+      "cleric-feature"
+    ],
+    "text": "Starting at 5th level, when an undead of CR 1/2 or lower fails its saving throw against your Turn Undead feature, the creature is instantly destroyed."
+  },
+  {
+    "id": "srd:cleric:channel-divinity-6",
+    "kind": "class-feature",
+    "name": "Channel Divinity",
+    "source": "srd",
+    "page": "PHB 56",
+    "tags": [
+      "cleric-feature"
+    ],
+    "text": "Beginning at 6th level, you can use your Channel Divinity twice between rests."
+  },
+  {
+    "id": "srd:cleric:destroy-undead-cr-1",
+    "kind": "class-feature",
+    "name": "Destroy Undead (CR 1)",
+    "source": "srd",
+    "page": "PHB 56",
+    "tags": [
+      "cleric-feature"
+    ],
+    "text": "Starting at 8th level, when an undead of CR 1 or lower fails its saving throw against your Turn Undead feature, the creature is instantly destroyed."
+  },
+  {
+    "id": "srd:cleric:divine-intervention",
+    "kind": "class-feature",
+    "name": "Divine Intervention",
+    "source": "srd",
+    "page": "PHB 56",
+    "tags": [
+      "cleric-feature"
+    ],
+    "text": "Beginning at 10th level, you can call on your deity to intervene on your behalf when your need is great.\n\nImploring your deity's aid requires you to use your action. Describe the assistance you seek, and roll percentile dice. If you roll a number equal to or lower than your cleric level, your deity intervenes. The DM chooses the nature of the intervention; the effect of any cleric spell or cleric domain spell would be appropriate. If your deity intervenes, you can't use this feature again for 7 days. Otherwise, you can use it again after you finish a long rest.\n\nAt 20th level, your call for intervention succeeds automatically, no roll required.",
+    "resources": [
+      {
+        "id": "srd:cleric:divine-intervention",
+        "name": "Divine Intervention",
+        "max": 1,
+        "recharge": [
+          {
+            "on": "long-rest",
+            "amount": "all"
+          }
+        ],
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ],
+    "actions": [
+      {
+        "id": "divine-intervention",
+        "name": "Divine Intervention",
+        "activation": "action",
+        "cost": {
+          "srd:cleric:divine-intervention": 1
+        },
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:cleric:destroy-undead-cr-2",
+    "kind": "class-feature",
+    "name": "Destroy Undead (CR 2)",
+    "source": "srd",
+    "page": "PHB 56",
+    "tags": [
+      "cleric-feature"
+    ],
+    "text": "Starting at 11th level, when an undead of CR 2 or lower fails its saving throw against your Turn Undead feature, the creature is instantly destroyed."
+  },
+  {
+    "id": "srd:cleric:destroy-undead-cr-3",
+    "kind": "class-feature",
+    "name": "Destroy Undead (CR 3)",
+    "source": "srd",
+    "page": "PHB 56",
+    "tags": [
+      "cleric-feature"
+    ],
+    "text": "Starting at 14th level, when an undead of CR 3 or lower fails its saving throw against your Turn Undead feature, the creature is instantly destroyed."
+  },
+  {
+    "id": "srd:cleric:destroy-undead-cr-4",
+    "kind": "class-feature",
+    "name": "Destroy Undead (CR 4)",
+    "source": "srd",
+    "page": "PHB 56",
+    "tags": [
+      "cleric-feature"
+    ],
+    "text": "Starting at 17th level, when an undead of CR 4 or lower fails its saving throw against your Turn Undead feature, the creature is instantly destroyed."
+  },
+  {
+    "id": "srd:cleric:channel-divinity-18",
+    "kind": "class-feature",
+    "name": "Channel Divinity",
+    "source": "srd",
+    "page": "PHB 56",
+    "tags": [
+      "cleric-feature"
+    ],
+    "text": "Beginning at 18th level, you can use your Channel Divinity three times between rests."
+  },
+  {
+    "id": "srd:cleric:divine-intervention-improvement",
+    "kind": "class-feature",
+    "name": "Divine Intervention Improvement",
+    "source": "srd",
+    "page": "PHB 56",
+    "tags": [
+      "cleric-feature"
+    ],
+    "text": "At 20th level, your call for intervention succeeds automatically, no roll required."
+  }
+]

@@ -1,0 +1,404 @@
+[
+  {
+    "id": "srd:class:bard",
+    "kind": "class",
+    "name": "Bard",
+    "source": "srd",
+    "page": "PHB 51",
+    "key": "bard",
+    "hitDie": "d8",
+    "tags": [
+      "srd-class"
+    ],
+    "text": "**Hit Dice:** 1d8 per bard level.\n\n**Hit Points at 1st Level:** 8 + your Constitution modifier.\n\n**Hit Points at Higher Levels:** 1d8 (or 5) + your Constitution modifier per bard level after 1st.\n\n**Armor:** Light\n**Weapons:** Simple, hand crossbows, longswords, rapiers, shortswords\n**Tools:** Three musical instruments of your choice\n**Saving Throws:** Dexterity, Charisma\n**Skills:** Any\n\n**Equipment:** You start with the following equipment, in addition to the equipment granted by your background:\n\n- (a) a rapier, (b) a longsword, or (c) any simple weapon\n- (a) a diplomat's pack or (b) an entertainer's pack\n- (a) a lute or (b) any other musical instrument\n- Leather armor, and a dagger\n\nAlternatively, you may start with 5d4 × 10 gp to buy your own equipment.",
+    "multiclassRequires": {
+      "all": [
+        {
+          "type": "ability",
+          "ability": "cha",
+          "min": 13
+        }
+      ],
+      "text": "Charisma 13"
+    },
+    "primaryAbility": [
+      "cha"
+    ],
+    "x-multiclass-proficiencies": {
+      "skills": [
+        {
+          "choose": {
+            "from": [
+              "athletics",
+              "acrobatics",
+              "sleight of hand",
+              "stealth",
+              "arcana",
+              "history",
+              "investigation",
+              "nature",
+              "religion",
+              "animal handling",
+              "insight",
+              "medicine",
+              "perception",
+              "survival",
+              "deception",
+              "intimidation",
+              "performance",
+              "persuasion"
+            ],
+            "count": 1
+          }
+        }
+      ],
+      "tools": [
+        "one {@item musical instrument|PHB} of your choice"
+      ],
+      "toolProficiencies": [
+        {
+          "anyMusicalInstrument": 1
+        }
+      ],
+      "armor": [
+        "light"
+      ],
+      "armorProficiencies": [
+        {
+          "light": true
+        }
+      ]
+    },
+    "spellcasting": {
+      "ability": "cha",
+      "progression": "full",
+      "type": "known",
+      "list": "bard-spell",
+      "cantrips": "@table(bard, cantrips-known)",
+      "known": "@table(bard, spells-known)"
+    },
+    "tables": {
+      "cantrips-known": [
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "spells-known": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15,
+        15,
+        16,
+        18,
+        19,
+        19,
+        20,
+        22,
+        22,
+        22
+      ]
+    },
+    "levels": {
+      "1": {
+        "choices": [
+          {
+            "id": "srd:class:bard:skill",
+            "name": "Skill Proficiency",
+            "count": 3,
+            "from": {
+              "kind": "skill"
+            }
+          },
+          {
+            "id": "srd:class:bard:tool",
+            "name": "Tool Proficiency",
+            "count": 3,
+            "from": {
+              "kind": "tool",
+              "tags": [
+                "musical-instrument"
+              ]
+            },
+            "text": "three musical instruments of your choice"
+          }
+        ],
+        "modifiers": [
+          {
+            "target": "saves.dex",
+            "op": "proficiency",
+            "value": "proficient"
+          },
+          {
+            "target": "saves.cha",
+            "op": "proficiency",
+            "value": "proficient"
+          },
+          {
+            "target": "proficiencies.armor",
+            "op": "include",
+            "value": [
+              "light"
+            ]
+          },
+          {
+            "target": "proficiencies.weapon",
+            "op": "include",
+            "value": [
+              "simple",
+              "srd:item:hand-crossbow",
+              "srd:item:longsword",
+              "srd:item:rapier",
+              "srd:item:shortsword"
+            ]
+          }
+        ],
+        "grants": [
+          "srd:bard:bardic-inspiration",
+          "srd:bard:spellcasting"
+        ]
+      },
+      "2": {
+        "grants": [
+          "srd:bard:jack-of-all-trades",
+          "srd:bard:song-of-rest-d6"
+        ]
+      },
+      "3": {
+        "grants": [
+          "srd:bard:bard-college",
+          "srd:bard:expertise"
+        ],
+        "choices": [
+          {
+            "id": "srd:class:bard:subclass",
+            "name": "Bard College",
+            "count": 1,
+            "from": {
+              "kind": "subclass",
+              "tags": [
+                "bard-subclass"
+              ]
+            }
+          }
+        ]
+      },
+      "4": {
+        "choices": [
+          {
+            "id": "srd:class:bard:asi-4",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "5": {
+        "grants": [
+          "srd:bard:bardic-inspiration-d8",
+          "srd:bard:font-of-inspiration"
+        ]
+      },
+      "6": {
+        "grants": [
+          "srd:bard:countercharm"
+        ]
+      },
+      "8": {
+        "choices": [
+          {
+            "id": "srd:class:bard:asi-8",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "9": {
+        "grants": [
+          "srd:bard:song-of-rest-d8"
+        ]
+      },
+      "10": {
+        "choices": [
+          {
+            "id": "srd:class:bard:known-spells-10",
+            "name": "Spell",
+            "count": 2,
+            "from": {
+              "kind": "spell",
+              "allTags": [
+                "spell-level-max:5"
+              ]
+            },
+            "mode": "learned"
+          }
+        ],
+        "grants": [
+          "srd:bard:bardic-inspiration-d10",
+          "srd:bard:expertise-10",
+          "srd:bard:magical-secrets"
+        ]
+      },
+      "12": {
+        "choices": [
+          {
+            "id": "srd:class:bard:asi-12",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "13": {
+        "grants": [
+          "srd:bard:song-of-rest-d10"
+        ]
+      },
+      "14": {
+        "choices": [
+          {
+            "id": "srd:class:bard:known-spells-14",
+            "name": "Spell",
+            "count": 2,
+            "from": {
+              "kind": "spell",
+              "allTags": [
+                "spell-level-max:7"
+              ]
+            },
+            "mode": "learned"
+          }
+        ],
+        "grants": [
+          "srd:bard:magical-secrets-14"
+        ]
+      },
+      "15": {
+        "grants": [
+          "srd:bard:bardic-inspiration-d12"
+        ]
+      },
+      "16": {
+        "choices": [
+          {
+            "id": "srd:class:bard:asi-16",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "17": {
+        "grants": [
+          "srd:bard:song-of-rest-d12"
+        ]
+      },
+      "18": {
+        "choices": [
+          {
+            "id": "srd:class:bard:known-spells-18",
+            "name": "Spell",
+            "count": 2,
+            "from": {
+              "kind": "spell"
+            },
+            "mode": "learned"
+          }
+        ],
+        "grants": [
+          "srd:bard:magical-secrets-18"
+        ]
+      },
+      "19": {
+        "choices": [
+          {
+            "id": "srd:class:bard:asi-19",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "20": {
+        "grants": [
+          "srd:bard:superior-inspiration"
+        ]
+      }
+    }
+  }
+]

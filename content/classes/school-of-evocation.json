@@ -1,0 +1,180 @@
+[
+  {
+    "id": "srd:subclass:school-of-evocation",
+    "kind": "subclass",
+    "name": "School of Evocation",
+    "source": "srd",
+    "page": "PHB 117",
+    "class": "srd:class:wizard",
+    "tags": [
+      "wizard-subclass",
+      "srd-subclass"
+    ],
+    "levels": {
+      "2": {
+        "grants": [
+          "srd:evocation:school-of-evocation"
+        ]
+      },
+      "6": {
+        "grants": [
+          "srd:evocation:potent-cantrip"
+        ]
+      },
+      "10": {
+        "grants": [
+          "srd:evocation:empowered-evocation"
+        ]
+      },
+      "14": {
+        "grants": [
+          "srd:evocation:overchannel"
+        ]
+      }
+    }
+  },
+  {
+    "id": "srd:evocation:evocation-savant",
+    "kind": "subclass-feature",
+    "name": "Evocation Savant",
+    "source": "srd",
+    "page": "PHB 117",
+    "tags": [
+      "evocation-feature",
+      "wizard-feature"
+    ],
+    "text": "Beginning when you select this school at 2nd level, the gold and time you must spend to copy an evocation spell into your spellbook is halved."
+  },
+  {
+    "id": "srd:evocation:sculpt-spells",
+    "kind": "subclass-feature",
+    "name": "Sculpt Spells",
+    "source": "srd",
+    "page": "PHB 117",
+    "tags": [
+      "evocation-feature",
+      "wizard-feature"
+    ],
+    "text": "Beginning at 2nd level, you can create pockets of relative safety within the effects of your evocation spells. When you cast an evocation spell that affects other creatures that you can see, you can choose a number of them equal to 1 + the spell's level. The chosen creatures automatically succeed on their saving throws against the spell, and they take no damage if they would normally take half damage on a successful save.",
+    "actions": [
+      {
+        "id": "sculpt-spells",
+        "name": "Sculpt Spells",
+        "activation": "special",
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:evocation:school-of-evocation",
+    "kind": "subclass-feature",
+    "name": "School of Evocation",
+    "source": "srd",
+    "page": "PHB 117",
+    "tags": [
+      "evocation-feature",
+      "wizard-feature"
+    ],
+    "text": "You focus your study on magic that creates powerful elemental effects such as bitter cold, searing flame, rolling thunder, crackling lightning, and burning acid. Some evokers find employment in military forces, serving as artillery to blast enemy armies from afar. Others use their spectacular power to protect the weak, while some seek their own gain as bandits, adventurers, or aspiring tyrants.",
+    "grants": [
+      "srd:evocation:evocation-savant",
+      "srd:evocation:sculpt-spells"
+    ]
+  },
+  {
+    "id": "srd:evocation:potent-cantrip",
+    "kind": "subclass-feature",
+    "name": "Potent Cantrip",
+    "source": "srd",
+    "page": "PHB 117",
+    "tags": [
+      "evocation-feature",
+      "wizard-feature"
+    ],
+    "text": "Starting at 6th level, your damaging cantrips affect even creatures that avoid the brunt of the effect. When a creature succeeds on a saving throw against your cantrip, the creature takes half the cantrip's damage (if any) but suffers no additional effect from the cantrip."
+  },
+  {
+    "id": "srd:evocation:empowered-evocation",
+    "kind": "subclass-feature",
+    "name": "Empowered Evocation",
+    "source": "srd",
+    "page": "PHB 117",
+    "tags": [
+      "evocation-feature",
+      "wizard-feature"
+    ],
+    "text": "Beginning at 10th level, you can add your Intelligence modifier to one damage roll of any wizard evocation spell you cast.",
+    "actions": [
+      {
+        "id": "empowered-evocation",
+        "name": "Empowered Evocation",
+        "activation": "special",
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:evocation:overchannel",
+    "kind": "subclass-feature",
+    "name": "Overchannel",
+    "source": "srd",
+    "page": "PHB 117",
+    "tags": [
+      "evocation-feature",
+      "wizard-feature"
+    ],
+    "text": "Starting at 14th level, you can increase the power of your simpler spells. When you cast a wizard spell of 1st through 5th-level that deals damage, you can deal maximum damage with that spell.\n\nThe first time you do so, you suffer no adverse effect. If you use this feature again before you finish a long rest, you take 2d12 necrotic damage for each level of the spell, immediately after you cast it. Each time you use this feature again before finishing a long rest, the necrotic damage per spell level increases by 1d12. This damage ignores resistance and immunity.",
+    "resources": [
+      {
+        "id": "srd:evocation:overchannel",
+        "name": "Overchannel",
+        "max": 1,
+        "recharge": [
+          {
+            "on": "long-rest",
+            "amount": "all"
+          }
+        ],
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ],
+    "actions": [
+      {
+        "id": "overchannel",
+        "name": "Overchannel (2d12)",
+        "activation": "special",
+        "cost": {
+          "srd:evocation:overchannel": 1
+        },
+        "damage": "2d12",
+        "damageType": "necrotic",
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      },
+      {
+        "id": "overchannel-1d12",
+        "name": "Overchannel (1d12)",
+        "activation": "special",
+        "cost": {
+          "srd:evocation:overchannel": 1
+        },
+        "damage": "1d12",
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  }
+]

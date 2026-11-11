@@ -1,0 +1,225 @@
+[
+  {
+    "id": "srd:warlock:pact-magic",
+    "kind": "class-feature",
+    "name": "Pact Magic",
+    "source": "srd",
+    "page": "PHB 105",
+    "tags": [
+      "warlock-feature"
+    ],
+    "text": "Your arcane research and the magic bestowed on you by your patron have given you facility with spells. See chapter 10 for the general rules of spellcasting and chapter 11 for the warlock spell list.\n\n**Cantrips.** You know two cantrips of your choice from the warlock spell list. You learn additional warlock cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Warlock table.\n\n**Spell Slots.** The Warlock table shows how many spell slots you have to cast your warlock spells of 1st through 5th level. The table also shows what the level of those slots is; all of your spell slots are the same level. To cast one of your warlock spells of 1st level or higher, you must expend a spell slot. You regain all expended spell slots when you finish a short or long rest.\n\nFor example, when you are 5th level, you have two 3rd-level spell slots. To cast the 1st-level spell witch bolt, you must spend one of those slots, and you cast it as a 3rd-level spell.\n\n**Spells Known of 1st Level and Higher.** At 1st level, you know two 1st-level spells of your choice from the warlock spell list.\n\nThe Spells Known column of the Warlock table shows when you learn more warlock spells of your choice of 1st level and higher. A spell you choose must be of a level no higher than what's shown in the table's Slot Level column for your level. When you reach 6th level, for example, you learn a new warlock spell, which can be 1st, 2nd, or 3rd level.\n\nAdditionally, when you gain a level in this class, you can choose one of the warlock spells you know and replace it with another spell from the warlock spell list, which also must be of a level for which you have spell slots.\n\n**Spellcasting Ability.** Charisma is your spellcasting ability for your warlock spells, so you use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a warlock spell you cast and when making an attack roll with one.\n\n**Spell save DC** = 8 + your proficiency bonus + your Charisma modifier\n\n**Spell attack modifier** = your proficiency bonus + your Charisma modifier\n\n**Spellcasting Focus.** You can use an arcane focus as a spellcasting focus for your warlock spells."
+  },
+  {
+    "id": "srd:warlock:otherworldly-patron",
+    "kind": "class-feature",
+    "name": "Otherworldly Patron",
+    "source": "srd",
+    "page": "PHB 105",
+    "tags": [
+      "warlock-feature"
+    ],
+    "text": "At 1st level, you have struck a bargain with an otherworldly being chosen from the list of available patrons. Your choice grants you features at 1st level and again at 6th, 10th, and 14th level."
+  },
+  {
+    "id": "srd:warlock:eldritch-invocations",
+    "kind": "class-feature",
+    "name": "Eldritch Invocations",
+    "source": "srd",
+    "page": "PHB 105",
+    "tags": [
+      "warlock-feature"
+    ],
+    "text": "In your study of occult lore, you have unearthed eldritch invocations, fragments of forbidden knowledge that imbue you with an abiding magical ability.\n\nAt 2nd level, you gain two eldritch invocations of your choice. A list of the available options can be found on the Optional Features page. When you gain certain warlock levels, you gain additional invocations of your choice, as shown in the Invocations Known column of the Warlock table.\n\nAdditionally, when you gain a level in this class, you can choose one of the invocations you know and replace it with another invocation that you could learn at that level.\n\nIf an eldritch invocation has prerequisites, you must meet them to learn it. You can learn the invocation at the same time that you meet its prerequisites. A level prerequisite refers to your level in this class."
+  },
+  {
+    "id": "srd:warlock:pact-boon",
+    "kind": "class-feature",
+    "name": "Pact Boon",
+    "source": "srd",
+    "page": "PHB 105",
+    "tags": [
+      "warlock-feature"
+    ],
+    "text": "At 3rd level, your otherworldly patron bestows a gift upon you for your loyal service. You gain one of the following features of your choice."
+  },
+  {
+    "id": "srd:warlock:mystic-arcanum-6th-level",
+    "kind": "class-feature",
+    "name": "Mystic Arcanum (6th level)",
+    "source": "srd",
+    "page": "PHB 105",
+    "tags": [
+      "warlock-feature"
+    ],
+    "text": "At 11th level, your patron bestows upon you a magical secret called an arcanum. Choose one 6th-level spell from the warlock spell list as this arcanum.\n\nYou can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again.\n\nAt higher levels, you gain more warlock spells of your choice that can be cast in this way: one 7th-level spell at 13th level, one 8th-level spell at 15th level, and one 9th-level spell at 17th level. You regain all uses of your Mystic Arcanum when you finish a long rest."
+  },
+  {
+    "id": "srd:warlock:mystic-arcanum-7th-level",
+    "kind": "class-feature",
+    "name": "Mystic Arcanum (7th level)",
+    "source": "srd",
+    "page": "PHB 105",
+    "tags": [
+      "warlock-feature"
+    ],
+    "text": "At 13th level, your patron bestows upon you a magical secret called an arcanum. Choose one 7th-level spell from the warlock spell list as this arcanum.\n\nYou can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again.",
+    "resources": [
+      {
+        "id": "srd:warlock:mystic-arcanum-7th-level",
+        "name": "Mystic Arcanum (7th level)",
+        "max": 1,
+        "recharge": [
+          {
+            "on": "long-rest",
+            "amount": "all"
+          }
+        ],
+        "provenance": {
+          "source": "prose",
+          "review": "auto"
+        }
+      }
+    ],
+    "actions": [
+      {
+        "id": "mystic-arcanum-7th-level",
+        "name": "Mystic Arcanum (7th level)",
+        "activation": "special",
+        "provenance": {
+          "source": "prose",
+          "review": "auto"
+        },
+        "cost": {
+          "srd:warlock:mystic-arcanum-7th-level": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:warlock:mystic-arcanum-8th-level",
+    "kind": "class-feature",
+    "name": "Mystic Arcanum (8th level)",
+    "source": "srd",
+    "page": "PHB 105",
+    "tags": [
+      "warlock-feature"
+    ],
+    "text": "At 15th level, your patron bestows upon you a magical secret called an arcanum. Choose one 8th-level spell from the warlock spell list as this arcanum.\n\nYou can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again.",
+    "resources": [
+      {
+        "id": "srd:warlock:mystic-arcanum-8th-level",
+        "name": "Mystic Arcanum (8th level)",
+        "max": 1,
+        "recharge": [
+          {
+            "on": "long-rest",
+            "amount": "all"
+          }
+        ],
+        "provenance": {
+          "source": "prose",
+          "review": "auto"
+        }
+      }
+    ],
+    "actions": [
+      {
+        "id": "mystic-arcanum-8th-level",
+        "name": "Mystic Arcanum (8th level)",
+        "activation": "special",
+        "provenance": {
+          "source": "prose",
+          "review": "auto"
+        },
+        "cost": {
+          "srd:warlock:mystic-arcanum-8th-level": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:warlock:mystic-arcanum-9th-level",
+    "kind": "class-feature",
+    "name": "Mystic Arcanum (9th level)",
+    "source": "srd",
+    "page": "PHB 105",
+    "tags": [
+      "warlock-feature"
+    ],
+    "text": "At 17th level, your patron bestows upon you a magical secret called an arcanum. Choose one 9th-level spell from the warlock spell list as this arcanum.\n\nYou can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again.",
+    "resources": [
+      {
+        "id": "srd:warlock:mystic-arcanum-9th-level",
+        "name": "Mystic Arcanum (9th level)",
+        "max": 1,
+        "recharge": [
+          {
+            "on": "long-rest",
+            "amount": "all"
+          }
+        ],
+        "provenance": {
+          "source": "prose",
+          "review": "auto"
+        }
+      }
+    ],
+    "actions": [
+      {
+        "id": "mystic-arcanum-9th-level",
+        "name": "Mystic Arcanum (9th level)",
+        "activation": "special",
+        "provenance": {
+          "source": "prose",
+          "review": "auto"
+        },
+        "cost": {
+          "srd:warlock:mystic-arcanum-9th-level": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:warlock:eldritch-master",
+    "kind": "class-feature",
+    "name": "Eldritch Master",
+    "source": "srd",
+    "page": "PHB 105",
+    "tags": [
+      "warlock-feature"
+    ],
+    "text": "At 20th level, you can draw on your inner reserve of mystical power while entreating your patron to regain expended spell slots. You can spend 1 minute entreating your patron for aid to regain all your expended spell slots from your Pact Magic feature. Once you regain spell slots with this feature, you must finish a long rest before you can do so again.",
+    "resources": [
+      {
+        "id": "srd:warlock:eldritch-master",
+        "name": "Eldritch Master",
+        "max": 1,
+        "recharge": [
+          {
+            "on": "long-rest",
+            "amount": "all"
+          }
+        ],
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ],
+    "actions": [
+      {
+        "id": "eldritch-master",
+        "name": "Eldritch Master",
+        "activation": "minute",
+        "cost": {
+          "srd:warlock:eldritch-master": 1
+        },
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  }
+]

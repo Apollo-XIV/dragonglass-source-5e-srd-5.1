@@ -1,0 +1,259 @@
+[
+  {
+    "id": "srd:class:wizard",
+    "kind": "class",
+    "name": "Wizard",
+    "source": "srd",
+    "page": "PHB 112",
+    "key": "wizard",
+    "hitDie": "d6",
+    "tags": [
+      "srd-class"
+    ],
+    "text": "**Hit Dice:** 1d6 per wizard level.\n\n**Hit Points at 1st Level:** 6 + your Constitution modifier.\n\n**Hit Points at Higher Levels:** 1d6 (or 4) + your Constitution modifier per wizard level after 1st.\n\n**Armor:** None\n**Weapons:** Daggers, darts, slings, quarterstaffs, light crossbows\n**Tools:** None\n**Saving Throws:** Intelligence, Wisdom\n**Skills:** Choose 2 from arcana, history, insight, investigation, medicine, religion\n\n**Equipment:** You start with the following equipment, in addition to the equipment granted by your background:\n\n- (a) a quarterstaff or (b) a dagger\n- (a) a component pouch or (b) an arcane focus\n- (a) a scholar's pack or (b) an explorer's pack\n- A spellbook\n\nAlternatively, you may start with 4d4 × 10 gp to buy your own equipment.",
+    "multiclassRequires": {
+      "all": [
+        {
+          "type": "ability",
+          "ability": "int",
+          "min": 13
+        }
+      ],
+      "text": "Intelligence 13"
+    },
+    "primaryAbility": [
+      "int"
+    ],
+    "spellcasting": {
+      "ability": "int",
+      "progression": "full",
+      "type": "spellbook",
+      "list": "wizard-spell",
+      "cantrips": "@table(wizard, cantrips-known)",
+      "prepared": "@level(wizard) + @abilities.int.mod",
+      "spellbook": "@table(wizard, spellbook-size)"
+    },
+    "tables": {
+      "cantrips-known": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "spellbook-size": [
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        44
+      ]
+    },
+    "levels": {
+      "1": {
+        "choices": [
+          {
+            "id": "srd:class:wizard:skill",
+            "name": "Skill Proficiency",
+            "count": 2,
+            "from": {
+              "ids": [
+                "srd:skill:arcana",
+                "srd:skill:history",
+                "srd:skill:insight",
+                "srd:skill:investigation",
+                "srd:skill:medicine",
+                "srd:skill:religion"
+              ]
+            }
+          }
+        ],
+        "modifiers": [
+          {
+            "target": "saves.int",
+            "op": "proficiency",
+            "value": "proficient"
+          },
+          {
+            "target": "saves.wis",
+            "op": "proficiency",
+            "value": "proficient"
+          },
+          {
+            "target": "proficiencies.weapon",
+            "op": "include",
+            "value": [
+              "srd:item:dagger",
+              "srd:item:dart",
+              "srd:item:sling",
+              "srd:item:quarterstaff",
+              "srd:item:light-crossbow"
+            ]
+          }
+        ],
+        "grants": [
+          "srd:wizard:arcane-recovery",
+          "srd:wizard:spellcasting"
+        ]
+      },
+      "2": {
+        "grants": [
+          "srd:wizard:arcane-tradition"
+        ],
+        "choices": [
+          {
+            "id": "srd:class:wizard:subclass",
+            "name": "Arcane Tradition",
+            "count": 1,
+            "from": {
+              "kind": "subclass",
+              "tags": [
+                "wizard-subclass"
+              ]
+            }
+          }
+        ]
+      },
+      "4": {
+        "choices": [
+          {
+            "id": "srd:class:wizard:asi-4",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "8": {
+        "choices": [
+          {
+            "id": "srd:class:wizard:asi-8",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "12": {
+        "choices": [
+          {
+            "id": "srd:class:wizard:asi-12",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "16": {
+        "choices": [
+          {
+            "id": "srd:class:wizard:asi-16",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "18": {
+        "grants": [
+          "srd:wizard:spell-mastery"
+        ]
+      },
+      "19": {
+        "choices": [
+          {
+            "id": "srd:class:wizard:asi-19",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "20": {
+        "grants": [
+          "srd:wizard:signature-spells"
+        ]
+      }
+    }
+  }
+]

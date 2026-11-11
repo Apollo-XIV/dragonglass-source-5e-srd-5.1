@@ -1,0 +1,366 @@
+[
+  {
+    "id": "srd:item:bit-and-bridle",
+    "kind": "item",
+    "name": "Bit and bridle",
+    "source": "srd",
+    "tags": [
+      "tack"
+    ],
+    "page": "PHB 157",
+    "itemType": "tack",
+    "weight": 1,
+    "value": 200
+  },
+  {
+    "id": "srd:item:camel",
+    "kind": "item",
+    "name": "Camel",
+    "source": "srd",
+    "tags": [
+      "mount"
+    ],
+    "page": "PHB 157",
+    "itemType": "mount",
+    "value": 5000
+  },
+  {
+    "id": "srd:item:carriage",
+    "kind": "item",
+    "name": "Carriage",
+    "source": "srd",
+    "tags": [
+      "vehicle"
+    ],
+    "page": "PHB 157",
+    "itemType": "vehicle",
+    "weight": 600,
+    "value": 10000
+  },
+  {
+    "id": "srd:item:cart",
+    "kind": "item",
+    "name": "Cart",
+    "source": "srd",
+    "tags": [
+      "vehicle"
+    ],
+    "page": "PHB 157",
+    "itemType": "vehicle",
+    "weight": 200,
+    "value": 1500
+  },
+  {
+    "id": "srd:item:chariot",
+    "kind": "item",
+    "name": "Chariot",
+    "source": "srd",
+    "tags": [
+      "vehicle"
+    ],
+    "page": "PHB 157",
+    "itemType": "vehicle",
+    "weight": 100,
+    "value": 25000,
+    "text": "> **Chariots**\n>\n> Chariots and the creatures pulling them work like controlled mounts, as described in the mounted combat rules in the Player's Handbook, but with the following differences:\n>\n> - Mounting or dismounting a chariot costs you 5 feet of movement, rather than a number of feet equal to half your speed.\n> - Being mounted on a chariot grants you half cover.\n> - A chariot's speed is equal to the speed of the slowest creature pulling it.\n> - If multiple creatures are pulling the chariot, they all act on the same initiative, and they must take the same action on their turn."
+  },
+  {
+    "id": "srd:item:donkey",
+    "kind": "item",
+    "name": "Donkey",
+    "source": "srd",
+    "tags": [
+      "mount"
+    ],
+    "page": "PHB 157",
+    "itemType": "mount",
+    "value": 800
+  },
+  {
+    "id": "srd:item:draft-horse",
+    "kind": "item",
+    "name": "Draft Horse",
+    "source": "srd",
+    "tags": [
+      "mount"
+    ],
+    "page": "PHB 157",
+    "itemType": "mount",
+    "value": 5000
+  },
+  {
+    "id": "srd:item:elephant",
+    "kind": "item",
+    "name": "Elephant",
+    "source": "srd",
+    "tags": [
+      "mount"
+    ],
+    "page": "PHB 157",
+    "itemType": "mount",
+    "value": 20000
+  },
+  {
+    "id": "srd:item:exotic-saddle",
+    "kind": "item",
+    "name": "Exotic Saddle",
+    "source": "srd",
+    "tags": [
+      "tack"
+    ],
+    "page": "PHB 157",
+    "itemType": "tack",
+    "weight": 40,
+    "value": 6000,
+    "text": "An exotic saddle is required for riding any aquatic or flying mount."
+  },
+  {
+    "id": "srd:item:feed-per-day",
+    "kind": "item",
+    "name": "Feed (per day)",
+    "source": "srd",
+    "tags": [
+      "tack"
+    ],
+    "page": "PHB 157",
+    "itemType": "tack",
+    "weight": 10,
+    "value": 5
+  },
+  {
+    "id": "srd:item:galley",
+    "kind": "item",
+    "name": "Galley",
+    "source": "srd",
+    "tags": [
+      "vehicle",
+      "ship"
+    ],
+    "page": "DMG 119",
+    "itemType": "vehicle",
+    "value": 3000000,
+    "text": "**Crew.** A ship needs a crew of skilled hirelings to function. As per the Player's Handbook, one skilled hireling costs at least 2 gp per day. The minimum number of skilled hirelings needed to crew a ship depends on the type of vessel.\n\nYou can track the loyalty of individual crew members or the crew as a whole using the optional loyalty rules in chapter 4 of the Dungeon Master's Guide. If at least half the crew becomes disloyal during a voyage, the crew turns hostile and stages a mutiny. If the ship is berthed, disloyal crew members leave the ship and never return.\n\n**Passengers.** This indicates the number of Small and Medium passengers the ship can accommodate.\n\nAccommodations consist of shared hammocks in tight quarters. A ship outfitted with private accommodations can carry one-fifth as many passengers.\n\nA passenger is usually expected to pay 5 sp per day for a hammock, but prices can vary from ship to ship. A small private cabin usually costs 2 gp per day.\n\n**Cargo.** The maximum tonnage the ship can carry.\n\n**Damage Threshold.** If a ship has a Damage Threshold, it has immunity to all damage unless it takes an amount of damage equal to or greater than its damage threshold, in which case it takes damage as normal. Any damage that fails to meet or exceed the damage threshold is considered superficial and doesn't reduce the ship's hit points.\n\n**Ship Repair.** Repairs to a damaged ship can be made while the vessel is berthed. Repairing 1 hit point of damage requires 1 day and costs 20 gp for materials and labor."
+  },
+  {
+    "id": "srd:item:keelboat",
+    "kind": "item",
+    "name": "Keelboat",
+    "source": "srd",
+    "tags": [
+      "vehicle",
+      "ship"
+    ],
+    "page": "DMG 119",
+    "itemType": "vehicle",
+    "value": 300000,
+    "text": "Keelboats and rowboats are used on lakes and rivers. If going downstream, add the speed of the current (typically 3 miles per hour) to the speed of the vehicle. These vehicles can't be rowed against any significant current, but they can be pulled upstream by draft animals on the shores."
+  },
+  {
+    "id": "srd:item:longship",
+    "kind": "item",
+    "name": "Longship",
+    "source": "srd",
+    "tags": [
+      "vehicle",
+      "ship"
+    ],
+    "page": "DMG 119",
+    "itemType": "vehicle",
+    "value": 1000000,
+    "text": "**Crew.** A ship needs a crew of skilled hirelings to function. As per the Player's Handbook, one skilled hireling costs at least 2 gp per day. The minimum number of skilled hirelings needed to crew a ship depends on the type of vessel.\n\nYou can track the loyalty of individual crew members or the crew as a whole using the optional loyalty rules in chapter 4 of the Dungeon Master's Guide. If at least half the crew becomes disloyal during a voyage, the crew turns hostile and stages a mutiny. If the ship is berthed, disloyal crew members leave the ship and never return.\n\n**Passengers.** This indicates the number of Small and Medium passengers the ship can accommodate.\n\nAccommodations consist of shared hammocks in tight quarters. A ship outfitted with private accommodations can carry one-fifth as many passengers.\n\nA passenger is usually expected to pay 5 sp per day for a hammock, but prices can vary from ship to ship. A small private cabin usually costs 2 gp per day.\n\n**Cargo.** The maximum tonnage the ship can carry.\n\n**Damage Threshold.** If a ship has a Damage Threshold, it has immunity to all damage unless it takes an amount of damage equal to or greater than its damage threshold, in which case it takes damage as normal. Any damage that fails to meet or exceed the damage threshold is considered superficial and doesn't reduce the ship's hit points.\n\n**Ship Repair.** Repairs to a damaged ship can be made while the vessel is berthed. Repairing 1 hit point of damage requires 1 day and costs 20 gp for materials and labor."
+  },
+  {
+    "id": "srd:item:mastiff",
+    "kind": "item",
+    "name": "Mastiff",
+    "source": "srd",
+    "tags": [
+      "mount"
+    ],
+    "page": "PHB 157",
+    "itemType": "mount",
+    "value": 2500
+  },
+  {
+    "id": "srd:item:military-saddle",
+    "kind": "item",
+    "name": "Military Saddle",
+    "source": "srd",
+    "tags": [
+      "tack"
+    ],
+    "page": "PHB 157",
+    "itemType": "tack",
+    "weight": 30,
+    "value": 2000,
+    "text": "A military saddle braces the rider, helping you keep your seat on an active mount in battle. It gives you advantage on any check you make to remain mounted."
+  },
+  {
+    "id": "srd:item:mule",
+    "kind": "item",
+    "name": "Mule",
+    "source": "srd",
+    "tags": [
+      "mount"
+    ],
+    "page": "PHB 157",
+    "itemType": "mount",
+    "value": 800
+  },
+  {
+    "id": "srd:item:pack-saddle",
+    "kind": "item",
+    "name": "Pack Saddle",
+    "source": "srd",
+    "tags": [
+      "tack"
+    ],
+    "page": "PHB 157",
+    "itemType": "tack",
+    "weight": 15,
+    "value": 500
+  },
+  {
+    "id": "srd:item:pony",
+    "kind": "item",
+    "name": "Pony",
+    "source": "srd",
+    "tags": [
+      "mount"
+    ],
+    "page": "PHB 157",
+    "itemType": "mount",
+    "value": 3000
+  },
+  {
+    "id": "srd:item:riding-horse",
+    "kind": "item",
+    "name": "Riding Horse",
+    "source": "srd",
+    "tags": [
+      "mount"
+    ],
+    "page": "PHB 157",
+    "itemType": "mount",
+    "value": 7500
+  },
+  {
+    "id": "srd:item:riding-saddle",
+    "kind": "item",
+    "name": "Riding Saddle",
+    "source": "srd",
+    "tags": [
+      "tack"
+    ],
+    "page": "PHB 157",
+    "itemType": "tack",
+    "weight": 25,
+    "value": 1000
+  },
+  {
+    "id": "srd:item:rowboat",
+    "kind": "item",
+    "name": "Rowboat",
+    "source": "srd",
+    "tags": [
+      "vehicle",
+      "ship"
+    ],
+    "page": "DMG 119",
+    "itemType": "vehicle",
+    "weight": 100,
+    "value": 5000,
+    "text": "Keelboats and rowboats are used on lakes and rivers, If going downstream, add the speed of the current (typically 3 miles per hour) to the speed of the vehicle. These vehicles can't be rowed against any significant current, but they can be pulled upstream by draft animals on the shores. A rowboat weighs 100 pounds, in case adventurers carry it over land."
+  },
+  {
+    "id": "srd:item:saddlebags",
+    "kind": "item",
+    "name": "Saddlebags",
+    "source": "srd",
+    "tags": [
+      "tack"
+    ],
+    "page": "PHB 157",
+    "itemType": "tack",
+    "weight": 8,
+    "value": 400
+  },
+  {
+    "id": "srd:item:sailing-ship",
+    "kind": "item",
+    "name": "Sailing Ship",
+    "source": "srd",
+    "tags": [
+      "vehicle",
+      "ship"
+    ],
+    "page": "DMG 119",
+    "itemType": "vehicle",
+    "value": 1000000,
+    "text": "**Crew.** A ship needs a crew of skilled hirelings to function. As per the Player's Handbook, one skilled hireling costs at least 2 gp per day. The minimum number of skilled hirelings needed to crew a ship depends on the type of vessel.\n\nYou can track the loyalty of individual crew members or the crew as a whole using the optional loyalty rules in chapter 4 of the Dungeon Master's Guide. If at least half the crew becomes disloyal during a voyage, the crew turns hostile and stages a mutiny. If the ship is berthed, disloyal crew members leave the ship and never return.\n\n**Passengers.** This indicates the number of Small and Medium passengers the ship can accommodate.\n\nAccommodations consist of shared hammocks in tight quarters. A ship outfitted with private accommodations can carry one-fifth as many passengers.\n\nA passenger is usually expected to pay 5 sp per day for a hammock, but prices can vary from ship to ship. A small private cabin usually costs 2 gp per day.\n\n**Cargo.** The maximum tonnage the ship can carry.\n\n**Damage Threshold.** If a ship has a Damage Threshold, it has immunity to all damage unless it takes an amount of damage equal to or greater than its damage threshold, in which case it takes damage as normal. Any damage that fails to meet or exceed the damage threshold is considered superficial and doesn't reduce the ship's hit points.\n\n**Ship Repair.** Repairs to a damaged ship can be made while the vessel is berthed. Repairing 1 hit point of damage requires 1 day and costs 20 gp for materials and labor."
+  },
+  {
+    "id": "srd:item:sled",
+    "kind": "item",
+    "name": "Sled",
+    "source": "srd",
+    "tags": [
+      "vehicle"
+    ],
+    "page": "PHB 157",
+    "itemType": "vehicle",
+    "weight": 300,
+    "value": 2000
+  },
+  {
+    "id": "srd:item:stabling-per-day",
+    "kind": "item",
+    "name": "Stabling (per day)",
+    "source": "srd",
+    "tags": [
+      "tack"
+    ],
+    "page": "PHB 157",
+    "itemType": "tack",
+    "value": 50
+  },
+  {
+    "id": "srd:item:wagon",
+    "kind": "item",
+    "name": "Wagon",
+    "source": "srd",
+    "tags": [
+      "vehicle"
+    ],
+    "page": "PHB 157",
+    "itemType": "vehicle",
+    "weight": 400,
+    "value": 3500
+  },
+  {
+    "id": "srd:item:warhorse",
+    "kind": "item",
+    "name": "Warhorse",
+    "source": "srd",
+    "tags": [
+      "mount"
+    ],
+    "page": "PHB 157",
+    "itemType": "mount",
+    "value": 40000
+  },
+  {
+    "id": "srd:item:warship",
+    "kind": "item",
+    "name": "Warship",
+    "source": "srd",
+    "tags": [
+      "vehicle",
+      "ship"
+    ],
+    "page": "DMG 119",
+    "itemType": "vehicle",
+    "value": 2500000,
+    "text": "**Crew.** A ship needs a crew of skilled hirelings to function. As per the Player's Handbook, one skilled hireling costs at least 2 gp per day. The minimum number of skilled hirelings needed to crew a ship depends on the type of vessel.\n\nYou can track the loyalty of individual crew members or the crew as a whole using the optional loyalty rules in chapter 4 of the Dungeon Master's Guide. If at least half the crew becomes disloyal during a voyage, the crew turns hostile and stages a mutiny. If the ship is berthed, disloyal crew members leave the ship and never return.\n\n**Passengers.** This indicates the number of Small and Medium passengers the ship can accommodate.\n\nAccommodations consist of shared hammocks in tight quarters. A ship outfitted with private accommodations can carry one-fifth as many passengers.\n\nA passenger is usually expected to pay 5 sp per day for a hammock, but prices can vary from ship to ship. A small private cabin usually costs 2 gp per day.\n\n**Cargo.** The maximum tonnage the ship can carry.\n\n**Damage Threshold.** If a ship has a Damage Threshold, it has immunity to all damage unless it takes an amount of damage equal to or greater than its damage threshold, in which case it takes damage as normal. Any damage that fails to meet or exceed the damage threshold is considered superficial and doesn't reduce the ship's hit points.\n\n**Ship Repair.** Repairs to a damaged ship can be made while the vessel is berthed. Repairing 1 hit point of damage requires 1 day and costs 20 gp for materials and labor."
+  }
+]

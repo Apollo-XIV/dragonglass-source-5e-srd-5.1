@@ -1,0 +1,24 @@
+[
+  {
+    "id": "srd:status:concentration",
+    "kind": "status",
+    "name": "Concentration",
+    "source": "srd",
+    "tags": [
+      "status"
+    ],
+    "text": "Some spells require you to maintain concentration in order to keep their magic active. If you lose concentration, such a spell ends.\n\nIf a spell must be maintained with concentration, that fact appears in its Duration entry, and the spell specifies how long you can concentrate on it. You can end concentration at any time (no action required).\n\nNormal activity, such as moving and attacking, doesn't interfere with concentration. The following factors can break concentration:\n\n- **Casting another spell that requires concentration.** You lose concentration on a spell if you cast another spell that requires concentration. You can't concentrate on two spells at once.\n- **Taking damage.** Whenever you take damage while you are concentrating on a spell, you must make a Constitution saving throw to maintain your concentration. The DC equals 10 or half the damage you take, whichever number is higher. If you take damage from multiple sources, such as an arrow and a dragon's breath, you make a separate saving throw for each source of damage.\n- **Being incapacitated or killed.** You lose concentration on a spell if you are incapacitated or if you die.\n\nThe DM might also decide that certain environmental phenomena, such as a wave crashing over you while you're on a storm-tossed ship, require you to succeed on a DC 10 Constitution saving throw to maintain concentration on a spell.",
+    "page": "PHB 203"
+  },
+  {
+    "id": "srd:status:surprised",
+    "kind": "status",
+    "name": "Surprised",
+    "source": "srd",
+    "tags": [
+      "status"
+    ],
+    "text": "A band of adventurers sneaks up on a bandit camp, springing from the trees to attack them. A gelatinous cube glides down a dungeon passage, unnoticed by the adventurers until the cube engulfs one of them. In these situations, one side of the battle gains surprise over the other.\n\nThe DM determines who might be surprised. If neither side tries to be stealthy, they automatically notice each other. Otherwise, the DM compares the Dexterity (Stealth) checks of anyone hiding with the passive Wisdom (Perception) score of each creature on the opposing side. Any character or monster that doesn't notice a threat is surprised at the start of the encounter.\n\nIf you're surprised, you can't move or take an action on your first turn of the combat, and you can't take a reaction until that turn ends. A member of a group can be surprised even if the other members aren't.",
+    "page": "PHB 189"
+  }
+]

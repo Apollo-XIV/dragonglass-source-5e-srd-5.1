@@ -1,0 +1,330 @@
+[
+  {
+    "id": "srd:class:ranger",
+    "kind": "class",
+    "name": "Ranger",
+    "source": "srd",
+    "page": "PHB 89",
+    "key": "ranger",
+    "hitDie": "d10",
+    "tags": [
+      "srd-class"
+    ],
+    "text": "**Hit Dice:** 1d10 per ranger level.\n\n**Hit Points at 1st Level:** 10 + your Constitution modifier.\n\n**Hit Points at Higher Levels:** 1d10 (or 6) + your Constitution modifier per ranger level after 1st.\n\n**Armor:** Light, medium, shield\n**Weapons:** Simple, martial\n**Tools:** None\n**Saving Throws:** Strength, Dexterity\n**Skills:** Choose 3 from animal handling, athletics, insight, investigation, nature, perception, stealth, survival\n\n**Equipment:** You start with the following equipment, in addition to the equipment granted by your background:\n\n- (a) scale mail or (b) leather armor\n- (a) two shortswords or (b) two simple melee weapons\n- (a) a dungeoneer's pack or (b) an explorer's pack\n- A longbow and a quiver of 20 arrows\n\nAlternatively, you may start with 5d4 × 10 gp to buy your own equipment.",
+    "multiclassRequires": {
+      "all": [
+        {
+          "type": "ability",
+          "ability": "dex",
+          "min": 13
+        },
+        {
+          "type": "ability",
+          "ability": "wis",
+          "min": 13
+        }
+      ],
+      "text": "Dexterity 13 and Wisdom 13"
+    },
+    "primaryAbility": [
+      "dex",
+      "wis"
+    ],
+    "x-multiclass-proficiencies": {
+      "skills": [
+        {
+          "choose": {
+            "from": [
+              "animal handling",
+              "athletics",
+              "insight",
+              "investigation",
+              "nature",
+              "perception",
+              "stealth",
+              "survival"
+            ],
+            "count": 1
+          }
+        }
+      ],
+      "weapons": [
+        "simple",
+        "martial"
+      ],
+      "armor": [
+        "light",
+        "medium",
+        "shield"
+      ],
+      "armorProficiencies": [
+        {
+          "light": true,
+          "medium": true,
+          "shield": true
+        }
+      ]
+    },
+    "spellcasting": {
+      "ability": "wis",
+      "progression": "half",
+      "type": "known",
+      "list": "ranger-spell",
+      "startsAt": 2,
+      "known": "@table(ranger, spells-known)"
+    },
+    "tables": {
+      "spells-known": [
+        0,
+        2,
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        7,
+        7,
+        8,
+        8,
+        9,
+        9,
+        10,
+        10,
+        11,
+        11
+      ]
+    },
+    "levels": {
+      "1": {
+        "choices": [
+          {
+            "id": "srd:class:ranger:skill",
+            "name": "Skill Proficiency",
+            "count": 3,
+            "from": {
+              "ids": [
+                "srd:skill:animal-handling",
+                "srd:skill:athletics",
+                "srd:skill:insight",
+                "srd:skill:investigation",
+                "srd:skill:nature",
+                "srd:skill:perception",
+                "srd:skill:stealth",
+                "srd:skill:survival"
+              ]
+            }
+          }
+        ],
+        "modifiers": [
+          {
+            "target": "saves.str",
+            "op": "proficiency",
+            "value": "proficient"
+          },
+          {
+            "target": "saves.dex",
+            "op": "proficiency",
+            "value": "proficient"
+          },
+          {
+            "target": "proficiencies.armor",
+            "op": "include",
+            "value": [
+              "light",
+              "medium",
+              "shield"
+            ]
+          },
+          {
+            "target": "proficiencies.weapon",
+            "op": "include",
+            "value": [
+              "simple",
+              "martial"
+            ]
+          }
+        ],
+        "grants": [
+          "srd:ranger:favored-enemy",
+          "srd:ranger:natural-explorer"
+        ]
+      },
+      "2": {
+        "grants": [
+          "srd:ranger:fighting-style",
+          "srd:ranger:spellcasting"
+        ],
+        "choices": [
+          {
+            "id": "srd:class:ranger:fighting-style-2",
+            "name": "Fighting Style",
+            "count": 1,
+            "from": {
+              "kind": "fighting-style",
+              "tags": [
+                "ranger-fighting-style"
+              ]
+            }
+          }
+        ]
+      },
+      "3": {
+        "grants": [
+          "srd:ranger:ranger-archetype",
+          "srd:ranger:primeval-awareness"
+        ],
+        "choices": [
+          {
+            "id": "srd:class:ranger:subclass",
+            "name": "Ranger Archetype",
+            "count": 1,
+            "from": {
+              "kind": "subclass",
+              "tags": [
+                "ranger-subclass"
+              ]
+            }
+          }
+        ]
+      },
+      "4": {
+        "choices": [
+          {
+            "id": "srd:class:ranger:asi-4",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "5": {
+        "grants": [
+          "srd:ranger:extra-attack"
+        ]
+      },
+      "6": {
+        "grants": [
+          "srd:ranger:favored-enemy-and-natural-explorer-improvements"
+        ]
+      },
+      "8": {
+        "choices": [
+          {
+            "id": "srd:class:ranger:asi-8",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ],
+        "grants": [
+          "srd:ranger:lands-stride"
+        ]
+      },
+      "10": {
+        "grants": [
+          "srd:ranger:hide-in-plain-sight",
+          "srd:ranger:natural-explorer-improvement"
+        ]
+      },
+      "12": {
+        "choices": [
+          {
+            "id": "srd:class:ranger:asi-12",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "14": {
+        "grants": [
+          "srd:ranger:vanish",
+          "srd:ranger:favored-enemy-improvement"
+        ]
+      },
+      "16": {
+        "choices": [
+          {
+            "id": "srd:class:ranger:asi-16",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "18": {
+        "grants": [
+          "srd:ranger:feral-senses"
+        ]
+      },
+      "19": {
+        "choices": [
+          {
+            "id": "srd:class:ranger:asi-19",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "20": {
+        "grants": [
+          "srd:ranger:foe-slayer"
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,205 @@
+[
+  {
+    "id": "srd:metamagic:careful-spell",
+    "kind": "metamagic",
+    "name": "Careful Spell",
+    "source": "srd",
+    "tags": [
+      "sorcerer-metamagic"
+    ],
+    "text": "When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell's full force. To do so, you spend 1 sorcery point and choose a number of those creatures up to your Charisma modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell.",
+    "page": "PHB 102",
+    "actions": [
+      {
+        "id": "careful-spell",
+        "name": "Careful Spell",
+        "activation": "special",
+        "cost": {
+          "srd:sorcerer:sorcery-points": 1
+        },
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:metamagic:distant-spell",
+    "kind": "metamagic",
+    "name": "Distant Spell",
+    "source": "srd",
+    "tags": [
+      "sorcerer-metamagic"
+    ],
+    "text": "When you cast a spell that has a range of 5 feet or greater, you can spend 1 sorcery point to double the range of the spell.\n\nWhen you cast a spell that has a range of touch, you can spend 1 sorcery point to make the range of the spell 30 feet.",
+    "page": "PHB 102",
+    "actions": [
+      {
+        "id": "distant-spell",
+        "name": "Distant Spell",
+        "activation": "special",
+        "cost": {
+          "srd:sorcerer:sorcery-points": 1
+        },
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:metamagic:empowered-spell",
+    "kind": "metamagic",
+    "name": "Empowered Spell",
+    "source": "srd",
+    "tags": [
+      "sorcerer-metamagic"
+    ],
+    "text": "When you roll damage for a spell, you can spend 1 sorcery point to reroll a number of the damage dice up to your Charisma modifier (minimum of one). You must use the new rolls.\n\nYou can use Empowered Spell even if you have already used a different Metamagic option during the casting of the spell.",
+    "page": "PHB 102",
+    "actions": [
+      {
+        "id": "empowered-spell",
+        "name": "Empowered Spell",
+        "activation": "special",
+        "cost": {
+          "srd:sorcerer:sorcery-points": 1
+        },
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:metamagic:extended-spell",
+    "kind": "metamagic",
+    "name": "Extended Spell",
+    "source": "srd",
+    "tags": [
+      "sorcerer-metamagic"
+    ],
+    "text": "When you cast a spell that has a duration of 1 minute or longer, you can spend 1 sorcery point to double its duration, to a maximum duration of 24 hours.",
+    "page": "PHB 102",
+    "actions": [
+      {
+        "id": "extended-spell",
+        "name": "Extended Spell",
+        "activation": "special",
+        "cost": {
+          "srd:sorcerer:sorcery-points": 1
+        },
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:metamagic:heightened-spell",
+    "kind": "metamagic",
+    "name": "Heightened Spell",
+    "source": "srd",
+    "tags": [
+      "sorcerer-metamagic"
+    ],
+    "text": "When you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 3 sorcery points to give one target of the spell disadvantage on its first saving throw made against the spell.",
+    "page": "PHB 102",
+    "actions": [
+      {
+        "id": "heightened-spell",
+        "name": "Heightened Spell",
+        "activation": "special",
+        "cost": {
+          "srd:sorcerer:sorcery-points": 3
+        },
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:metamagic:quickened-spell",
+    "kind": "metamagic",
+    "name": "Quickened Spell",
+    "source": "srd",
+    "tags": [
+      "sorcerer-metamagic"
+    ],
+    "text": "When you cast a spell that has a casting time of 1 action, you can spend 2 sorcery points to change the casting time to 1 bonus action for this casting.",
+    "page": "PHB 102",
+    "actions": [
+      {
+        "id": "quickened-spell",
+        "name": "Quickened Spell",
+        "activation": "special",
+        "cost": {
+          "srd:sorcerer:sorcery-points": 2
+        },
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:metamagic:subtle-spell",
+    "kind": "metamagic",
+    "name": "Subtle Spell",
+    "source": "srd",
+    "tags": [
+      "sorcerer-metamagic"
+    ],
+    "text": "When you cast a spell, you can spend 1 sorcery point to cast it without any somatic or verbal components.",
+    "page": "PHB 102",
+    "actions": [
+      {
+        "id": "subtle-spell",
+        "name": "Subtle Spell",
+        "activation": "special",
+        "cost": {
+          "srd:sorcerer:sorcery-points": 1
+        },
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:metamagic:twinned-spell",
+    "kind": "metamagic",
+    "name": "Twinned Spell",
+    "source": "srd",
+    "tags": [
+      "sorcerer-metamagic"
+    ],
+    "text": "When you cast a spell that targets only one creature and doesn't have a range of self, you can spend a number of sorcery points equal to the spell's level to target a second creature in range with the same spell (1 sorcery point if the spell is a cantrip).\n\nTo be eligible, a spell must be incapable of targeting more than one creature at the spell's current level. For example, magic missile and scorching ray aren't eligible, but ray of frost and chromatic orb are.",
+    "page": "PHB 102",
+    "actions": [
+      {
+        "id": "twinned-spell",
+        "name": "Twinned Spell",
+        "activation": "special",
+        "cost": {
+          "srd:sorcerer:sorcery-points": {
+            "min": 1,
+            "max": 9
+          }
+        },
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  }
+]

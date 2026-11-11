@@ -1,0 +1,129 @@
+[
+  {
+    "id": "srd:subclass:champion",
+    "kind": "subclass",
+    "name": "Champion",
+    "source": "srd",
+    "page": "PHB 72",
+    "class": "srd:class:fighter",
+    "tags": [
+      "fighter-subclass",
+      "srd-subclass"
+    ],
+    "levels": {
+      "3": {
+        "grants": [
+          "srd:champion:champion"
+        ]
+      },
+      "7": {
+        "grants": [
+          "srd:champion:remarkable-athlete"
+        ]
+      },
+      "10": {
+        "grants": [
+          "srd:champion:additional-fighting-style"
+        ],
+        "choices": [
+          {
+            "id": "srd:subclass:champion:fighting-style-10",
+            "name": "Fighting Style",
+            "count": 1,
+            "from": {
+              "kind": "fighting-style",
+              "tags": [
+                "fighter-fighting-style"
+              ]
+            }
+          }
+        ]
+      },
+      "15": {
+        "grants": [
+          "srd:champion:superior-critical"
+        ]
+      },
+      "18": {
+        "grants": [
+          "srd:champion:survivor"
+        ]
+      }
+    }
+  },
+  {
+    "id": "srd:champion:improved-critical",
+    "kind": "subclass-feature",
+    "name": "Improved Critical",
+    "source": "srd",
+    "page": "PHB 72",
+    "tags": [
+      "champion-feature",
+      "fighter-feature"
+    ],
+    "text": "Beginning when you choose this archetype at 3rd level, your weapon attacks score a critical hit on a roll of 19 or 20."
+  },
+  {
+    "id": "srd:champion:champion",
+    "kind": "subclass-feature",
+    "name": "Champion",
+    "source": "srd",
+    "page": "PHB 72",
+    "tags": [
+      "champion-feature",
+      "fighter-feature"
+    ],
+    "text": "The archetypal Champion focuses on the development of raw physical power honed to deadly perfection. Those who model themselves on this archetype combine rigorous training with physical excellence to deal devastating blows.",
+    "grants": [
+      "srd:champion:improved-critical"
+    ]
+  },
+  {
+    "id": "srd:champion:remarkable-athlete",
+    "kind": "subclass-feature",
+    "name": "Remarkable Athlete",
+    "source": "srd",
+    "page": "PHB 72",
+    "tags": [
+      "champion-feature",
+      "fighter-feature"
+    ],
+    "text": "Starting at 7th level, you can add half your proficiency bonus (round up) to any Strength, Dexterity, or Constitution check you make that doesn't already use your proficiency bonus.\n\nIn addition, when you make a running long jump, the distance you can cover increases by a number of feet equal to your Strength modifier."
+  },
+  {
+    "id": "srd:champion:additional-fighting-style",
+    "kind": "subclass-feature",
+    "name": "Additional Fighting Style",
+    "source": "srd",
+    "page": "PHB 72",
+    "tags": [
+      "champion-feature",
+      "fighter-feature"
+    ],
+    "text": "At 10th level, you can choose a second option from the Fighting Style class feature."
+  },
+  {
+    "id": "srd:champion:superior-critical",
+    "kind": "subclass-feature",
+    "name": "Superior Critical",
+    "source": "srd",
+    "page": "PHB 72",
+    "tags": [
+      "champion-feature",
+      "fighter-feature"
+    ],
+    "text": "Starting at 15th level, your weapon attacks score a critical hit on a roll of 18-20."
+  },
+  {
+    "id": "srd:champion:survivor",
+    "kind": "subclass-feature",
+    "name": "Survivor",
+    "source": "srd",
+    "page": "PHB 72",
+    "tags": [
+      "champion-feature",
+      "fighter-feature"
+    ],
+    "text": "At 18th level, you attain the pinnacle of resilience in battle. At the start of each of your turns, you regain hit points equal to 5 + your Constitution modifier if you have no more than half of your hit points left. You don't gain this benefit if you have 0 hit points."
+  }
+]

@@ -1,0 +1,191 @@
+[
+  {
+    "id": "srd:subclass:the-fiend",
+    "kind": "subclass",
+    "name": "The Fiend",
+    "source": "srd",
+    "page": "PHB 109",
+    "class": "srd:class:warlock",
+    "tags": [
+      "warlock-subclass",
+      "srd-subclass"
+    ],
+    "levels": {
+      "1": {
+        "grants": [
+          "srd:fiend:the-fiend"
+        ],
+        "spellListAdditions": [
+          {
+            "class": "srd:class:warlock",
+            "spells": [
+              "srd:spell:burning-hands",
+              "srd:spell:command",
+              "srd:spell:blindness-deafness",
+              "srd:spell:scorching-ray",
+              "srd:spell:fireball",
+              "srd:spell:stinking-cloud",
+              "srd:spell:fire-shield",
+              "srd:spell:wall-of-fire",
+              "srd:spell:flame-strike",
+              "srd:spell:hallow"
+            ]
+          }
+        ]
+      },
+      "6": {
+        "grants": [
+          "srd:fiend:dark-ones-own-luck"
+        ]
+      },
+      "10": {
+        "grants": [
+          "srd:fiend:fiendish-resilience"
+        ]
+      },
+      "14": {
+        "grants": [
+          "srd:fiend:hurl-through-hell"
+        ]
+      }
+    }
+  },
+  {
+    "id": "srd:fiend:dark-ones-blessing",
+    "kind": "subclass-feature",
+    "name": "Dark One's Blessing",
+    "source": "srd",
+    "page": "PHB 109",
+    "tags": [
+      "fiend-feature",
+      "warlock-feature"
+    ],
+    "text": "Starting at 1st level, when you reduce a hostile creature to 0 hit points, you gain temporary hit points equal to your Charisma modifier + your warlock level (minimum of 1)."
+  },
+  {
+    "id": "srd:fiend:the-fiend",
+    "kind": "subclass-feature",
+    "name": "The Fiend",
+    "source": "srd",
+    "page": "PHB 109",
+    "tags": [
+      "fiend-feature",
+      "warlock-feature"
+    ],
+    "text": "You have made a pact with a fiend from the lower planes of existence, a being whose aims are evil, even if you strive against those aims. Such beings desire the corruption or destruction of all things, ultimately including you. Fiends powerful enough to forge a pact include demon lords such as Demogorgon, Orcus, Fraz-Urb'luu, and Baphomet; archdevils such as Asmodeus, Dispater, Mephistopheles, and Belial; pit fiends and balors that are especially mighty; and ultroloths and other lords of the yugoloths.\n\n**Expanded Spell List.** The Fiend lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.\n\n**Fiend Expanded Spells**\n| Spell Level | Spells |\n| --- | --- |\n| 1st | burning hands, command |\n| 2nd | blindness/deafness, scorching ray |\n| 3rd | fireball, stinking cloud |\n| 4th | fire shield, wall of fire |\n| 5th | flame strike, hallow |",
+    "grants": [
+      "srd:fiend:dark-ones-blessing"
+    ]
+  },
+  {
+    "id": "srd:fiend:dark-ones-own-luck",
+    "kind": "subclass-feature",
+    "name": "Dark One's Own Luck",
+    "source": "srd",
+    "page": "PHB 109",
+    "tags": [
+      "fiend-feature",
+      "warlock-feature"
+    ],
+    "text": "Starting at 6th level, you can call on your patron to alter fate in your favor. When you make an ability check or a saving throw, you can use this feature to add a d10 to your roll. You can do so after seeing the initial roll but before any of the roll's effects occur.\n\nOnce you use this feature, you can't use it again until you finish a short or long rest.",
+    "resources": [
+      {
+        "id": "srd:fiend:dark-ones-own-luck",
+        "name": "Dark One's Own Luck",
+        "max": 1,
+        "recharge": [
+          {
+            "on": "short-rest",
+            "amount": "all"
+          }
+        ],
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ],
+    "actions": [
+      {
+        "id": "dark-ones-own-luck",
+        "name": "Dark One's Own Luck",
+        "activation": "special",
+        "cost": {
+          "srd:fiend:dark-ones-own-luck": 1
+        },
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:fiend:fiendish-resilience",
+    "kind": "subclass-feature",
+    "name": "Fiendish Resilience",
+    "source": "srd",
+    "page": "PHB 109",
+    "tags": [
+      "fiend-feature",
+      "warlock-feature"
+    ],
+    "text": "Starting at 10th level, you can choose one damage type when you finish a short or long rest. You gain resistance to that damage type until you choose a different one with this feature. Damage from magical weapons or silver weapons ignores this resistance.",
+    "actions": [
+      {
+        "id": "fiendish-resilience",
+        "name": "Fiendish Resilience",
+        "activation": "special",
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "srd:fiend:hurl-through-hell",
+    "kind": "subclass-feature",
+    "name": "Hurl Through Hell",
+    "source": "srd",
+    "page": "PHB 109",
+    "tags": [
+      "fiend-feature",
+      "warlock-feature"
+    ],
+    "text": "Starting at 14th level, when you hit a creature with an attack, you can use this feature to instantly transport the target through the lower planes. The creature disappears and hurtles through a nightmare landscape.\n\nAt the end of your next turn, the target returns to the space it previously occupied, or the nearest unoccupied space. If the target is not a fiend, it takes 10d10 psychic damage as it reels from its horrific experience.\n\nOnce you use this feature, you can't use it again until you finish a long rest.",
+    "resources": [
+      {
+        "id": "srd:fiend:hurl-through-hell",
+        "name": "Hurl Through Hell",
+        "max": 1,
+        "recharge": [
+          {
+            "on": "long-rest",
+            "amount": "all"
+          }
+        ],
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ],
+    "actions": [
+      {
+        "id": "hurl-through-hell",
+        "name": "Hurl Through Hell",
+        "activation": "special",
+        "cost": {
+          "srd:fiend:hurl-through-hell": 1
+        },
+        "damage": "10d10",
+        "damageType": "psychic",
+        "provenance": {
+          "source": "pack:release-5.3.3",
+          "review": "auto"
+        }
+      }
+    ]
+  }
+]

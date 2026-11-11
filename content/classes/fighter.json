@@ -1,0 +1,360 @@
+[
+  {
+    "id": "srd:class:fighter",
+    "kind": "class",
+    "name": "Fighter",
+    "source": "srd",
+    "page": "PHB 70",
+    "key": "fighter",
+    "hitDie": "d10",
+    "tags": [
+      "srd-class"
+    ],
+    "text": "**Hit Dice:** 1d10 per fighter level.\n\n**Hit Points at 1st Level:** 10 + your Constitution modifier.\n\n**Hit Points at Higher Levels:** 1d10 (or 6) + your Constitution modifier per fighter level after 1st.\n\n**Armor:** Light, medium, heavy, shield\n**Weapons:** Simple, martial\n**Tools:** None\n**Saving Throws:** Strength, Constitution\n**Skills:** Choose 2 from acrobatics, animal handling, athletics, history, insight, intimidation, perception, survival\n\n**Equipment:** You start with the following equipment, in addition to the equipment granted by your background:\n\n- (a) chain mail or (b) leather armor, longbow, and 20 arrows\n- (a) a martial weapon and a shield or (b) two martial weapons\n- (a) a light crossbow and 20 bolts or (b) two handaxes\n- (a) a dungeoneer's pack or (b) an explorer's pack\n\nAlternatively, you may start with 5d4 × 10 gp to buy your own equipment.",
+    "multiclassRequires": {
+      "any": [
+        {
+          "type": "ability",
+          "ability": "str",
+          "min": 13
+        },
+        {
+          "type": "ability",
+          "ability": "dex",
+          "min": 13
+        }
+      ],
+      "text": "Strength 13 or Dexterity 13"
+    },
+    "primaryAbility": [
+      "str",
+      "dex"
+    ],
+    "x-multiclass-proficiencies": {
+      "weapons": [
+        "simple",
+        "martial"
+      ],
+      "armor": [
+        "light",
+        "medium",
+        "shield"
+      ],
+      "armorProficiencies": [
+        {
+          "light": true,
+          "medium": true,
+          "shield": true
+        }
+      ]
+    },
+    "tables": {
+      "action-surge": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "indomitable": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    "levels": {
+      "1": {
+        "choices": [
+          {
+            "id": "srd:class:fighter:skill",
+            "name": "Skill Proficiency",
+            "count": 2,
+            "from": {
+              "ids": [
+                "srd:skill:acrobatics",
+                "srd:skill:animal-handling",
+                "srd:skill:athletics",
+                "srd:skill:history",
+                "srd:skill:insight",
+                "srd:skill:intimidation",
+                "srd:skill:perception",
+                "srd:skill:survival"
+              ]
+            }
+          },
+          {
+            "id": "srd:class:fighter:fighting-style-1",
+            "name": "Fighting Style",
+            "count": 1,
+            "from": {
+              "kind": "fighting-style",
+              "tags": [
+                "fighter-fighting-style"
+              ]
+            }
+          }
+        ],
+        "modifiers": [
+          {
+            "target": "saves.str",
+            "op": "proficiency",
+            "value": "proficient"
+          },
+          {
+            "target": "saves.con",
+            "op": "proficiency",
+            "value": "proficient"
+          },
+          {
+            "target": "proficiencies.armor",
+            "op": "include",
+            "value": [
+              "light",
+              "medium",
+              "heavy",
+              "shield"
+            ]
+          },
+          {
+            "target": "proficiencies.weapon",
+            "op": "include",
+            "value": [
+              "simple",
+              "martial"
+            ]
+          }
+        ],
+        "grants": [
+          "srd:fighter:fighting-style",
+          "srd:fighter:second-wind"
+        ]
+      },
+      "2": {
+        "grants": [
+          "srd:fighter:action-surge"
+        ]
+      },
+      "3": {
+        "grants": [
+          "srd:fighter:martial-archetype"
+        ],
+        "choices": [
+          {
+            "id": "srd:class:fighter:subclass",
+            "name": "Martial Archetype",
+            "count": 1,
+            "from": {
+              "kind": "subclass",
+              "tags": [
+                "fighter-subclass"
+              ]
+            }
+          }
+        ]
+      },
+      "4": {
+        "choices": [
+          {
+            "id": "srd:class:fighter:asi-4",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "5": {
+        "grants": [
+          "srd:fighter:extra-attack"
+        ]
+      },
+      "6": {
+        "choices": [
+          {
+            "id": "srd:class:fighter:asi-6",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "8": {
+        "choices": [
+          {
+            "id": "srd:class:fighter:asi-8",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "9": {
+        "grants": [
+          "srd:fighter:indomitable"
+        ]
+      },
+      "11": {
+        "grants": [
+          "srd:fighter:extra-attack-2"
+        ]
+      },
+      "12": {
+        "choices": [
+          {
+            "id": "srd:class:fighter:asi-12",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "13": {
+        "grants": [
+          "srd:fighter:indomitable-two-uses"
+        ]
+      },
+      "14": {
+        "choices": [
+          {
+            "id": "srd:class:fighter:asi-14",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "16": {
+        "choices": [
+          {
+            "id": "srd:class:fighter:asi-16",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "17": {
+        "grants": [
+          "srd:fighter:action-surge-two-uses",
+          "srd:fighter:indomitable-three-uses"
+        ]
+      },
+      "19": {
+        "choices": [
+          {
+            "id": "srd:class:fighter:asi-19",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "20": {
+        "grants": [
+          "srd:fighter:extra-attack-3"
+        ]
+      }
+    }
+  }
+]

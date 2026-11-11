@@ -1,0 +1,335 @@
+[
+  {
+    "id": "srd:class:rogue",
+    "kind": "class",
+    "name": "Rogue",
+    "source": "srd",
+    "page": "PHB 94",
+    "key": "rogue",
+    "hitDie": "d8",
+    "tags": [
+      "srd-class"
+    ],
+    "text": "**Hit Dice:** 1d8 per rogue level.\n\n**Hit Points at 1st Level:** 8 + your Constitution modifier.\n\n**Hit Points at Higher Levels:** 1d8 (or 5) + your Constitution modifier per rogue level after 1st.\n\n**Armor:** Light\n**Weapons:** Simple, hand crossbows, longswords, rapiers, shortswords\n**Tools:** Thieves' tools\n**Saving Throws:** Dexterity, Intelligence\n**Skills:** Choose 4 from acrobatics, athletics, deception, insight, intimidation, investigation, perception, performance, persuasion, sleight of hand, stealth\n\n**Equipment:** You start with the following equipment, in addition to the equipment granted by your background:\n\n- (a) a rapier or (b) a shortsword\n- (a) a shortbow and quiver of 20 arrows or (b) a shortsword\n- (a) a burglar's pack, (b) a dungeoneer's pack, or (c) an explorer's pack\n- Leather armor, two daggers, and thieves' tools\n\nAlternatively, you may start with 4d4 × 10 gp to buy your own equipment.",
+    "multiclassRequires": {
+      "all": [
+        {
+          "type": "ability",
+          "ability": "dex",
+          "min": 13
+        }
+      ],
+      "text": "Dexterity 13"
+    },
+    "primaryAbility": [
+      "dex"
+    ],
+    "x-multiclass-proficiencies": {
+      "skills": [
+        {
+          "choose": {
+            "from": [
+              "acrobatics",
+              "athletics",
+              "deception",
+              "insight",
+              "intimidation",
+              "investigation",
+              "perception",
+              "performance",
+              "persuasion",
+              "sleight of hand",
+              "stealth"
+            ],
+            "count": 1
+          }
+        }
+      ],
+      "tools": [
+        "{@item thieves' tools|PHB}"
+      ],
+      "toolProficiencies": [
+        {
+          "thieves' tools": true
+        }
+      ],
+      "armor": [
+        "light"
+      ],
+      "armorProficiencies": [
+        {
+          "light": true
+        }
+      ]
+    },
+    "tables": {
+      "sneak-attack": [
+        "1d6",
+        "1d6",
+        "2d6",
+        "2d6",
+        "3d6",
+        "3d6",
+        "4d6",
+        "4d6",
+        "5d6",
+        "5d6",
+        "6d6",
+        "6d6",
+        "7d6",
+        "7d6",
+        "8d6",
+        "8d6",
+        "9d6",
+        "9d6",
+        "10d6",
+        "10d6"
+      ]
+    },
+    "levels": {
+      "1": {
+        "grants": [
+          "srd:tool:thieves-tools",
+          "srd:rogue:expertise",
+          "srd:rogue:sneak-attack",
+          "srd:rogue:thieves-cant"
+        ],
+        "choices": [
+          {
+            "id": "srd:class:rogue:skill",
+            "name": "Skill Proficiency",
+            "count": 4,
+            "from": {
+              "ids": [
+                "srd:skill:acrobatics",
+                "srd:skill:athletics",
+                "srd:skill:deception",
+                "srd:skill:insight",
+                "srd:skill:intimidation",
+                "srd:skill:investigation",
+                "srd:skill:perception",
+                "srd:skill:performance",
+                "srd:skill:persuasion",
+                "srd:skill:sleight-of-hand",
+                "srd:skill:stealth"
+              ]
+            }
+          }
+        ],
+        "modifiers": [
+          {
+            "target": "saves.dex",
+            "op": "proficiency",
+            "value": "proficient"
+          },
+          {
+            "target": "saves.int",
+            "op": "proficiency",
+            "value": "proficient"
+          },
+          {
+            "target": "proficiencies.armor",
+            "op": "include",
+            "value": [
+              "light"
+            ]
+          },
+          {
+            "target": "proficiencies.weapon",
+            "op": "include",
+            "value": [
+              "simple",
+              "srd:item:hand-crossbow",
+              "srd:item:longsword",
+              "srd:item:rapier",
+              "srd:item:shortsword"
+            ]
+          }
+        ]
+      },
+      "2": {
+        "grants": [
+          "srd:rogue:cunning-action"
+        ]
+      },
+      "3": {
+        "grants": [
+          "srd:rogue:roguish-archetype"
+        ],
+        "choices": [
+          {
+            "id": "srd:class:rogue:subclass",
+            "name": "Roguish Archetype",
+            "count": 1,
+            "from": {
+              "kind": "subclass",
+              "tags": [
+                "rogue-subclass"
+              ]
+            }
+          }
+        ]
+      },
+      "4": {
+        "choices": [
+          {
+            "id": "srd:class:rogue:asi-4",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "5": {
+        "grants": [
+          "srd:rogue:uncanny-dodge"
+        ]
+      },
+      "6": {
+        "grants": [
+          "srd:rogue:expertise-6"
+        ]
+      },
+      "7": {
+        "grants": [
+          "srd:rogue:evasion"
+        ]
+      },
+      "8": {
+        "choices": [
+          {
+            "id": "srd:class:rogue:asi-8",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "10": {
+        "choices": [
+          {
+            "id": "srd:class:rogue:asi-10",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "11": {
+        "grants": [
+          "srd:rogue:reliable-talent"
+        ]
+      },
+      "12": {
+        "choices": [
+          {
+            "id": "srd:class:rogue:asi-12",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "14": {
+        "grants": [
+          "srd:rogue:blindsense"
+        ]
+      },
+      "15": {
+        "grants": [
+          "srd:rogue:slippery-mind"
+        ]
+      },
+      "16": {
+        "choices": [
+          {
+            "id": "srd:class:rogue:asi-16",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "18": {
+        "grants": [
+          "srd:rogue:elusive"
+        ]
+      },
+      "19": {
+        "choices": [
+          {
+            "id": "srd:class:rogue:asi-19",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "20": {
+        "grants": [
+          "srd:rogue:stroke-of-luck"
+        ]
+      }
+    }
+  }
+]

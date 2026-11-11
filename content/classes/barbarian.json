@@ -1,0 +1,312 @@
+[
+  {
+    "id": "srd:class:barbarian",
+    "kind": "class",
+    "name": "Barbarian",
+    "source": "srd",
+    "page": "PHB 46",
+    "key": "barbarian",
+    "hitDie": "d12",
+    "tags": [
+      "srd-class"
+    ],
+    "text": "**Hit Dice:** 1d12 per barbarian level.\n\n**Hit Points at 1st Level:** 12 + your Constitution modifier.\n\n**Hit Points at Higher Levels:** 1d12 (or 7) + your Constitution modifier per barbarian level after 1st.\n\n**Armor:** Light, medium, shield\n**Weapons:** Simple, martial\n**Tools:** None\n**Saving Throws:** Strength, Constitution\n**Skills:** Choose 2 from animal handling, athletics, intimidation, nature, perception, survival\n\n**Equipment:** You start with the following equipment, in addition to the equipment granted by your background:\n\n- (a) a greataxe or (b) any martial melee weapon\n- (a) two handaxes or (b) any simple weapon\n- An explorer's pack, and four javelins\n\nAlternatively, you may start with 2d4 × 10 gp to buy your own equipment.",
+    "multiclassRequires": {
+      "all": [
+        {
+          "type": "ability",
+          "ability": "str",
+          "min": 13
+        }
+      ],
+      "text": "Strength 13"
+    },
+    "primaryAbility": [
+      "str"
+    ],
+    "x-multiclass-proficiencies": {
+      "weapons": [
+        "simple",
+        "martial"
+      ],
+      "armor": [
+        "shield"
+      ],
+      "armorProficiencies": [
+        {
+          "shield": true
+        }
+      ]
+    },
+    "tables": {
+      "rages": [
+        2,
+        2,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        6,
+        6,
+        6,
+        "unlimited"
+      ],
+      "rage-damage": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4
+      ]
+    },
+    "levels": {
+      "1": {
+        "choices": [
+          {
+            "id": "srd:class:barbarian:skill",
+            "name": "Skill Proficiency",
+            "count": 2,
+            "from": {
+              "ids": [
+                "srd:skill:animal-handling",
+                "srd:skill:athletics",
+                "srd:skill:intimidation",
+                "srd:skill:nature",
+                "srd:skill:perception",
+                "srd:skill:survival"
+              ]
+            }
+          }
+        ],
+        "modifiers": [
+          {
+            "target": "saves.str",
+            "op": "proficiency",
+            "value": "proficient"
+          },
+          {
+            "target": "saves.con",
+            "op": "proficiency",
+            "value": "proficient"
+          },
+          {
+            "target": "proficiencies.armor",
+            "op": "include",
+            "value": [
+              "light",
+              "medium",
+              "shield"
+            ]
+          },
+          {
+            "target": "proficiencies.weapon",
+            "op": "include",
+            "value": [
+              "simple",
+              "martial"
+            ]
+          }
+        ],
+        "grants": [
+          "srd:barbarian:rage",
+          "srd:barbarian:unarmored-defense"
+        ]
+      },
+      "2": {
+        "grants": [
+          "srd:barbarian:danger-sense",
+          "srd:barbarian:reckless-attack"
+        ]
+      },
+      "3": {
+        "grants": [
+          "srd:barbarian:primal-path"
+        ],
+        "choices": [
+          {
+            "id": "srd:class:barbarian:subclass",
+            "name": "Primal Path",
+            "count": 1,
+            "from": {
+              "kind": "subclass",
+              "tags": [
+                "barbarian-subclass"
+              ]
+            }
+          }
+        ]
+      },
+      "4": {
+        "choices": [
+          {
+            "id": "srd:class:barbarian:asi-4",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "5": {
+        "grants": [
+          "srd:barbarian:extra-attack",
+          "srd:barbarian:fast-movement"
+        ]
+      },
+      "7": {
+        "grants": [
+          "srd:barbarian:feral-instinct"
+        ]
+      },
+      "8": {
+        "choices": [
+          {
+            "id": "srd:class:barbarian:asi-8",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "9": {
+        "grants": [
+          "srd:barbarian:brutal-critical-1-die"
+        ]
+      },
+      "11": {
+        "grants": [
+          "srd:barbarian:relentless-rage"
+        ]
+      },
+      "12": {
+        "choices": [
+          {
+            "id": "srd:class:barbarian:asi-12",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "13": {
+        "grants": [
+          "srd:barbarian:brutal-critical-2-dice"
+        ]
+      },
+      "15": {
+        "grants": [
+          "srd:barbarian:persistent-rage"
+        ]
+      },
+      "16": {
+        "choices": [
+          {
+            "id": "srd:class:barbarian:asi-16",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "17": {
+        "grants": [
+          "srd:barbarian:brutal-critical-3-dice"
+        ]
+      },
+      "18": {
+        "grants": [
+          "srd:barbarian:indomitable-might"
+        ]
+      },
+      "19": {
+        "choices": [
+          {
+            "id": "srd:class:barbarian:asi-19",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "20": {
+        "grants": [
+          "srd:barbarian:primal-champion"
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,499 @@
+[
+  {
+    "id": "srd:class:warlock",
+    "kind": "class",
+    "name": "Warlock",
+    "source": "srd",
+    "page": "PHB 105",
+    "key": "warlock",
+    "hitDie": "d8",
+    "tags": [
+      "srd-class"
+    ],
+    "text": "**Hit Dice:** 1d8 per warlock level.\n\n**Hit Points at 1st Level:** 8 + your Constitution modifier.\n\n**Hit Points at Higher Levels:** 1d8 (or 5) + your Constitution modifier per warlock level after 1st.\n\n**Armor:** Light\n**Weapons:** Simple\n**Tools:** None\n**Saving Throws:** Wisdom, Charisma\n**Skills:** Choose 2 from arcana, deception, history, intimidation, investigation, nature, religion\n\n**Equipment:** You start with the following equipment, in addition to the equipment granted by your background:\n\n- (a) a light crossbow and 20 bolts or (b) any simple weapon\n- (a) a component pouch or (b) an arcane focus\n- (a) a scholar's pack or (b) a dungeoneer's pack\n- Leather armor, any simple weapon, and two daggers\n\nAlternatively, you may start with 4d4 × 10 gp to buy your own equipment.",
+    "multiclassRequires": {
+      "all": [
+        {
+          "type": "ability",
+          "ability": "cha",
+          "min": 13
+        }
+      ],
+      "text": "Charisma 13"
+    },
+    "primaryAbility": [
+      "cha"
+    ],
+    "x-multiclass-proficiencies": {
+      "weapons": [
+        "simple"
+      ],
+      "armor": [
+        "light"
+      ],
+      "armorProficiencies": [
+        {
+          "light": true
+        }
+      ]
+    },
+    "spellcasting": {
+      "ability": "cha",
+      "progression": "pact",
+      "type": "known",
+      "list": "warlock-spell",
+      "cantrips": "@table(warlock, cantrips-known)",
+      "known": "@table(warlock, spells-known)",
+      "extra": [
+        {
+          "level": 11,
+          "choose": 1,
+          "spellLevels": [
+            6
+          ]
+        },
+        {
+          "level": 13,
+          "choose": 1,
+          "spellLevels": [
+            7
+          ]
+        },
+        {
+          "level": 15,
+          "choose": 1,
+          "spellLevels": [
+            8
+          ]
+        },
+        {
+          "level": 17,
+          "choose": 1,
+          "spellLevels": [
+            9
+          ]
+        }
+      ]
+    },
+    "tables": {
+      "cantrips-known": [
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "spells-known": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        10,
+        11,
+        11,
+        12,
+        12,
+        13,
+        13,
+        14,
+        14,
+        15,
+        15
+      ],
+      "spell-slots": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4
+      ],
+      "slot-level": [
+        "1st",
+        "1st",
+        "2nd",
+        "2nd",
+        "3rd",
+        "3rd",
+        "4th",
+        "4th",
+        "5th",
+        "5th",
+        "5th",
+        "5th",
+        "5th",
+        "5th",
+        "5th",
+        "5th",
+        "5th",
+        "5th",
+        "5th",
+        "5th"
+      ],
+      "invocations-known": [
+        0,
+        2,
+        2,
+        2,
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        5,
+        6,
+        6,
+        6,
+        7,
+        7,
+        7,
+        8,
+        8,
+        8
+      ]
+    },
+    "levels": {
+      "1": {
+        "choices": [
+          {
+            "id": "srd:class:warlock:skill",
+            "name": "Skill Proficiency",
+            "count": 2,
+            "from": {
+              "ids": [
+                "srd:skill:arcana",
+                "srd:skill:deception",
+                "srd:skill:history",
+                "srd:skill:intimidation",
+                "srd:skill:investigation",
+                "srd:skill:nature",
+                "srd:skill:religion"
+              ]
+            }
+          },
+          {
+            "id": "srd:class:warlock:subclass",
+            "name": "Otherworldly Patron",
+            "count": 1,
+            "from": {
+              "kind": "subclass",
+              "tags": [
+                "warlock-subclass"
+              ]
+            }
+          }
+        ],
+        "modifiers": [
+          {
+            "target": "saves.wis",
+            "op": "proficiency",
+            "value": "proficient"
+          },
+          {
+            "target": "saves.cha",
+            "op": "proficiency",
+            "value": "proficient"
+          },
+          {
+            "target": "proficiencies.armor",
+            "op": "include",
+            "value": [
+              "light"
+            ]
+          },
+          {
+            "target": "proficiencies.weapon",
+            "op": "include",
+            "value": [
+              "simple"
+            ]
+          }
+        ],
+        "grants": [
+          "srd:warlock:pact-magic",
+          "srd:warlock:otherworldly-patron"
+        ]
+      },
+      "2": {
+        "grants": [
+          "srd:warlock:eldritch-invocations"
+        ],
+        "choices": [
+          {
+            "id": "srd:class:warlock:eldritch-invocations-2",
+            "name": "Eldritch Invocations",
+            "count": 2,
+            "from": {
+              "kind": "eldritch-invocation",
+              "tags": [
+                "warlock-invocation"
+              ]
+            }
+          }
+        ]
+      },
+      "3": {
+        "grants": [
+          "srd:warlock:pact-boon"
+        ],
+        "choices": [
+          {
+            "id": "srd:class:warlock:pact-boon-3",
+            "name": "Pact Boon",
+            "count": 1,
+            "from": {
+              "kind": "pact-boon",
+              "tags": [
+                "warlock-pact-boon"
+              ]
+            }
+          }
+        ]
+      },
+      "4": {
+        "choices": [
+          {
+            "id": "srd:class:warlock:asi-4",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "5": {
+        "choices": [
+          {
+            "id": "srd:class:warlock:eldritch-invocations-5",
+            "name": "Eldritch Invocations",
+            "count": 1,
+            "from": {
+              "kind": "eldritch-invocation",
+              "tags": [
+                "warlock-invocation"
+              ]
+            }
+          }
+        ]
+      },
+      "7": {
+        "choices": [
+          {
+            "id": "srd:class:warlock:eldritch-invocations-7",
+            "name": "Eldritch Invocations",
+            "count": 1,
+            "from": {
+              "kind": "eldritch-invocation",
+              "tags": [
+                "warlock-invocation"
+              ]
+            }
+          }
+        ]
+      },
+      "8": {
+        "choices": [
+          {
+            "id": "srd:class:warlock:asi-8",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "9": {
+        "choices": [
+          {
+            "id": "srd:class:warlock:eldritch-invocations-9",
+            "name": "Eldritch Invocations",
+            "count": 1,
+            "from": {
+              "kind": "eldritch-invocation",
+              "tags": [
+                "warlock-invocation"
+              ]
+            }
+          }
+        ]
+      },
+      "11": {
+        "grants": [
+          "srd:warlock:mystic-arcanum-6th-level"
+        ]
+      },
+      "12": {
+        "choices": [
+          {
+            "id": "srd:class:warlock:asi-12",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          },
+          {
+            "id": "srd:class:warlock:eldritch-invocations-12",
+            "name": "Eldritch Invocations",
+            "count": 1,
+            "from": {
+              "kind": "eldritch-invocation",
+              "tags": [
+                "warlock-invocation"
+              ]
+            }
+          }
+        ]
+      },
+      "13": {
+        "grants": [
+          "srd:warlock:mystic-arcanum-7th-level"
+        ]
+      },
+      "15": {
+        "grants": [
+          "srd:warlock:mystic-arcanum-8th-level"
+        ],
+        "choices": [
+          {
+            "id": "srd:class:warlock:eldritch-invocations-15",
+            "name": "Eldritch Invocations",
+            "count": 1,
+            "from": {
+              "kind": "eldritch-invocation",
+              "tags": [
+                "warlock-invocation"
+              ]
+            }
+          }
+        ]
+      },
+      "16": {
+        "choices": [
+          {
+            "id": "srd:class:warlock:asi-16",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "17": {
+        "grants": [
+          "srd:warlock:mystic-arcanum-9th-level"
+        ]
+      },
+      "18": {
+        "choices": [
+          {
+            "id": "srd:class:warlock:eldritch-invocations-18",
+            "name": "Eldritch Invocations",
+            "count": 1,
+            "from": {
+              "kind": "eldritch-invocation",
+              "tags": [
+                "warlock-invocation"
+              ]
+            }
+          }
+        ]
+      },
+      "19": {
+        "choices": [
+          {
+            "id": "srd:class:warlock:asi-19",
+            "name": "Ability Score Improvement",
+            "count": 1,
+            "from": {
+              "kind": [
+                "feat",
+                "feature"
+              ],
+              "tags": [
+                "ability-score-improvement",
+                "srd-feat"
+              ]
+            },
+            "text": "Increase one ability score by 2, or two by 1 each — or take a feat."
+          }
+        ]
+      },
+      "20": {
+        "grants": [
+          "srd:warlock:eldritch-master"
+        ]
+      }
+    }
+  }
+]
