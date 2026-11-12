@@ -245,12 +245,12 @@
     ]
   },
   {
-    "id": "srd:hill-dwarf:dwarven-toughness",
+    "id": "srd:subspecies:dwarf-hill:dwarven-toughness",
     "kind": "species-trait",
     "name": "Dwarven Toughness",
     "source": "srd",
     "tags": [
-      "hill-dwarf-trait"
+      "dwarf-hill-trait"
     ],
     "text": "Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.",
     "page": "PHB 20",
@@ -267,7 +267,7 @@
     ]
   },
   {
-    "id": "srd:subspecies:hill-dwarf",
+    "id": "srd:subspecies:dwarf-hill",
     "kind": "subspecies",
     "name": "Hill Dwarf",
     "source": "srd",
@@ -286,7 +286,7 @@
       }
     ],
     "grants": [
-      "srd:hill-dwarf:dwarven-toughness"
+      "srd:subspecies:dwarf-hill:dwarven-toughness"
     ]
   },
   {
@@ -399,40 +399,40 @@
     ]
   },
   {
-    "id": "srd:high-elf:elf-weapon-training",
+    "id": "srd:subspecies:elf-high:elf-weapon-training",
     "kind": "species-trait",
     "name": "Elf Weapon Training",
     "source": "srd",
     "tags": [
-      "high-elf-trait"
+      "elf-high-trait"
     ],
     "text": "You have proficiency with the longsword, shortsword, shortbow, and longbow.",
     "page": "PHB 23"
   },
   {
-    "id": "srd:high-elf:cantrip",
+    "id": "srd:subspecies:elf-high:cantrip",
     "kind": "species-trait",
     "name": "Cantrip",
     "source": "srd",
     "tags": [
-      "high-elf-trait"
+      "elf-high-trait"
     ],
     "text": "You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it.",
     "page": "PHB 23"
   },
   {
-    "id": "srd:high-elf:extra-language",
+    "id": "srd:subspecies:elf-high:extra-language",
     "kind": "species-trait",
     "name": "Extra Language",
     "source": "srd",
     "tags": [
-      "high-elf-trait"
+      "elf-high-trait"
     ],
     "text": "You can speak, read, and write one extra language of your choosing.",
     "page": "PHB 23"
   },
   {
-    "id": "srd:subspecies:high-elf",
+    "id": "srd:subspecies:elf-high",
     "kind": "subspecies",
     "name": "High Elf",
     "source": "srd",
@@ -446,13 +446,13 @@
     "grants": [
       "srd:language:common",
       "srd:language:elvish",
-      "srd:high-elf:elf-weapon-training",
-      "srd:high-elf:cantrip",
-      "srd:high-elf:extra-language"
+      "srd:subspecies:elf-high:elf-weapon-training",
+      "srd:subspecies:elf-high:cantrip",
+      "srd:subspecies:elf-high:extra-language"
     ],
     "choices": [
       {
-        "id": "srd:subspecies:high-elf:language",
+        "id": "srd:subspecies:elf-high:language",
         "name": "Language",
         "count": 1,
         "from": {
@@ -463,7 +463,7 @@
         }
       },
       {
-        "id": "srd:subspecies:high-elf:known-spells",
+        "id": "srd:subspecies:elf-high:known-spells",
         "name": "Cantrip",
         "count": 1,
         "from": {
@@ -569,29 +569,29 @@
     ]
   },
   {
-    "id": "srd:rock-gnome:artificers-lore",
+    "id": "srd:subspecies:gnome-rock:artificers-lore",
     "kind": "species-trait",
     "name": "Artificer's Lore",
     "source": "srd",
     "tags": [
-      "rock-gnome-trait"
+      "gnome-rock-trait"
     ],
     "text": "Whenever you make an Intelligence (History) check related to magic items, alchemical objects, or technological devices, you can add twice your proficiency bonus, instead of any proficiency bonus you normally apply.",
     "page": "PHB 37"
   },
   {
-    "id": "srd:rock-gnome:tinker",
+    "id": "srd:subspecies:gnome-rock:tinker",
     "kind": "species-trait",
     "name": "Tinker",
     "source": "srd",
     "tags": [
-      "rock-gnome-trait"
+      "gnome-rock-trait"
     ],
     "text": "You have proficiency with artisan's tools (tinker's tools). Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up to three such devices active at a time.\n\nWhen you create a device, choose one of the following options:\n\n**Clockwork Toy.** This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in a random direction. It makes noises as appropriate to the creature it represents.\n\n**Fire Starter.** The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.\n\n**Music Box.** When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed.",
     "page": "PHB 37"
   },
   {
-    "id": "srd:subspecies:rock-gnome",
+    "id": "srd:subspecies:gnome-rock",
     "kind": "subspecies",
     "name": "Rock Gnome",
     "source": "srd",
@@ -604,8 +604,8 @@
     "page": "PHB 37",
     "grants": [
       "srd:tool:tinkers-tools",
-      "srd:rock-gnome:artificers-lore",
-      "srd:rock-gnome:tinker"
+      "srd:subspecies:gnome-rock:artificers-lore",
+      "srd:subspecies:gnome-rock:tinker"
     ],
     "modifiers": [
       {
@@ -944,18 +944,18 @@
     ]
   },
   {
-    "id": "srd:lightfoot-halfling:naturally-stealthy",
+    "id": "srd:subspecies:halfling-lightfoot:naturally-stealthy",
     "kind": "species-trait",
     "name": "Naturally Stealthy",
     "source": "srd",
     "tags": [
-      "lightfoot-halfling-trait"
+      "halfling-lightfoot-trait"
     ],
     "text": "You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you.",
     "page": "PHB 28"
   },
   {
-    "id": "srd:subspecies:lightfoot-halfling",
+    "id": "srd:subspecies:halfling-lightfoot",
     "kind": "subspecies",
     "name": "Lightfoot Halfling",
     "source": "srd",
@@ -974,7 +974,7 @@
       }
     ],
     "grants": [
-      "srd:lightfoot-halfling:naturally-stealthy"
+      "srd:subspecies:halfling-lightfoot:naturally-stealthy"
     ]
   },
   {
