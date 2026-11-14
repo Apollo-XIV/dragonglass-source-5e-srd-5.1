@@ -20,6 +20,24 @@
     ],
     "text": "You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation.\n\nWhen you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level.\n\nAfter you use your breath weapon, you can't use it again until you complete a short or long rest.",
     "page": "PHB 32",
+    "resources": [
+      {
+        "id": "srd:dragonborn:breath-weapon",
+        "name": "Breath Weapon",
+        "max": 1,
+        "recharge": [
+          {
+            "on": "short-rest",
+            "amount": "all"
+          }
+        ],
+        "unit": "uses",
+        "provenance": {
+          "source": "llm:claude-sonnet-5-5",
+          "review": "auto"
+        }
+      }
+    ],
     "actions": [
       {
         "id": "breath-weapon",
@@ -162,7 +180,21 @@
       "dwarf-trait"
     ],
     "text": "Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.",
-    "page": "PHB 18"
+    "page": "PHB 18",
+    "modifiers": [
+      {
+        "target": "skills.history",
+        "op": "proficiency",
+        "value": "expertise",
+        "when": {
+          "text": "whenever you make an Intelligence (History) check related to the origin of stonework"
+        },
+        "provenance": {
+          "source": "llm:claude-sonnet-5-5",
+          "review": "auto"
+        }
+      }
+    ]
   },
   {
     "id": "srd:species:dwarf",
@@ -1073,7 +1105,41 @@
       "tiefling-trait"
     ],
     "text": "You know the thaumaturgy cantrip. Once you reach 3rd level, you can cast the hellish rebuke spell as a 2nd-level spell with this trait; you regain the ability to cast it when you finish a long rest. Once you reach 5th level, you can also cast the darkness spell once per day with this trait; you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells.",
-    "page": "PHB 42"
+    "page": "PHB 42",
+    "resources": [
+      {
+        "id": "srd:tiefling:infernal-legacy-hellish-rebuke",
+        "name": "Infernal Legacy: Hellish Rebuke",
+        "max": "min(1, floor(@level/3))",
+        "recharge": [
+          {
+            "on": "long-rest",
+            "amount": "all"
+          }
+        ],
+        "unit": "uses",
+        "provenance": {
+          "source": "llm:claude-sonnet-5-5",
+          "review": "auto"
+        }
+      },
+      {
+        "id": "srd:tiefling:infernal-legacy-darkness",
+        "name": "Infernal Legacy: Darkness",
+        "max": "min(1, floor(@level/5))",
+        "recharge": [
+          {
+            "on": "long-rest",
+            "amount": "all"
+          }
+        ],
+        "unit": "uses",
+        "provenance": {
+          "source": "llm:claude-sonnet-5-5",
+          "review": "auto"
+        }
+      }
+    ]
   },
   {
     "id": "srd:species:tiefling",

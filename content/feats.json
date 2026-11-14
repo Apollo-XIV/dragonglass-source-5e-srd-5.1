@@ -17,6 +17,19 @@
           "min": 13
         }
       ]
-    }
+    },
+    "modifiers": [
+      {
+        "target": "attacks.all",
+        "op": "advantage",
+        "when": {
+          "text": "against a creature you are grappling"
+        },
+        "provenance": {
+          "source": "llm:claude-sonnet-5-5",
+          "review": "auto"
+        }
+      }
+    ]
   }
 ]

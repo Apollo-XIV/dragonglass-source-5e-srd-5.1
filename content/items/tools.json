@@ -41,7 +41,21 @@
     "itemType": "tool",
     "weight": 6,
     "value": 3000,
-    "text": "**Instrument.** If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.\n\nProficiency with a musical instrument indicates you are familiar with the techniques used to play it. You also have knowledge of some songs commonly performed with that instrument.\n\n**History.** Your expertise aids you in recalling lore related to your instrument.\n\n**Performance.** Your ability to put on a good show is improved when you incorporate an instrument into your act.\n\n**Compose a Tune.** As part of a long rest, you can compose a new tune and lyrics for your instrument. You might use this ability to impress a noble or spread scandalous rumors with a catchy tune.\n\n**Musical Instrument**\n| Activity | DC |\n| --- | --- |\n| Identify a tune | 10 |\n| Improvise a tune | 20 |"
+    "text": "**Instrument.** If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.\n\nProficiency with a musical instrument indicates you are familiar with the techniques used to play it. You also have knowledge of some songs commonly performed with that instrument.\n\n**History.** Your expertise aids you in recalling lore related to your instrument.\n\n**Performance.** Your ability to put on a good show is improved when you incorporate an instrument into your act.\n\n**Compose a Tune.** As part of a long rest, you can compose a new tune and lyrics for your instrument. You might use this ability to impress a noble or spread scandalous rumors with a catchy tune.\n\n**Musical Instrument**\n| Activity | DC |\n| --- | --- |\n| Identify a tune | 10 |\n| Improvise a tune | 20 |",
+    "modifiers": [
+      {
+        "target": "checks.all",
+        "op": "add",
+        "value": "@prof",
+        "when": {
+          "text": "if you have proficiency with the instrument, on ability checks to play music with it"
+        },
+        "provenance": {
+          "source": "llm:claude-sonnet-5-5",
+          "review": "auto"
+        }
+      }
+    ]
   },
   {
     "id": "srd:item:brewers-supplies",
@@ -175,7 +189,21 @@
     "itemType": "tool",
     "weight": 3,
     "value": 600,
-    "text": "**Instrument.** If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.\n\nProficiency with a musical instrument indicates you are familiar with the techniques used to play it. You also have knowledge of some songs commonly performed with that instrument.\n\n**History.** Your expertise aids you in recalling lore related to your instrument.\n\n**Performance.** Your ability to put on a good show is improved when you incorporate an instrument into your act.\n\n**Compose a Tune.** As part of a long rest, you can compose a new tune and lyrics for your instrument. You might use this ability to impress a noble or spread scandalous rumors with a catchy tune.\n\n**Musical Instrument**\n| Activity | DC |\n| --- | --- |\n| Identify a tune | 10 |\n| Improvise a tune | 20 |"
+    "text": "**Instrument.** If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.\n\nProficiency with a musical instrument indicates you are familiar with the techniques used to play it. You also have knowledge of some songs commonly performed with that instrument.\n\n**History.** Your expertise aids you in recalling lore related to your instrument.\n\n**Performance.** Your ability to put on a good show is improved when you incorporate an instrument into your act.\n\n**Compose a Tune.** As part of a long rest, you can compose a new tune and lyrics for your instrument. You might use this ability to impress a noble or spread scandalous rumors with a catchy tune.\n\n**Musical Instrument**\n| Activity | DC |\n| --- | --- |\n| Identify a tune | 10 |\n| Improvise a tune | 20 |",
+    "modifiers": [
+      {
+        "target": "checks.all",
+        "op": "add",
+        "value": "@prof",
+        "when": {
+          "text": "if you have proficiency with the instrument, on ability checks to play music with it"
+        },
+        "provenance": {
+          "source": "llm:claude-sonnet-5-5",
+          "review": "auto"
+        }
+      }
+    ]
   },
   {
     "id": "srd:item:dulcimer",
@@ -190,7 +218,21 @@
     "itemType": "tool",
     "weight": 10,
     "value": 2500,
-    "text": "**Instrument.** If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.\n\nProficiency with a musical instrument indicates you are familiar with the techniques used to play it. You also have knowledge of some songs commonly performed with that instrument.\n\n**History.** Your expertise aids you in recalling lore related to your instrument.\n\n**Performance.** Your ability to put on a good show is improved when you incorporate an instrument into your act.\n\n**Compose a Tune.** As part of a long rest, you can compose a new tune and lyrics for your instrument. You might use this ability to impress a noble or spread scandalous rumors with a catchy tune.\n\n**Musical Instrument**\n| Activity | DC |\n| --- | --- |\n| Identify a tune | 10 |\n| Improvise a tune | 20 |"
+    "text": "**Instrument.** If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.\n\nProficiency with a musical instrument indicates you are familiar with the techniques used to play it. You also have knowledge of some songs commonly performed with that instrument.\n\n**History.** Your expertise aids you in recalling lore related to your instrument.\n\n**Performance.** Your ability to put on a good show is improved when you incorporate an instrument into your act.\n\n**Compose a Tune.** As part of a long rest, you can compose a new tune and lyrics for your instrument. You might use this ability to impress a noble or spread scandalous rumors with a catchy tune.\n\n**Musical Instrument**\n| Activity | DC |\n| --- | --- |\n| Identify a tune | 10 |\n| Improvise a tune | 20 |",
+    "modifiers": [
+      {
+        "target": "checks.all",
+        "op": "add",
+        "value": "@prof",
+        "when": {
+          "text": "if you have proficiency with the instrument, on ability checks to play music with it"
+        },
+        "provenance": {
+          "source": "llm:claude-sonnet-5-5",
+          "review": "auto"
+        }
+      }
+    ]
   },
   {
     "id": "srd:item:flute",
@@ -205,7 +247,21 @@
     "itemType": "tool",
     "weight": 1,
     "value": 200,
-    "text": "**Instrument.** If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.\n\nProficiency with a musical instrument indicates you are familiar with the techniques used to play it. You also have knowledge of some songs commonly performed with that instrument.\n\n**History.** Your expertise aids you in recalling lore related to your instrument.\n\n**Performance.** Your ability to put on a good show is improved when you incorporate an instrument into your act.\n\n**Compose a Tune.** As part of a long rest, you can compose a new tune and lyrics for your instrument. You might use this ability to impress a noble or spread scandalous rumors with a catchy tune.\n\n**Musical Instrument**\n| Activity | DC |\n| --- | --- |\n| Identify a tune | 10 |\n| Improvise a tune | 20 |"
+    "text": "**Instrument.** If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.\n\nProficiency with a musical instrument indicates you are familiar with the techniques used to play it. You also have knowledge of some songs commonly performed with that instrument.\n\n**History.** Your expertise aids you in recalling lore related to your instrument.\n\n**Performance.** Your ability to put on a good show is improved when you incorporate an instrument into your act.\n\n**Compose a Tune.** As part of a long rest, you can compose a new tune and lyrics for your instrument. You might use this ability to impress a noble or spread scandalous rumors with a catchy tune.\n\n**Musical Instrument**\n| Activity | DC |\n| --- | --- |\n| Identify a tune | 10 |\n| Improvise a tune | 20 |",
+    "modifiers": [
+      {
+        "target": "checks.all",
+        "op": "add",
+        "value": "@prof",
+        "when": {
+          "text": "if you have proficiency with the instrument, on ability checks to play music with it"
+        },
+        "provenance": {
+          "source": "llm:claude-sonnet-5-5",
+          "review": "auto"
+        }
+      }
+    ]
   },
   {
     "id": "srd:item:forgery-kit",
@@ -279,7 +335,21 @@
     "itemType": "tool",
     "weight": 2,
     "value": 300,
-    "text": "**Instrument.** If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.\n\nProficiency with a musical instrument indicates you are familiar with the techniques used to play it. You also have knowledge of some songs commonly performed with that instrument.\n\n**History.** Your expertise aids you in recalling lore related to your instrument.\n\n**Performance.** Your ability to put on a good show is improved when you incorporate an instrument into your act.\n\n**Compose a Tune.** As part of a long rest, you can compose a new tune and lyrics for your instrument. You might use this ability to impress a noble or spread scandalous rumors with a catchy tune.\n\n**Musical Instrument**\n| Activity | DC |\n| --- | --- |\n| Identify a tune | 10 |\n| Improvise a tune | 20 |"
+    "text": "**Instrument.** If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.\n\nProficiency with a musical instrument indicates you are familiar with the techniques used to play it. You also have knowledge of some songs commonly performed with that instrument.\n\n**History.** Your expertise aids you in recalling lore related to your instrument.\n\n**Performance.** Your ability to put on a good show is improved when you incorporate an instrument into your act.\n\n**Compose a Tune.** As part of a long rest, you can compose a new tune and lyrics for your instrument. You might use this ability to impress a noble or spread scandalous rumors with a catchy tune.\n\n**Musical Instrument**\n| Activity | DC |\n| --- | --- |\n| Identify a tune | 10 |\n| Improvise a tune | 20 |",
+    "modifiers": [
+      {
+        "target": "checks.all",
+        "op": "add",
+        "value": "@prof",
+        "when": {
+          "text": "if you have proficiency with the instrument, on ability checks to play music with it"
+        },
+        "provenance": {
+          "source": "llm:claude-sonnet-5-5",
+          "review": "auto"
+        }
+      }
+    ]
   },
   {
     "id": "srd:item:jewelers-tools",
@@ -324,7 +394,21 @@
     "itemType": "tool",
     "weight": 2,
     "value": 3500,
-    "text": "**Instrument.** If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.\n\nProficiency with a musical instrument indicates you are familiar with the techniques used to play it. You also have knowledge of some songs commonly performed with that instrument.\n\n**History.** Your expertise aids you in recalling lore related to your instrument.\n\n**Performance.** Your ability to put on a good show is improved when you incorporate an instrument into your act.\n\n**Compose a Tune.** As part of a long rest, you can compose a new tune and lyrics for your instrument. You might use this ability to impress a noble or spread scandalous rumors with a catchy tune.\n\n**Musical Instrument**\n| Activity | DC |\n| --- | --- |\n| Identify a tune | 10 |\n| Improvise a tune | 20 |"
+    "text": "**Instrument.** If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.\n\nProficiency with a musical instrument indicates you are familiar with the techniques used to play it. You also have knowledge of some songs commonly performed with that instrument.\n\n**History.** Your expertise aids you in recalling lore related to your instrument.\n\n**Performance.** Your ability to put on a good show is improved when you incorporate an instrument into your act.\n\n**Compose a Tune.** As part of a long rest, you can compose a new tune and lyrics for your instrument. You might use this ability to impress a noble or spread scandalous rumors with a catchy tune.\n\n**Musical Instrument**\n| Activity | DC |\n| --- | --- |\n| Identify a tune | 10 |\n| Improvise a tune | 20 |",
+    "modifiers": [
+      {
+        "target": "checks.all",
+        "op": "add",
+        "value": "@prof",
+        "when": {
+          "text": "if you have proficiency with the instrument, on ability checks to play music with it"
+        },
+        "provenance": {
+          "source": "llm:claude-sonnet-5-5",
+          "review": "auto"
+        }
+      }
+    ]
   },
   {
     "id": "srd:item:lyre",
@@ -339,7 +423,21 @@
     "itemType": "tool",
     "weight": 2,
     "value": 3000,
-    "text": "**Instrument.** If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.\n\nProficiency with a musical instrument indicates you are familiar with the techniques used to play it. You also have knowledge of some songs commonly performed with that instrument.\n\n**History.** Your expertise aids you in recalling lore related to your instrument.\n\n**Performance.** Your ability to put on a good show is improved when you incorporate an instrument into your act.\n\n**Compose a Tune.** As part of a long rest, you can compose a new tune and lyrics for your instrument. You might use this ability to impress a noble or spread scandalous rumors with a catchy tune.\n\n**Musical Instrument**\n| Activity | DC |\n| --- | --- |\n| Identify a tune | 10 |\n| Improvise a tune | 20 |"
+    "text": "**Instrument.** If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.\n\nProficiency with a musical instrument indicates you are familiar with the techniques used to play it. You also have knowledge of some songs commonly performed with that instrument.\n\n**History.** Your expertise aids you in recalling lore related to your instrument.\n\n**Performance.** Your ability to put on a good show is improved when you incorporate an instrument into your act.\n\n**Compose a Tune.** As part of a long rest, you can compose a new tune and lyrics for your instrument. You might use this ability to impress a noble or spread scandalous rumors with a catchy tune.\n\n**Musical Instrument**\n| Activity | DC |\n| --- | --- |\n| Identify a tune | 10 |\n| Improvise a tune | 20 |",
+    "modifiers": [
+      {
+        "target": "checks.all",
+        "op": "add",
+        "value": "@prof",
+        "when": {
+          "text": "if you have proficiency with the instrument, on ability checks to play music with it"
+        },
+        "provenance": {
+          "source": "llm:claude-sonnet-5-5",
+          "review": "auto"
+        }
+      }
+    ]
   },
   {
     "id": "srd:item:masons-tools",
@@ -368,7 +466,21 @@
     ],
     "page": "PHB 154",
     "itemType": "tool",
-    "text": "**Instrument.** If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.\n\nProficiency with a musical instrument indicates you are familiar with the techniques used to play it. You also have knowledge of some songs commonly performed with that instrument.\n\n**History.** Your expertise aids you in recalling lore related to your instrument.\n\n**Performance.** Your ability to put on a good show is improved when you incorporate an instrument into your act.\n\n**Compose a Tune.** As part of a long rest, you can compose a new tune and lyrics for your instrument. You might use this ability to impress a noble or spread scandalous rumors with a catchy tune.\n\n**Musical Instrument**\n| Activity | DC |\n| --- | --- |\n| Identify a tune | 10 |\n| Improvise a tune | 20 |\n\nThis group covers: Bagpipes, Drum, Dulcimer, Flute, Horn, Lute, Lyre, Pan Flute, Shawm, Viol."
+    "text": "**Instrument.** If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.\n\nProficiency with a musical instrument indicates you are familiar with the techniques used to play it. You also have knowledge of some songs commonly performed with that instrument.\n\n**History.** Your expertise aids you in recalling lore related to your instrument.\n\n**Performance.** Your ability to put on a good show is improved when you incorporate an instrument into your act.\n\n**Compose a Tune.** As part of a long rest, you can compose a new tune and lyrics for your instrument. You might use this ability to impress a noble or spread scandalous rumors with a catchy tune.\n\n**Musical Instrument**\n| Activity | DC |\n| --- | --- |\n| Identify a tune | 10 |\n| Improvise a tune | 20 |\n\nThis group covers: Bagpipes, Drum, Dulcimer, Flute, Horn, Lute, Lyre, Pan Flute, Shawm, Viol.",
+    "modifiers": [
+      {
+        "target": "checks.all",
+        "op": "add",
+        "value": "@prof",
+        "when": {
+          "text": "if you have proficiency with the instrument, on ability checks to play music with it"
+        },
+        "provenance": {
+          "source": "llm:claude-sonnet-5-5",
+          "review": "auto"
+        }
+      }
+    ]
   },
   {
     "id": "srd:item:navigators-tools",
@@ -413,7 +525,21 @@
     "itemType": "tool",
     "weight": 2,
     "value": 1200,
-    "text": "**Instrument.** If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.\n\nProficiency with a musical instrument indicates you are familiar with the techniques used to play it. You also have knowledge of some songs commonly performed with that instrument.\n\n**History.** Your expertise aids you in recalling lore related to your instrument.\n\n**Performance.** Your ability to put on a good show is improved when you incorporate an instrument into your act.\n\n**Compose a Tune.** As part of a long rest, you can compose a new tune and lyrics for your instrument. You might use this ability to impress a noble or spread scandalous rumors with a catchy tune.\n\n**Musical Instrument**\n| Activity | DC |\n| --- | --- |\n| Identify a tune | 10 |\n| Improvise a tune | 20 |"
+    "text": "**Instrument.** If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.\n\nProficiency with a musical instrument indicates you are familiar with the techniques used to play it. You also have knowledge of some songs commonly performed with that instrument.\n\n**History.** Your expertise aids you in recalling lore related to your instrument.\n\n**Performance.** Your ability to put on a good show is improved when you incorporate an instrument into your act.\n\n**Compose a Tune.** As part of a long rest, you can compose a new tune and lyrics for your instrument. You might use this ability to impress a noble or spread scandalous rumors with a catchy tune.\n\n**Musical Instrument**\n| Activity | DC |\n| --- | --- |\n| Identify a tune | 10 |\n| Improvise a tune | 20 |",
+    "modifiers": [
+      {
+        "target": "checks.all",
+        "op": "add",
+        "value": "@prof",
+        "when": {
+          "text": "if you have proficiency with the instrument, on ability checks to play music with it"
+        },
+        "provenance": {
+          "source": "llm:claude-sonnet-5-5",
+          "review": "auto"
+        }
+      }
+    ]
   },
   {
     "id": "srd:item:playing-card-set",
@@ -472,7 +598,21 @@
     "itemType": "tool",
     "weight": 1,
     "value": 200,
-    "text": "**Instrument.** If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.\n\nProficiency with a musical instrument indicates you are familiar with the techniques used to play it. You also have knowledge of some songs commonly performed with that instrument.\n\n**History.** Your expertise aids you in recalling lore related to your instrument.\n\n**Performance.** Your ability to put on a good show is improved when you incorporate an instrument into your act.\n\n**Compose a Tune.** As part of a long rest, you can compose a new tune and lyrics for your instrument. You might use this ability to impress a noble or spread scandalous rumors with a catchy tune.\n\n**Musical Instrument**\n| Activity | DC |\n| --- | --- |\n| Identify a tune | 10 |\n| Improvise a tune | 20 |"
+    "text": "**Instrument.** If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.\n\nProficiency with a musical instrument indicates you are familiar with the techniques used to play it. You also have knowledge of some songs commonly performed with that instrument.\n\n**History.** Your expertise aids you in recalling lore related to your instrument.\n\n**Performance.** Your ability to put on a good show is improved when you incorporate an instrument into your act.\n\n**Compose a Tune.** As part of a long rest, you can compose a new tune and lyrics for your instrument. You might use this ability to impress a noble or spread scandalous rumors with a catchy tune.\n\n**Musical Instrument**\n| Activity | DC |\n| --- | --- |\n| Identify a tune | 10 |\n| Improvise a tune | 20 |",
+    "modifiers": [
+      {
+        "target": "checks.all",
+        "op": "add",
+        "value": "@prof",
+        "when": {
+          "text": "if you have proficiency with the instrument, on ability checks to play music with it"
+        },
+        "provenance": {
+          "source": "llm:claude-sonnet-5-5",
+          "review": "auto"
+        }
+      }
+    ]
   },
   {
     "id": "srd:item:smiths-tools",
@@ -532,7 +672,21 @@
     "itemType": "tool",
     "weight": 1,
     "value": 3000,
-    "text": "**Instrument.** If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.\n\nProficiency with a musical instrument indicates you are familiar with the techniques used to play it. You also have knowledge of some songs commonly performed with that instrument.\n\n**History.** Your expertise aids you in recalling lore related to your instrument.\n\n**Performance.** Your ability to put on a good show is improved when you incorporate an instrument into your act.\n\n**Compose a Tune.** As part of a long rest, you can compose a new tune and lyrics for your instrument. You might use this ability to impress a noble or spread scandalous rumors with a catchy tune.\n\n**Musical Instrument**\n| Activity | DC |\n| --- | --- |\n| Identify a tune | 10 |\n| Improvise a tune | 20 |"
+    "text": "**Instrument.** If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.\n\nProficiency with a musical instrument indicates you are familiar with the techniques used to play it. You also have knowledge of some songs commonly performed with that instrument.\n\n**History.** Your expertise aids you in recalling lore related to your instrument.\n\n**Performance.** Your ability to put on a good show is improved when you incorporate an instrument into your act.\n\n**Compose a Tune.** As part of a long rest, you can compose a new tune and lyrics for your instrument. You might use this ability to impress a noble or spread scandalous rumors with a catchy tune.\n\n**Musical Instrument**\n| Activity | DC |\n| --- | --- |\n| Identify a tune | 10 |\n| Improvise a tune | 20 |",
+    "modifiers": [
+      {
+        "target": "checks.all",
+        "op": "add",
+        "value": "@prof",
+        "when": {
+          "text": "if you have proficiency with the instrument, on ability checks to play music with it"
+        },
+        "provenance": {
+          "source": "llm:claude-sonnet-5-5",
+          "review": "auto"
+        }
+      }
+    ]
   },
   {
     "id": "srd:item:weavers-tools",

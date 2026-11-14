@@ -24,7 +24,26 @@
     "itemType": "gear",
     "weight": 1,
     "value": 2500,
-    "text": "As an action, you can splash the contents of this vial onto a creature within 5 feet of you or throw the vial up to 20 feet, shattering it on impact. In either case, make a ranged attack against a creature or object, treating the acid as an improvised weapon. On a hit, the target takes 2d6 acid damage."
+    "text": "As an action, you can splash the contents of this vial onto a creature within 5 feet of you or throw the vial up to 20 feet, shattering it on impact. In either case, make a ranged attack against a creature or object, treating the acid as an improvised weapon. On a hit, the target takes 2d6 acid damage.",
+    "actions": [
+      {
+        "id": "throw-acid",
+        "name": "Throw Acid",
+        "activation": "action",
+        "attack": {
+          "type": "ranged-weapon",
+          "proficient": false
+        },
+        "damage": "2d6",
+        "damageType": "acid",
+        "range": "20 ft.",
+        "target": "one creature or object",
+        "provenance": {
+          "source": "llm:claude-sonnet-5-5",
+          "review": "auto"
+        }
+      }
+    ]
   },
   {
     "id": "srd:item:alchemists-fire-flask",
@@ -38,7 +57,27 @@
     "itemType": "gear",
     "weight": 1,
     "value": 5000,
-    "text": "This sticky, adhesive fluid ignites when exposed to air. As an action, you can throw this flask up to 20 feet, shattering it on impact. Make a ranged attack against a creature or object, treating the alchemist's fire as an improvised weapon. On a hit, the target takes 1d4 fire damage at the start of each of its turns. A creature can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames."
+    "text": "This sticky, adhesive fluid ignites when exposed to air. As an action, you can throw this flask up to 20 feet, shattering it on impact. Make a ranged attack against a creature or object, treating the alchemist's fire as an improvised weapon. On a hit, the target takes 1d4 fire damage at the start of each of its turns. A creature can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames.",
+    "actions": [
+      {
+        "id": "throw-alchemists-fire",
+        "name": "Throw Alchemist's Fire",
+        "activation": "action",
+        "attack": {
+          "type": "ranged-weapon",
+          "proficient": false
+        },
+        "damage": "1d4",
+        "damageType": "fire",
+        "range": "20 ft.",
+        "target": "one creature or object",
+        "text": "Target takes the fire damage at the start of each of its turns until it uses its action to make a DC 10 Dexterity check to extinguish the flames.",
+        "provenance": {
+          "source": "llm:claude-sonnet-5-5",
+          "review": "auto"
+        }
+      }
+    ]
   },
   {
     "id": "srd:item:ale-gallon",
@@ -145,7 +184,24 @@
     "itemType": "gear",
     "weight": 2,
     "value": 100,
-    "text": "As an action, you can spill these tiny metal balls from their pouch to cover a level area 10 feet square. A creature moving across the covered area must succeed on a DC 10 Dexterity saving throw or fall prone. A creature moving through the area at half speed doesn't need to make the saving throw."
+    "text": "As an action, you can spill these tiny metal balls from their pouch to cover a level area 10 feet square. A creature moving across the covered area must succeed on a DC 10 Dexterity saving throw or fall prone. A creature moving through the area at half speed doesn't need to make the saving throw.",
+    "actions": [
+      {
+        "id": "spill-ball-bearings",
+        "name": "Spill Ball Bearings",
+        "activation": "action",
+        "save": {
+          "ability": "dex",
+          "dc": "10"
+        },
+        "range": "10 ft. square",
+        "text": "Creatures moving across the area must succeed or fall prone; moving at half speed avoids the save.",
+        "provenance": {
+          "source": "llm:claude-sonnet-5-5",
+          "review": "auto"
+        }
+      }
+    ]
   },
   {
     "id": "srd:item:barrel",
@@ -323,7 +379,26 @@
     "itemType": "gear",
     "weight": 0.1,
     "value": 5,
-    "text": "As an action, you can spread a single bag of caltrops to cover a 5-foot-square area. Any creature that enters the area must succeed on a DC 15 Dexterity saving throw or stop moving and take 1 piercing damage. Until the creature regains at least 1 hit point, its walking speed is reduced by 10 feet. A creature moving through the area at half speed doesn't need to make the saving throw."
+    "text": "As an action, you can spread a single bag of caltrops to cover a 5-foot-square area. Any creature that enters the area must succeed on a DC 15 Dexterity saving throw or stop moving and take 1 piercing damage. Until the creature regains at least 1 hit point, its walking speed is reduced by 10 feet. A creature moving through the area at half speed doesn't need to make the saving throw.",
+    "actions": [
+      {
+        "id": "spread-caltrops",
+        "name": "Spread Caltrops",
+        "activation": "action",
+        "save": {
+          "ability": "dex",
+          "dc": "15"
+        },
+        "damage": "1",
+        "damageType": "piercing",
+        "range": "5 ft. square",
+        "text": "On a failed save the creature stops moving and its walking speed is reduced by 10 feet until it regains 1 hit point; moving at half speed avoids the save.",
+        "provenance": {
+          "source": "llm:claude-sonnet-5-5",
+          "review": "auto"
+        }
+      }
+    ]
   },
   {
     "id": "srd:item:caltrops-bag-of-20",
@@ -338,7 +413,26 @@
     "itemType": "gear",
     "weight": 2,
     "value": 100,
-    "text": "As an action, you can spread a single bag of caltrops to cover a 5-foot-square area. Any creature that enters the area must succeed on a DC 15 Dexterity saving throw or stop moving and take 1 piercing damage. Until the creature regains at least 1 hit point, its walking speed is reduced by 10 feet. A creature moving through the area at half speed doesn't need to make the saving throw."
+    "text": "As an action, you can spread a single bag of caltrops to cover a 5-foot-square area. Any creature that enters the area must succeed on a DC 15 Dexterity saving throw or stop moving and take 1 piercing damage. Until the creature regains at least 1 hit point, its walking speed is reduced by 10 feet. A creature moving through the area at half speed doesn't need to make the saving throw.",
+    "actions": [
+      {
+        "id": "spread-caltrops",
+        "name": "Spread Caltrops",
+        "activation": "action",
+        "save": {
+          "ability": "dex",
+          "dc": "15"
+        },
+        "damage": "1",
+        "damageType": "piercing",
+        "range": "5 ft. square",
+        "text": "On a failed save the creature stops moving and its walking speed is reduced by 10 feet until it regains 1 hit point; moving at half speed avoids the save.",
+        "provenance": {
+          "source": "llm:claude-sonnet-5-5",
+          "review": "auto"
+        }
+      }
+    ]
   },
   {
     "id": "srd:item:candle",
@@ -883,7 +977,36 @@
     "itemType": "gear",
     "weight": 3,
     "value": 500,
-    "text": "This kit is a leather pouch containing bandages, salves, and splints. The kit has ten uses. As an action, you can expend one use of the kit to stabilize a creature that has 0 hit points, without needing to make a Wisdom (Medicine) check."
+    "text": "This kit is a leather pouch containing bandages, salves, and splints. The kit has ten uses. As an action, you can expend one use of the kit to stabilize a creature that has 0 hit points, without needing to make a Wisdom (Medicine) check.",
+    "resources": [
+      {
+        "id": "srd:item:healers-kit",
+        "name": "Healer's Kit",
+        "max": 10,
+        "recharge": [],
+        "unit": "uses",
+        "provenance": {
+          "source": "llm:claude-sonnet-5-5",
+          "review": "auto"
+        }
+      }
+    ],
+    "actions": [
+      {
+        "id": "stabilize",
+        "name": "Stabilize",
+        "activation": "action",
+        "cost": {
+          "srd:item:healers-kit": 1
+        },
+        "target": "one creature with 0 hit points",
+        "text": "Stabilize without a Wisdom (Medicine) check.",
+        "provenance": {
+          "source": "llm:claude-sonnet-5-5",
+          "review": "auto"
+        }
+      }
+    ]
   },
   {
     "id": "srd:item:hempen-rope-50-feet",
@@ -911,7 +1034,27 @@
     "itemType": "gear",
     "weight": 1,
     "value": 2500,
-    "text": "As an action, you can splash the contents of this flask onto a creature within 5 feet of you or throw it up to 20 feet, shattering it on impact. In either case, make a ranged attack against a target creature, treating the holy water as an improvised weapon. If the target is a fiend or undead, it takes 2d6 radiant damage.\n\nA cleric or paladin may create holy water by performing a special ritual. The ritual takes 1 hour to perform, uses 25 gp worth of powdered silver, and requires the caster to expend a 1st-level spell slot."
+    "text": "As an action, you can splash the contents of this flask onto a creature within 5 feet of you or throw it up to 20 feet, shattering it on impact. In either case, make a ranged attack against a target creature, treating the holy water as an improvised weapon. If the target is a fiend or undead, it takes 2d6 radiant damage.\n\nA cleric or paladin may create holy water by performing a special ritual. The ritual takes 1 hour to perform, uses 25 gp worth of powdered silver, and requires the caster to expend a 1st-level spell slot.",
+    "actions": [
+      {
+        "id": "throw-holy-water",
+        "name": "Throw Holy Water",
+        "activation": "action",
+        "attack": {
+          "type": "ranged-weapon",
+          "proficient": false
+        },
+        "damage": "2d6",
+        "damageType": "radiant",
+        "range": "20 ft.",
+        "target": "one creature",
+        "text": "Damage only if the target is a fiend or undead.",
+        "provenance": {
+          "source": "llm:claude-sonnet-5-5",
+          "review": "auto"
+        }
+      }
+    ]
   },
   {
     "id": "srd:item:hooded-lantern",

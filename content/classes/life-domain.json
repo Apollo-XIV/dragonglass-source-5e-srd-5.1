@@ -74,7 +74,20 @@
       "life-feature",
       "cleric-feature"
     ],
-    "text": "When you choose this domain at 1st level, you gain proficiency with heavy armor."
+    "text": "When you choose this domain at 1st level, you gain proficiency with heavy armor.",
+    "modifiers": [
+      {
+        "target": "proficiencies.armor",
+        "op": "include",
+        "value": [
+          "heavy armor"
+        ],
+        "provenance": {
+          "source": "llm:claude-sonnet-5-5",
+          "review": "auto"
+        }
+      }
+    ]
   },
   {
     "id": "srd:life:disciple-of-life",
