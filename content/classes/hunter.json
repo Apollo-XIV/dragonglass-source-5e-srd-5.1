@@ -170,7 +170,21 @@
       "ranger-feature",
       "hunter-defensive-tactics-option"
     ],
-    "text": "When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that creature for the rest of the turn."
+    "text": "When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that creature for the rest of the turn.",
+    "modifiers": [
+      {
+        "target": "ac",
+        "op": "add",
+        "value": 4,
+        "when": {
+          "text": "against all subsequent attacks made by a creature that has hit you, for the rest of the turn"
+        },
+        "provenance": {
+          "source": "llm:claude-sonnet-5-5",
+          "review": "auto"
+        }
+      }
+    ]
   },
   {
     "id": "srd:hunter:steel-will",
