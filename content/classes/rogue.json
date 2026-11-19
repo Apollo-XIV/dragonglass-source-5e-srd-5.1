@@ -114,6 +114,27 @@
                 "srd:skill:stealth"
               ]
             }
+          },
+          {
+            "id": "srd:class:rogue:expertise-1",
+            "name": "Expertise",
+            "count": 2,
+            "from": {
+              "anyOf": [
+                {
+                  "kind": "expertise",
+                  "tags": [
+                    "expertise-skill"
+                  ]
+                },
+                {
+                  "kind": "expertise",
+                  "tags": [
+                    "expertise-tool"
+                  ]
+                }
+              ]
+            }
           }
         ],
         "modifiers": [
@@ -198,6 +219,29 @@
       "6": {
         "grants": [
           "srd:rogue:expertise-6"
+        ],
+        "choices": [
+          {
+            "id": "srd:class:rogue:expertise-6",
+            "name": "Expertise",
+            "count": 2,
+            "from": {
+              "anyOf": [
+                {
+                  "kind": "expertise",
+                  "tags": [
+                    "expertise-skill"
+                  ]
+                },
+                {
+                  "kind": "expertise",
+                  "tags": [
+                    "expertise-tool"
+                  ]
+                }
+              ]
+            }
+          }
         ]
       },
       "7": {
